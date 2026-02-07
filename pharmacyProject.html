@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Douglas Hedman</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Douglas Hedman - Hedman Garcia Pharmacy</title>
+    <meta name="description" content="Hedman Garcia Pharmacy - Web-based pharmacy management system with inventory, billing, and user management." />
+    <meta name="keywords" content="pharmacy, web development, PHP, inventory management, Douglas Hedman" />
 
     <!-- Favicons -->
     <link href="assets/img/icon.png" rel="icon" />
@@ -85,33 +85,37 @@
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
+          <!-- Language Toggle -->
+          <div class="lang-toggle-container mt-3 text-center">
+            <button id="lang-toggle" class="lang-toggle-btn" title="Cambiar a Espanol">ES</button>
+          </div>
         </div>
 
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
               <a href="index.html" class="nav-link scrollto active"
-                ><i class="bx bx-home"></i> <span>Home</span></a
+                ><i class="bx bx-home"></i> <span data-i18n="nav.home">Home</span></a
               >
             </li>
             <li>
               <a href="index.html#about" class="nav-link scrollto"
-                ><i class="bx bx-user"></i> <span>About</span></a
+                ><i class="bx bx-user"></i> <span data-i18n="nav.about">About</span></a
               >
             </li>
             <li>
               <a href="index.html#resume" class="nav-link scrollto"
-                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+                ><i class="bx bx-file-blank"></i> <span data-i18n="nav.resume">Resume</span></a
               >
             </li>
             <li>
               <a href="index.html#portfolio" class="nav-link scrollto"
-                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+                ><i class="bx bx-book-content"></i> <span data-i18n="nav.portfolio">Portfolio</span></a
               >
             </li>
             <li>
               <a href="index.html#contact" class="nav-link scrollto"
-                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+                ><i class="bx bx-envelope"></i> <span data-i18n="nav.contact">Contact</span></a
               >
             </li>
           </ul>
@@ -126,10 +130,10 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Hedman Garcia Pharmacy</h2>
+            <h2 data-i18n="pharmacy.breadcrumb.title">Hedman Garcia Pharmacy</h2>
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li>Portfolio</li>
+              <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+              <li data-i18n="nav.portfolio">Portfolio</li>
             </ol>
           </div>
         </div>
@@ -174,16 +178,17 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3>Project information</h3>
+                <h3 data-i18n="pharmacy.info.title">Project information</h3>
                 <ul>
-                  <li><strong>Project Date</strong>: November 2023</li>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Client</strong>: Personal Project</li>
+                  <li><strong data-i18n="pharmacy.info.date.label">Project Date</strong>: <span data-i18n="pharmacy.info.date.value">2024</span></li>
+                  <li><strong data-i18n="pharmacy.info.category.label">Category</strong>: <span data-i18n="pharmacy.info.category.value">Web Development</span></li>
+                  <li><strong data-i18n="pharmacy.info.client.label">Client</strong>: <span data-i18n="pharmacy.info.client.value">Personal Project</span></li>
                   <li>
                     <strong
                       ><a
                         href="https://github.com/PickleRickHND/Hedman-Garcia-Pharmacy"
                         target="_blank"
+                        data-i18n="pharmacy.info.repo"
                         >Want to check my code?</a
                       ></strong
                     >
@@ -191,10 +196,10 @@
                 </ul>
               </div>
               <div class="portfolio-description">
-                <h2>Functionality</h2>
-                <p style="text-align: justify">
+                <h2 data-i18n="pharmacy.func.title">Functionality</h2>
+                <p style="text-align: justify" data-i18n="pharmacy.func.description">
                   This project is a website for a pharmacy. It has a login
-                  system for the employees to access the website including an advanced 
+                  system for the employees to access the website including an advanced
                   email password recovery. This project has the option to check the
                   stock of the pharmacy. The website also has a user management
                   area where admins can control basic user privileges. Also,
@@ -227,6 +232,9 @@
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- i18n System -->
+    <script src="assets/js/i18n.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

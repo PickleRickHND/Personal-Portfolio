@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Douglas Hedman | Software & Web Developer Portfolio</title>
-  <meta content="Portfolio de Douglas Hedman, Ingeniero en Sistemas y Desarrollador Web Junior de Honduras. Especializado en desarrollo Full Stack con React, Node.js, JavaScript, PHP y más." name="description">
-  <meta content="Douglas Hedman, Software Developer, Web Developer, Full Stack Developer, React, Node.js, JavaScript, PHP, Honduras, Tegucigalpa, Portfolio, Ingeniero en Sistemas" name="keywords">
+  <title>Douglas Hedman - Systems Engineer</title>
+  <meta name="description" content="Systems Engineer with 3+ years of experience in software development, QA automation, and systems administration. Flutter, React, Next.js, Cypress specialist.">
+  <meta name="keywords" content="Douglas Hedman, Systems Engineer, Software Developer, Flutter, React, Next.js, Cypress, QA Automation, Full Stack, Honduras">
   <meta name="author" content="Douglas Hedman">
-  <meta property="og:title" content="Douglas Hedman | Software & Web Developer Portfolio">
-  <meta property="og:description" content="Portfolio de Douglas Hedman, Ingeniero en Sistemas y Desarrollador Web Junior de Honduras.">
+  <meta property="og:title" content="Douglas Hedman | Systems Engineer Portfolio">
+  <meta property="og:description" content="Systems Engineer with 3+ years of experience in software development, QA automation, and systems administration.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Douglas Hedman | Software & Web Developer Portfolio">
-  <meta name="twitter:description" content="Portfolio de Douglas Hedman, Ingeniero en Sistemas y Desarrollador Web Junior de Honduras.">
+  <meta name="twitter:title" content="Douglas Hedman | Systems Engineer Portfolio">
+  <meta name="twitter:description" content="Systems Engineer with 3+ years of experience in software development, QA automation, and systems administration.">
 
   <!-- Favicons -->
   <link href="assets/img/icon.png" rel="icon">
@@ -30,7 +30,7 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
@@ -56,16 +56,20 @@
           <a href="https://github.com/PickleRickHND" class="github" target="_blank"><i class="bx bxl-github"></i></a>
           <a href="https://www.linkedin.com/in/douglas-hedman-9a48a5133/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
         </div>
+        <!-- Language Toggle -->
+        <div class="lang-toggle-container mt-3 text-center">
+          <button id="lang-toggle" class="lang-toggle-btn" title="Cambiar a Espanol">ES</button>
+        </div>
       </div>
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-chat"></i> <span>Testimonials</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span data-i18n="nav.home">Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav.about">About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav.resume">Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span data-i18n="nav.portfolio">Portfolio</span></a></li>
+
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -75,7 +79,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div style="top: -95px" class="hero-container" data-aos="fade-in">
       <h1>Douglas Hedman</h1>
-      <p>I'm a <span class="typed" data-typed-items="Web Developer, Software Engineer"></span></p>
+      <p><span data-i18n="hero.greeting">I'm a </span><span class="typed" data-typed-items="Systems Engineer, QA Automation, Full-Stack Developer, Mobile Developer"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -86,10 +90,8 @@
       <div class="container">
 
         <div style="text-align: justify;" class="section-title">
-          <h2>About</h2>
-          <p>At the age of 24, I stand proudly as a Honduran national deeply immersed in the world of software development. 
-            My academic journey culminated in 2024 with a graduation from the prestigious José Cecilio del Valle University, where I improved my skills and knowledge in software engineering.
-            Beyond my formal education, I have worked towards excellence by acquiring professional certifications in Full Stack Engineering and Computer Science.</p>
+          <h2 data-i18n="about.title">About</h2>
+          <p data-i18n="about.description">Systems Engineer with over 3 years of experience in software development, quality assurance, and systems administration. Specialized in building cross-platform mobile applications with Flutter, web development with React and Next.js, and QA automation with Cypress. Graduate from Jose Cecilio del Valle University with professional certifications in Full Stack Engineering and Computer Science.</p>
           <br>
         </div>
 
@@ -98,32 +100,31 @@
             <img src="assets/img/profileImage.png" class="img-fluid" alt="Douglas Hedman - Junior Software Developer">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Junior Software &amp; Web Developer</h3>
+            <h3 data-i18n="about.role">Systems Engineer | Software Development &amp; Systems Administration Specialist</h3>
             <br>
-            <p class="fst-italic" style="text-align: justify;">
-              I am passionate about learning new technologies and improving my developer skills. I am always open to exploring innovative solutions and embracing new advancements in the field. 
-              As I continue to develop professionally, I am committed to using my skills to make a meaningful impact in the software development community.
+            <p class="fst-italic" style="text-align: justify;" data-i18n="about.detail">
+              I am passionate about building high-quality software solutions and continuously expanding my technical expertise. With hands-on experience across mobile, web, and backend development, I bring a versatile approach to every project. I thrive in collaborative environments and am committed to delivering clean, efficient, and maintainable code.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <br>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 February 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+504 89041949</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>24</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.birthday">Birthday:</strong> <span>21 February 2000</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.phone">Phone:</strong> <span>+504 89041949</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.age">Age:</strong> <span>26</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <br>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>System Computing Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>douglashedman@yahoo.es</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tegucigalpa, Honduras</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.degree">Degree:</strong> <span data-i18n="about.degree.value">Systems Engineering</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.email">Email:</strong> <span>douglashedman@yahoo.es</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.city">City:</strong> <span>Tegucigalpa, Honduras</span></li>
                 </ul>
               </div>
             </div>
-            <p style="text-align: justify;">
-              These certifications demonstrate my dedication to continuous learning and highlight my ability to adapt and thrive in the constantly changing world of software development.
+            <p style="text-align: justify;" data-i18n="about.closing">
+              My professional certifications and hands-on experience demonstrate my dedication to continuous learning and my ability to adapt and thrive in the constantly evolving world of software development.
             </p>
           </div>
         </div>
@@ -134,50 +135,31 @@
     <section id="skills" class="skills section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>Skills</h2>
-          <p style="text-align: justify;">During my academic journey and through personal projects, I have acquired significant skills in web development. I began with HTML and CSS, building a solid foundation that allowed me to advance to more complex languages like JavaScript and PHP. These skills helped me develop dynamic and responsive websites. 
-            Driven by my curiosity and passion for technology, I later ventured into the Computer Science Field. This area has particularly captured my interest, and I continue to enhance and sharpen my abilities in these fields. </p>
+          <h2 data-i18n="skills.title">Skills</h2>
+          <p style="text-align: justify;" data-i18n="skills.description">Throughout my career, I have developed expertise across the full software development lifecycle. From building responsive web applications with React and Next.js, to developing cross-platform mobile apps with Flutter, implementing QA automation with Cypress, and managing backend services with PHP, Python, and Firebase. I continuously sharpen my skills to deliver robust and scalable solutions.</p>
         </div>
         <br>
         <div class="row skills-content justify-content-center">
           <div class="col-lg-ju" data-aos="fade-up">
-            <ul class="list-inline list-icons d-flex flex-wrap justify-content-center">
-              <li class="list-inline-item">
-                <i class="devicons devicons-html5"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-css3"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-javascript"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-php"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-bootstrap"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-react"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-nodejs"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-java"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-python"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-postgresql"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-git"></i>
-              </li>
-              <li class="list-inline-item">
-                <i class="devicons devicons-github"></i>
-              </li>
+            <ul class="list-inline list-icons d-flex flex-wrap justify-content-center" id="skills-icons">
+              <li class="list-inline-item"><i class="devicon-html5-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-css3-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-javascript-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-typescript-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-php-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-bootstrap-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-react-original"></i></li>
+              <li class="list-inline-item"><i class="devicon-nodejs-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-python-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-postgresql-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-mysql-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-git-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-github-original"></i></li>
+              <li class="list-inline-item"><i class="devicon-flutter-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-firebase-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-cypressio-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-nextjs-plain"></i></li>
+              <li class="list-inline-item"><i class="devicon-tailwindcss-original"></i></li>
             </ul>
           </div>
         </div>
@@ -188,17 +170,26 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p>By clicking the button below, you are invited to download a PDF version of my resume, which provides a detailed overview of my educational background and professional experience:</p>
+          <h2 data-i18n="resume.title">Resume</h2>
+          <p data-i18n="resume.description">Click the buttons below to download a PDF version of my resume, which provides a detailed overview of my educational background and professional experience:</p>
         </div>
 
-        <button class="download-button" onclick="window.open('https://drive.google.com/file/d/1bs9fZGuApQHv-3UYWLWNc99igsjw-U3r/view?usp=sharing')" style="background: none; border: none;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 20 20">
-            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
-            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-          </svg>
-          <span class="download-text">Download</span>
-        </button>
+        <div class="resume-buttons">
+          <button id="resume-btn-en" class="download-button resume-btn-primary" onclick="window.open('assets/resume/Douglas_Hedman_CV_2026_EN.pdf')" style="background: none; border: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 20 20">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            <span class="download-text" data-i18n="resume.download.en">English</span>
+          </button>
+          <button id="resume-btn-es" class="download-button resume-btn-secondary" onclick="window.open('assets/resume/Douglas_Hedman_CV_2026_ES.pdf')" style="background: none; border: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 20 20">
+              <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+              <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+            </svg>
+            <span class="download-text" data-i18n="resume.download.es">Spanish</span>
+          </button>
+        </div>
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -206,26 +197,38 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Below, you will find a series of projects I have worked on, spanning from my university days to the present:</p>
+          <h2 data-i18n="portfolio.title">Portfolio</h2>
+          <p data-i18n="portfolio.description">Below, you will find a selection of projects I have worked on, from personal ventures to professional applications:</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web</li>
-              <li data-filter=".filter-ios">Mobile</li>
-              <li data-filter=".filter-app">App</li>
+              <li data-filter="*" class="filter-active" data-i18n="portfolio.filter.all">All</li>
+              <li data-filter=".filter-web" data-i18n="portfolio.filter.web">Web</li>
+              <li data-filter=".filter-mobile" data-i18n="portfolio.filter.mobile">Mobile</li>
+              <li data-filter=".filter-app" data-i18n="portfolio.filter.app">App</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
+          <!-- Prizio App - Most Recent -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/prizio_home.png" class="img-fluid" alt="Prizio App">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/prizio_home.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                <a href="prizioProject.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pharmacy Project -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pharmacy1.png" class="img-fluid" alt="Hedman Garcia Pharmacy - Sistema de Gestión de Farmacia">
+              <img src="assets/img/portfolio/pharmacy1.png" class="img-fluid" alt="Hedman Garcia Pharmacy - Pharmacy Management System">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/pharmacy1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 <a href="pharmacyProject.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -233,9 +236,10 @@
             </div>
           </div>
 
+          <!-- Spotify Project -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/SpotifyProject1.png" class="img-fluid" alt="Spotify Playlist Generator - Generador de Playlists con API de Spotify">
+              <img src="assets/img/portfolio/SpotifyProject1.png" class="img-fluid" alt="Spotify Playlist Generator - Playlist Creator with Spotify API">
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/SpotifyProject1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                 <a href="spotifyProject.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -248,97 +252,13 @@
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Here are some testimonials from colleagues, professors, and clients who have worked with me:</p>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Douglas es un desarrollador muy dedicado y apasionado por la tecnología. Su capacidad para resolver problemas y aprender nuevas tecnologías rápidamente es impresionante.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Testimonio de profesor universitario">
-                <h3>Prof. Juan García</h3>
-                <h4>Profesor Universitario</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Trabajar con Douglas fue una excelente experiencia. Su atención al detalle y compromiso con la calidad del código hacen que sea un gran compañero de equipo.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="Testimonio de colega desarrollador">
-                <h3>María López</h3>
-                <h4>Software Developer</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  El sistema de farmacia que Douglas desarrolló superó nuestras expectativas. Es funcional, fácil de usar y nos ha ayudado a mejorar significativamente nuestras operaciones.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="Testimonio de cliente de farmacia">
-                <h3>Carlos Martínez</h3>
-                <h4>Propietario de Farmacia</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Douglas demuestra un excelente dominio de las tecnologías modernas de desarrollo web. Su proyecto final fue uno de los mejores de su generación.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="Testimonio de asesor de tesis">
-                <h3>Ing. Roberto Hernández</h3>
-                <h4>Asesor de Tesis</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Un profesional comprometido con su trabajo. Douglas siempre busca la mejor solución y no se rinde hasta encontrarla. Recomendado al 100%.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="Testimonio de compañero de proyecto">
-                <h3>Ana Rodríguez</h3>
-                <h4>Project Manager</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Following this, you will find my contact information should you wish to get in touch with me for a more engaging conversation:</p>
+          <h2 data-i18n="contact.title">Contact</h2>
+          <p data-i18n="contact.description">Feel free to reach out if you would like to get in touch for a more engaging conversation:</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -346,19 +266,19 @@
             <div class="info">
               <div class="address">
                 <a href="https://maps.app.goo.gl/CtmRKHZmWX6e3Wa3A" class="location" target="_blank"><i class="bi bi-geo-alt"></i></a>
-                <h4>Location:</h4>
+                <h4 data-i18n="contact.location">Location:</h4>
                 <p>Tegucigalpa, Honduras</p>
               </div>
 
               <div class="email">
                 <a href="mailto:douglashedman@yahoo.es"><i class="bi bi-envelope"></i></a>
-                <h4>Email:</h4>
+                <h4 data-i18n="contact.email">Email:</h4>
                 <p>douglashedman@yahoo.es</p>
               </div>
 
               <div class="phone">
                 <a href="https://wa.me/+50489041949" class="whatsapp" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-                <h4>Phone:</h4>
+                <h4 data-i18n="contact.phone">Phone:</h4>
                 <p>+504 89041949</p>
               </div>
             </div>
@@ -400,6 +320,9 @@
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- i18n System -->
+  <script src="assets/js/i18n.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

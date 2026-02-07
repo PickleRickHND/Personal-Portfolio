@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Douglas Hedman</title>
-    <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <title>Douglas Hedman - Spotify Playlist Generator</title>
+    <meta name="description" content="Spotify Playlist Generator - Web application to create playlists using the Spotify API, built with React and Node.js." />
+    <meta name="keywords" content="Spotify, playlist generator, React, Node.js, API, web development, Douglas Hedman" />
 
     <!-- Favicons -->
     <link href="assets/img/icon.png" rel="icon" />
@@ -85,33 +85,37 @@
               ><i class="bx bxl-linkedin"></i
             ></a>
           </div>
+          <!-- Language Toggle -->
+          <div class="lang-toggle-container mt-3 text-center">
+            <button id="lang-toggle" class="lang-toggle-btn" title="Cambiar a Espanol">ES</button>
+          </div>
         </div>
 
         <nav id="navbar" class="nav-menu navbar">
           <ul>
             <li>
               <a href="index.html" class="nav-link scrollto active"
-                ><i class="bx bx-home"></i> <span>Home</span></a
+                ><i class="bx bx-home"></i> <span data-i18n="nav.home">Home</span></a
               >
             </li>
             <li>
               <a href="index.html#about" class="nav-link scrollto"
-                ><i class="bx bx-user"></i> <span>About</span></a
+                ><i class="bx bx-user"></i> <span data-i18n="nav.about">About</span></a
               >
             </li>
             <li>
               <a href="index.html#resume" class="nav-link scrollto"
-                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+                ><i class="bx bx-file-blank"></i> <span data-i18n="nav.resume">Resume</span></a
               >
             </li>
             <li>
               <a href="index.html#portfolio" class="nav-link scrollto"
-                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+                ><i class="bx bx-book-content"></i> <span data-i18n="nav.portfolio">Portfolio</span></a
               >
             </li>
             <li>
               <a href="index.html#contact" class="nav-link scrollto"
-                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+                ><i class="bx bx-envelope"></i> <span data-i18n="nav.contact">Contact</span></a
               >
             </li>
           </ul>
@@ -126,10 +130,10 @@
       <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
           <div class="d-flex justify-content-between align-items-center">
-            <h2>Spotify Playlist Generator</h2>
+            <h2 data-i18n="spotify.breadcrumb.title">Spotify Playlist Generator</h2>
             <ol>
-              <li><a href="index.html">Home</a></li>
-              <li>Portfolio</li>
+              <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+              <li data-i18n="nav.portfolio">Portfolio</li>
             </ol>
           </div>
         </div>
@@ -166,16 +170,17 @@
 
             <div class="col-lg-4">
               <div class="portfolio-info">
-                <h3>Project information</h3>
+                <h3 data-i18n="spotify.info.title">Project information</h3>
                 <ul>
-                  <li><strong>Project Date</strong>: December 2023</li>
-                  <li><strong>Category</strong>: Web Development</li>
-                  <li><strong>Client</strong>: Personal Project</li>
+                  <li><strong data-i18n="spotify.info.date.label">Project Date</strong>: <span data-i18n="spotify.info.date.value">December 2023</span></li>
+                  <li><strong data-i18n="spotify.info.category.label">Category</strong>: <span data-i18n="spotify.info.category.value">Web Development</span></li>
+                  <li><strong data-i18n="spotify.info.client.label">Client</strong>: <span data-i18n="spotify.info.client.value">Personal Project</span></li>
                   <li>
                     <strong
                       ><a
                         href="https://github.com/PickleRickHND/Spotify-Playlist-Generator"
                         target="_blank"
+                        data-i18n="spotify.info.repo"
                         >Want to check my code?</a
                       ></strong
                     >
@@ -183,14 +188,13 @@
                 </ul>
               </div>
               <div class="portfolio-description">
-                <h2>Functionality</h2>
-                <p style="text-align: justify">
-                  This project is an application that allows the user to create a 
-                  playlist based on the user's search and then exported it to Spotify. The application uses the Spotify API
+                <h2 data-i18n="spotify.func.title">Functionality</h2>
+                <p style="text-align: justify" data-i18n="spotify.func.description">
+                  This project is an application that allows the user to create a
+                  playlist based on the user's search and then export it to Spotify. The application uses the Spotify API
                   to search for songs and create the playlist. The application also uses the
-                  Spotify API to authenticate the user and get the user's information. 
+                  Spotify API to authenticate the user and get the user's information.
                   The application is built using React and Node.js.
-
                 </p>
               </div>
             </div>
@@ -217,6 +221,9 @@
     <script src="assets/vendor/typed.js/typed.umd.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- i18n System -->
+    <script src="assets/js/i18n.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>

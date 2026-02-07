@@ -456,7 +456,8 @@ section {
 }
 
 .list-icons {
-  font-size: 3rem; }
+  font-size: 3rem;
+  gap: 15px; }
   .list-icons .list-inline-item i:hover {
     color: #186fb6; }
 
@@ -566,6 +567,7 @@ section {
   overflow: hidden;
   z-index: 1;
 }
+
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -1097,4 +1099,73 @@ section {
     width: auto;
     padding-right: 20px 15px;
   }
+}
+
+/*--------------------------------------------------------------
+# Language Toggle Button
+--------------------------------------------------------------*/
+.lang-toggle-container {
+  margin-top: 10px;
+}
+
+.lang-toggle-btn {
+  display: inline-block;
+  background: #212431;
+  color: #fff;
+  border: 2px solid #149ddd;
+  border-radius: 50px;
+  width: 42px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+  line-height: 38px;
+  text-align: center;
+  padding: 0;
+}
+
+.lang-toggle-btn:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Resume Buttons
+--------------------------------------------------------------*/
+.resume-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.download-button {
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 10px 25px;
+}
+
+.download-button .download-text {
+  margin-left: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.resume-btn-primary {
+  color: #149ddd;
+}
+
+.resume-btn-primary:hover {
+  color: #2eafec;
+}
+
+.resume-btn-secondary {
+  color: #6c757d;
+}
+
+.resume-btn-secondary:hover {
+  color: #149ddd;
 }

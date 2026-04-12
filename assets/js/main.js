@@ -59,9 +59,10 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let elementPos = select(el).offsetTop
+    const target = select(el)
+    if (!target) return
     window.scrollTo({
-      top: elementPos,
+      top: target.offsetTop,
       behavior: 'smooth'
     })
   }
@@ -121,20 +122,8 @@
   });
 
   /**
-   * Hero type effect
+   * Typed.js hero: initialized in i18n.js (setLanguage) to avoid duplicate instances.
    */
-  const typed = select('.typed')
-  if (typed) {
-    let typed_strings = typed.getAttribute('data-typed-items')
-    typed_strings = typed_strings.split(',')
-    window._typedInstance = new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    });
-  }
 
   /**
    * Skills animation
@@ -175,10 +164,11 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
       }, true);
+
+      portfolioIsotope.on('arrangeComplete', function() {
+        AOS.refresh()
+      });
     }
 
   });
@@ -191,60 +181,66 @@
   });
 
   /**
-   * Portfolio details slider
+   * Portfolio details slider (project detail pages only)
    */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  if (select('.portfolio-details-slider')) {
+    new Swiper('.portfolio-details-slider', {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 
   /**
-   * Testimonials slider
+   * Testimonials slider (optional section)
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
+  if (select('.testimonials-slider')) {
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
       },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
 
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
       }
-    }
-  });
+    });
+  }
 
   /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
+      duration: 500,
+      easing: 'ease-out-cubic',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 60,
+      delay: 0
     })
   });
 

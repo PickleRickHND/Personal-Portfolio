@@ -17,15 +17,16 @@
 
       // Hero
       "hero.greeting": "I'm a ",
+      "hero.status": "Available for work",
 
       // About Section
       "about.title": "About",
       "about.description":
-        "Systems Engineer with over 3 years of experience in software development, quality assurance, and systems administration. Specialized in building cross-platform mobile applications with Flutter, web development with React and Next.js, and QA automation with Cypress. Graduate from Jose Cecilio del Valle University with professional certifications in Full Stack Engineering and Computer Science.",
+        "Systems Engineer with over 3 years of experience in full-stack web development, QA automation, and mobile app development. I have shipped 6+ production Next.js web applications, 2 cross-platform Flutter mobile apps, and maintained 600+ automated tests with Cypress and Playwright for e-commerce platforms. I work with modern stacks including React, TypeScript, Tailwind CSS, Firebase, Supabase, and PHP/Yii2.",
       "about.role":
-        "Systems Engineer | Software Development & Systems Administration Specialist",
+        "Full-Stack Developer | Next.js, React, Flutter & QA Automation",
       "about.detail":
-        "I am passionate about building high-quality software solutions and continuously expanding my technical expertise. With hands-on experience across mobile, web, and backend development, I bring a versatile approach to every project. I thrive in collaborative environments and am committed to delivering clean, efficient, and maintainable code.",
+        "I am passionate about building high-quality software solutions across the full stack. From responsive web applications with Next.js and React, to cross-platform mobile apps with Flutter, and robust test automation with Cypress and Playwright. I thrive in remote, collaborative environments and am committed to delivering clean, efficient, and well-tested code.",
       "about.birthday": "Birthday:",
       "about.phone": "Phone:",
       "about.age": "Age:",
@@ -34,12 +35,12 @@
       "about.city": "City:",
       "about.degree.value": "Systems Engineering",
       "about.closing":
-        "My professional certifications and hands-on experience demonstrate my dedication to continuous learning and my ability to adapt and thrive in the constantly evolving world of software development.",
+        "Beyond my main role, I have built production applications for clients across industries including e-commerce, education, agriculture, and non-profits. I am always exploring new technologies and contributing to open-source projects.",
 
       // Skills Section
       "skills.title": "Skills",
       "skills.description":
-        "Throughout my career, I have developed expertise across the full software development lifecycle. From building responsive web applications with React and Next.js, to developing cross-platform mobile apps with Flutter, implementing QA automation with Cypress, and managing backend services with PHP, Python, and Firebase. I continuously sharpen my skills to deliver robust and scalable solutions.",
+        "Throughout my career, I have developed expertise across the full software development lifecycle. From building production web applications with Next.js and React, to developing cross-platform mobile apps with Flutter, implementing QA automation with Cypress and Playwright, and managing backend services with PHP/Yii2, Firebase, and Supabase. I deploy to Vercel and GCP, and monitor with Sentry.",
 
       // Resume Section
       "resume.title": "Resume",
@@ -123,15 +124,16 @@
 
       // Hero
       "hero.greeting": "Soy ",
+      "hero.status": "Disponible para trabajar",
 
       // About Section
       "about.title": "Acerca de mi",
       "about.description":
-        "Ingeniero en Sistemas con mas de 3 anios de experiencia en desarrollo de software, aseguramiento de calidad y administracion de sistemas. Especializado en la creacion de aplicaciones moviles multiplataforma con Flutter, desarrollo web con React y Next.js, y automatizacion de QA con Cypress. Graduado de la Universidad Jose Cecilio del Valle con certificaciones profesionales en Full Stack Engineering y Computer Science.",
+        "Ingeniero en Sistemas con mas de 3 anios de experiencia en desarrollo web full-stack, automatizacion QA y desarrollo de aplicaciones moviles. He lanzado 6+ aplicaciones web en produccion con Next.js, 2 apps moviles multiplataforma con Flutter, y mantengo 600+ tests automatizados con Cypress y Playwright para plataformas de e-commerce. Trabajo con stacks modernos como React, TypeScript, Tailwind CSS, Firebase, Supabase y PHP/Yii2.",
       "about.role":
-        "Ingeniero en Sistemas | Especialista en Desarrollo de Software y Administracion de Sistemas",
+        "Desarrollador Full-Stack | Next.js, React, Flutter y Automatizacion QA",
       "about.detail":
-        "Me apasiona construir soluciones de software de alta calidad y expandir continuamente mi experiencia tecnica. Con experiencia practica en desarrollo movil, web y backend, aporto un enfoque versatil a cada proyecto. Me desenvuelvo en entornos colaborativos y estoy comprometido con entregar codigo limpio, eficiente y mantenible.",
+        "Me apasiona construir soluciones de software de alta calidad en todo el stack. Desde aplicaciones web responsivas con Next.js y React, hasta apps moviles multiplataforma con Flutter, y automatizacion robusta de pruebas con Cypress y Playwright. Me desenvuelvo en entornos remotos y colaborativos, comprometido con entregar codigo limpio, eficiente y bien testeado.",
       "about.birthday": "Cumpleanos:",
       "about.phone": "Telefono:",
       "about.age": "Edad:",
@@ -140,12 +142,12 @@
       "about.city": "Ciudad:",
       "about.degree.value": "Ingenieria en Sistemas",
       "about.closing":
-        "Mis certificaciones profesionales y experiencia practica demuestran mi dedicacion al aprendizaje continuo y mi capacidad para adaptarme y prosperar en el mundo en constante evolucion del desarrollo de software.",
+        "Mas alla de mi rol principal, he construido aplicaciones en produccion para clientes en diversas industrias como e-commerce, educacion, agricultura y organizaciones sin fines de lucro. Siempre estoy explorando nuevas tecnologias y contribuyendo a proyectos open-source.",
 
       // Skills Section
       "skills.title": "Habilidades",
       "skills.description":
-        "A lo largo de mi carrera, he desarrollado experiencia en todo el ciclo de vida del desarrollo de software. Desde la construccion de aplicaciones web responsivas con React y Next.js, hasta el desarrollo de aplicaciones moviles multiplataforma con Flutter, la implementacion de automatizacion de QA con Cypress, y la gestion de servicios backend con PHP, Python y Firebase. Continuamente perfecciono mis habilidades para entregar soluciones robustas y escalables.",
+        "A lo largo de mi carrera, he desarrollado experiencia en todo el ciclo de vida del desarrollo de software. Desde la construccion de aplicaciones web en produccion con Next.js y React, hasta el desarrollo de apps moviles multiplataforma con Flutter, automatizacion QA con Cypress y Playwright, y gestion de servicios backend con PHP/Yii2, Firebase y Supabase. Despliego en Vercel y GCP, y monitoreo con Sentry.",
 
       // Resume Section
       "resume.title": "Curriculum",

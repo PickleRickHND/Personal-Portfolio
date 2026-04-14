@@ -22,7 +22,7 @@
       // About Section
       "about.title": "About",
       "about.description":
-        "Systems Engineer with over 3 years of experience in full-stack web development, QA automation, and mobile app development. I have shipped 6+ production Next.js web applications, 2 cross-platform Flutter mobile apps, and maintained 600+ automated tests with Cypress and Playwright for e-commerce platforms. I work with modern stacks including React, TypeScript, Tailwind CSS, Firebase, Supabase, and PHP/Yii2.",
+        "Systems Engineer with over 3 years of experience in full-stack web development, QA automation, and mobile app development. I have shipped 6+ production Next.js web applications, 2 cross-platform Flutter mobile apps, and maintained 300+ automated tests with Cypress and Playwright for e-commerce platforms. I work with modern stacks including React, TypeScript, Tailwind CSS, Firebase, Supabase, and PHP/Yii2.",
       "about.role":
         "Full-Stack Developer | Next.js, React, Flutter & QA Automation",
       "about.detail":
@@ -57,6 +57,153 @@
       "portfolio.filter.web": "Web",
       "portfolio.filter.mobile": "Mobile",
       "portfolio.filter.app": "App",
+
+      // Stats
+      "stats.apps": "Production Apps",
+      "stats.tests": "Automated Tests",
+      "stats.years": "Years Experience",
+
+      // Hero Aside
+      "hero.sub": "Full-Stack Developer — Tegucigalpa, HN",
+      "hero.meta.stack.label": "Stack",
+      "hero.meta.stack.value": "Next.js / React / Flutter",
+      "hero.meta.focus.label": "Focus",
+      "hero.meta.focus.value": "Full-Stack & QA Automation",
+      "hero.meta.based.label": "Based in",
+      "hero.meta.based.value": "Honduras · Remote",
+
+      // Portfolio Featured
+      "portfolio.featured.badge": "Featured Project",
+      "portfolio.featured.desc": "Cross-platform price comparison app for Honduran supermarkets. Scan barcodes, compare prices, set alerts, and build smart shopping lists.",
+      "portfolio.featured.view": "View Project",
+      "portfolio.featured.screenshots": "Screenshots",
+
+      // Portfolio Cards
+      "portfolio.prizio.desc": "Price comparison mobile app for Honduras",
+      "portfolio.pharmacy.desc": "Inventory, billing & user management system with auth and email recovery",
+      "portfolio.spotify.desc": "Search songs, generate playlists by mood, and export directly to your Spotify account",
+
+      // Prizio Detail Page
+      "prizio.feature.scanner": "Barcode Scanner",
+      "prizio.feature.scanner.desc": "Scan product barcodes to instantly compare prices across supermarkets",
+      "prizio.feature.alerts": "Price Alerts",
+      "prizio.feature.alerts.desc": "Set alerts and get notified when prices drop on your favorite products",
+      "prizio.feature.lists": "Smart Shopping Lists",
+      "prizio.feature.lists.desc": "Build lists that auto-find the cheapest store combination",
+      "prizio.feature.trends": "Price Trends",
+      "prizio.feature.trends.desc": "View historical price charts to buy at the right time",
+      "prizio.meta.repo.label": "Repository",
+      "prizio.gallery.home": "Home",
+      "prizio.gallery.search": "Search",
+      "prizio.gallery.lists": "Lists",
+      "prizio.gallery.stores": "Stores",
+      "prizio.back": "Back to Portfolio",
+
+      // Pharmacy Detail Page
+      "pharmacy.feature.auth": "Secure Authentication",
+      "pharmacy.feature.auth.desc": "Employee login system with advanced email password recovery via SendGrid",
+      "pharmacy.feature.inventory": "Inventory Management",
+      "pharmacy.feature.inventory.desc": "Complete stock tracking with product categories, quantities, and alerts",
+      "pharmacy.feature.billing": "Billing System",
+      "pharmacy.feature.billing.desc": "Create and manage customer receipts with detailed transaction records",
+      "pharmacy.feature.users": "User Management",
+      "pharmacy.feature.users.desc": "Admin dashboard to control roles, permissions, and user privileges",
+      "pharmacy.meta.repo.label": "Repository",
+      "pharmacy.gallery.dashboard": "Dashboard Mobile",
+      "pharmacy.gallery.inventory": "Inventory Mobile",
+      "pharmacy.gallery.reports": "Reports Mobile",
+
+      // Spotify Detail Page
+      "spotify.feature.search": "Song Search",
+      "spotify.feature.search.desc": "Search millions of tracks using the Spotify Web API with real-time results",
+      "spotify.feature.mood": "Mood-Based Generation",
+      "spotify.feature.mood.desc": "Generate playlists by adjusting energy, danceability, positivity, and tempo sliders",
+      "spotify.feature.export": "Direct Export",
+      "spotify.feature.export.desc": "One-click export of generated playlists directly to your Spotify account via OAuth",
+      "spotify.feature.i18n": "Bilingual (EN/ES)",
+      "spotify.feature.i18n.desc": "Full internationalization support with English and Spanish interfaces",
+      "spotify.meta.repo.label": "Repository",
+      "spotify.gallery.mobile": "Mobile",
+
+      // Portfolio Cards
+      "portfolio.arca.desc": "Non-profit website with blog, gallery, donations, and 5-language support (ES/EN/FR/PT/DE)",
+
+      // Arca Detail Page
+      // Portfolio Cards
+      "portfolio.printshop.desc": "E-commerce platform with admin dashboard, invoicing, and inventory management",
+      "portfolio.folium.desc": "Academic services platform with 60+ SEO blog articles and 26 services catalog",
+
+      // PrintShop Detail Page
+      "printshop.breadcrumb.title": "PrintShop 504",
+      "printshop.info.title": "Project information",
+      "printshop.info.date.label": "Project Date",
+      "printshop.info.date.value": "2025 - Present",
+      "printshop.info.category.label": "Category",
+      "printshop.info.category.value": "E-Commerce Platform",
+      "printshop.info.client.label": "Client",
+      "printshop.info.client.value": "PrintShop 504",
+      "printshop.info.repo.label": "Repository",
+      "printshop.func.title": "Functionality",
+      "printshop.func.description":
+        "Full e-commerce platform for a sublimation business in Honduras (custom t-shirts, bags, mugs). Features a public storefront with shopping cart, admin dashboard with inventory management, order tracking, invoicing with PDF generation, customer management, supplier tracking, activity logs, Excel reports, and role-based access control. Built with Next.js, Supabase, Tailwind CSS, React-PDF, Resend, Zustand, and Upstash Redis for rate limiting.",
+      "printshop.feature.store": "E-Commerce Storefront",
+      "printshop.feature.store.desc": "Public catalog with product filtering, shopping cart, and checkout flow",
+      "printshop.feature.admin": "Admin Dashboard",
+      "printshop.feature.admin.desc": "Complete back-office with inventory, orders, customers, suppliers, and activity logs",
+      "printshop.feature.invoicing": "PDF Invoicing & Reports",
+      "printshop.feature.invoicing.desc": "Generate invoices with React-PDF and export detailed Excel reports with ExcelJS",
+      "printshop.feature.auth": "Auth & Rate Limiting",
+      "printshop.feature.auth.desc": "Supabase authentication with role-based access and Upstash Redis rate limiting",
+      "printshop.gallery.invoicing": "Invoicing",
+      "printshop.gallery.logs": "Activity Log",
+      "printshop.gallery.reports": "Reports",
+
+      // Folium Detail Page
+      "folium.breadcrumb.title": "Folium Labs",
+      "folium.info.title": "Project information",
+      "folium.info.date.label": "Project Date",
+      "folium.info.date.value": "2025 - Present",
+      "folium.info.category.label": "Category",
+      "folium.info.category.value": "Web Development (SaaS)",
+      "folium.info.client.label": "Client",
+      "folium.info.client.value": "Folium Labs",
+      "folium.info.url.label": "Website",
+      "folium.func.title": "Functionality",
+      "folium.func.description":
+        "Multi-page website for an academic and technology services agency targeting university students in Honduras. Features 26 services catalog, SEO-optimized blog with 60+ articles, pricing pages, testimonials, WhatsApp and email conversion funnels, and full bilingual support (ES/EN). Built with Next.js 16, TypeScript, Tailwind CSS, MDX for blog content, Resend for transactional emails, and Motion for animations.",
+      "folium.feature.blog": "SEO Blog (60+ Articles)",
+      "folium.feature.blog.desc": "MDX-powered blog with categories, reading time, and optimized for search engines",
+      "folium.feature.services": "Services Catalog (26)",
+      "folium.feature.services.desc": "Filterable catalog of academic and technical services with detailed descriptions",
+      "folium.feature.conversion": "Conversion Funnels",
+      "folium.feature.conversion.desc": "WhatsApp and email integration with Resend for lead capture and transactional emails",
+      "folium.feature.i18n": "Bilingual (ES/EN)",
+      "folium.feature.i18n.desc": "Full internationalization with localized URLs, content, and SEO meta tags",
+      "folium.gallery.testimonials": "Testimonials",
+      "folium.gallery.pricing": "Pricing",
+
+      "arca.breadcrumb.title": "El Arca Honduras",
+      "arca.info.title": "Project information",
+      "arca.info.date.label": "Project Date",
+      "arca.info.date.value": "2025 - Present",
+      "arca.info.category.label": "Category",
+      "arca.info.category.value": "Web Development (Non-Profit)",
+      "arca.info.client.label": "Client",
+      "arca.info.client.value": "El Arca Honduras (Volunteer)",
+      "arca.info.url.label": "Website",
+      "arca.func.title": "Functionality",
+      "arca.func.description":
+        "Institutional website for El Arca Honduras, a non-profit organization building communities for people with and without intellectual disabilities since 1977. Features a blog with MDX content, photo gallery, community pages, donation integration, SEO optimization, and full internationalization in 5 languages (Spanish, English, French, Portuguese, German). Built with Next.js 15, TypeScript, Tailwind CSS, and Playwright for E2E testing.",
+      "arca.feature.blog": "Blog & Content",
+      "arca.feature.blog.desc": "MDX-powered blog with rich content, categories, and SEO-optimized articles",
+      "arca.feature.gallery": "Photo Gallery",
+      "arca.feature.gallery.desc": "Filterable gallery showcasing community events, daily life, and programs",
+      "arca.feature.i18n": "5 Languages",
+      "arca.feature.i18n.desc": "Full internationalization in Spanish, English, French, Portuguese, and German with next-intl",
+      "arca.feature.seo": "SEO & Performance",
+      "arca.feature.seo.desc": "Optimized schemas, structured data, hCaptcha protection, and Playwright E2E testing",
+      "arca.gallery.home": "Home Mobile",
+      "arca.gallery.gallery": "Gallery Mobile",
 
       // Testimonials Section
       "testimonials.title": "Testimonials",
@@ -94,24 +241,24 @@
       "pharmacy.info.category.value": "Web Development",
       "pharmacy.info.client.label": "Client",
       "pharmacy.info.client.value": "Personal Project",
-      "pharmacy.info.repo": "Want to check my code?",
+      "pharmacy.info.repo": "View on GitHub",
       "pharmacy.func.title": "Functionality",
       "pharmacy.func.description":
-        "This project is a website for a pharmacy. It has a login system for the employees to access the website including an advanced email password recovery. This project has the option to check the stock of the pharmacy. The website also has a user management area where admins can control basic user privileges. Also, this website includes a billing section to manage receipts and create new receipts for customers. The website also is fully responsive, check it out!",
+        "A complete pharmacy management system with a modern, responsive UI. Features include secure authentication with email recovery via SendGrid, real-time inventory tracking with stock alerts, billing and receipt management, role-based user administration (Admin/Cashier), and a reporting dashboard. Fully responsive design optimized for desktop and mobile devices.",
 
       // Spotify Project Page
       "spotify.breadcrumb.title": "Spotify Playlist Generator",
       "spotify.info.title": "Project information",
       "spotify.info.date.label": "Project Date",
-      "spotify.info.date.value": "December 2023",
+      "spotify.info.date.value": "December 2024",
       "spotify.info.category.label": "Category",
       "spotify.info.category.value": "Web Development",
       "spotify.info.client.label": "Client",
       "spotify.info.client.value": "Personal Project",
-      "spotify.info.repo": "Want to check my code?",
+      "spotify.info.repo": "View on GitHub",
       "spotify.func.title": "Functionality",
       "spotify.func.description":
-        "This project is an application that allows the user to create a playlist based on the user's search and then export it to Spotify. The application uses the Spotify API to search for songs and create the playlist. The application also uses the Spotify API to authenticate the user and get the user's information. The application is built using React and Node.js.",
+        "A full-featured Spotify playlist generator with OAuth authentication, song search, mood-based generation (energy, danceability, positivity, tempo sliders), and direct playlist export to your Spotify account. Features include browsing your top tracks, saved music, and generated playlists. Built with React, Node.js, and the Spotify Web API. Supports English and Spanish (i18n).",
     },
     es: {
       // Navigation
@@ -129,7 +276,7 @@
       // About Section
       "about.title": "Acerca de mi",
       "about.description":
-        "Ingeniero en Sistemas con mas de 3 anios de experiencia en desarrollo web full-stack, automatizacion QA y desarrollo de aplicaciones moviles. He lanzado 6+ aplicaciones web en produccion con Next.js, 2 apps moviles multiplataforma con Flutter, y mantengo 600+ tests automatizados con Cypress y Playwright para plataformas de e-commerce. Trabajo con stacks modernos como React, TypeScript, Tailwind CSS, Firebase, Supabase y PHP/Yii2.",
+        "Ingeniero en Sistemas con mas de 3 anios de experiencia en desarrollo web full-stack, automatizacion QA y desarrollo de aplicaciones moviles. He lanzado 6+ aplicaciones web en produccion con Next.js, 2 apps moviles multiplataforma con Flutter, y mantengo 300+ tests automatizados con Cypress y Playwright para plataformas de e-commerce. Trabajo con stacks modernos como React, TypeScript, Tailwind CSS, Firebase, Supabase y PHP/Yii2.",
       "about.role":
         "Desarrollador Full-Stack | Next.js, React, Flutter y Automatizacion QA",
       "about.detail":
@@ -164,6 +311,153 @@
       "portfolio.filter.web": "Web",
       "portfolio.filter.mobile": "Movil",
       "portfolio.filter.app": "App",
+
+      // Stats
+      "stats.apps": "Apps en Produccion",
+      "stats.tests": "Tests Automatizados",
+      "stats.years": "Anios de Experiencia",
+
+      // Hero Aside
+      "hero.sub": "Desarrollador Full-Stack — Tegucigalpa, HN",
+      "hero.meta.stack.label": "Stack",
+      "hero.meta.stack.value": "Next.js / React / Flutter",
+      "hero.meta.focus.label": "Enfoque",
+      "hero.meta.focus.value": "Full-Stack y Automatizacion QA",
+      "hero.meta.based.label": "Ubicacion",
+      "hero.meta.based.value": "Honduras · Remoto",
+
+      // Portfolio Featured
+      "portfolio.featured.badge": "Proyecto Destacado",
+      "portfolio.featured.desc": "Aplicacion multiplataforma de comparacion de precios para supermercados hondurenos. Escanea codigos de barras, compara precios, configura alertas y crea listas inteligentes.",
+      "portfolio.featured.view": "Ver Proyecto",
+      "portfolio.featured.screenshots": "Capturas",
+
+      // Portfolio Cards
+      "portfolio.prizio.desc": "App movil de comparacion de precios para Honduras",
+      "portfolio.pharmacy.desc": "Sistema de inventario, facturacion y gestion de usuarios con autenticacion",
+      "portfolio.spotify.desc": "Busca canciones, genera playlists por estado de animo y exporta directamente a tu cuenta de Spotify",
+
+      // Prizio Detail Page
+      "prizio.feature.scanner": "Escaner de Codigos",
+      "prizio.feature.scanner.desc": "Escanea codigos de barras para comparar precios en supermercados al instante",
+      "prizio.feature.alerts": "Alertas de Precios",
+      "prizio.feature.alerts.desc": "Configura alertas y recibe notificaciones cuando bajan los precios",
+      "prizio.feature.lists": "Listas Inteligentes",
+      "prizio.feature.lists.desc": "Crea listas que encuentran automaticamente la combinacion de tiendas mas barata",
+      "prizio.feature.trends": "Tendencias de Precios",
+      "prizio.feature.trends.desc": "Consulta graficos historicos de precios para comprar en el momento adecuado",
+      "prizio.meta.repo.label": "Repositorio",
+      "prizio.gallery.home": "Inicio",
+      "prizio.gallery.search": "Busqueda",
+      "prizio.gallery.lists": "Listas",
+      "prizio.gallery.stores": "Tiendas",
+      "prizio.back": "Volver al Portafolio",
+
+      // Pharmacy Detail Page
+      "pharmacy.feature.auth": "Autenticacion Segura",
+      "pharmacy.feature.auth.desc": "Sistema de inicio de sesion con recuperacion de contrasena por correo via SendGrid",
+      "pharmacy.feature.inventory": "Gestion de Inventario",
+      "pharmacy.feature.inventory.desc": "Seguimiento completo de stock con categorias de productos, cantidades y alertas",
+      "pharmacy.feature.billing": "Sistema de Facturacion",
+      "pharmacy.feature.billing.desc": "Creacion y gestion de recibos de clientes con registros detallados",
+      "pharmacy.feature.users": "Gestion de Usuarios",
+      "pharmacy.feature.users.desc": "Panel de administracion para controlar roles, permisos y privilegios",
+      "pharmacy.meta.repo.label": "Repositorio",
+      "pharmacy.gallery.dashboard": "Dashboard Movil",
+      "pharmacy.gallery.inventory": "Inventario Movil",
+      "pharmacy.gallery.reports": "Reportes Movil",
+
+      // Spotify Detail Page
+      "spotify.feature.search": "Busqueda de Canciones",
+      "spotify.feature.search.desc": "Busca millones de canciones usando la API Web de Spotify con resultados en tiempo real",
+      "spotify.feature.mood": "Generacion por Estado de Animo",
+      "spotify.feature.mood.desc": "Genera playlists ajustando controles de energia, bailabilidad, positividad y tempo",
+      "spotify.feature.export": "Exportacion Directa",
+      "spotify.feature.export.desc": "Exportacion con un clic de playlists generadas directamente a tu cuenta de Spotify via OAuth",
+      "spotify.feature.i18n": "Bilingue (EN/ES)",
+      "spotify.feature.i18n.desc": "Soporte completo de internacionalizacion con interfaces en ingles y espanol",
+      "spotify.meta.repo.label": "Repositorio",
+      "spotify.gallery.mobile": "Movil",
+
+      // Portfolio Cards
+      "portfolio.arca.desc": "Sitio web sin fines de lucro con blog, galeria, donaciones y soporte en 5 idiomas (ES/EN/FR/PT/DE)",
+
+      // Arca Detail Page
+      // Portfolio Cards
+      "portfolio.printshop.desc": "Plataforma e-commerce con panel admin, facturacion y gestion de inventario",
+      "portfolio.folium.desc": "Plataforma de servicios academicos con 60+ articulos SEO y catalogo de 26 servicios",
+
+      // PrintShop Detail Page
+      "printshop.breadcrumb.title": "PrintShop 504",
+      "printshop.info.title": "Informacion del proyecto",
+      "printshop.info.date.label": "Fecha del proyecto",
+      "printshop.info.date.value": "2025 - Presente",
+      "printshop.info.category.label": "Categoria",
+      "printshop.info.category.value": "Plataforma E-Commerce",
+      "printshop.info.client.label": "Cliente",
+      "printshop.info.client.value": "PrintShop 504",
+      "printshop.info.repo.label": "Repositorio",
+      "printshop.func.title": "Funcionalidad",
+      "printshop.func.description":
+        "Plataforma e-commerce completa para negocio de sublimacion en Honduras (camisetas, bolsos, tazas personalizadas). Incluye tienda publica con carrito de compras, panel admin con gestion de inventario, seguimiento de ordenes, facturacion con generacion de PDF, gestion de clientes, seguimiento de proveedores, registros de actividad, reportes Excel y control de acceso por roles. Construido con Next.js, Supabase, Tailwind CSS, React-PDF, Resend, Zustand y Upstash Redis.",
+      "printshop.feature.store": "Tienda E-Commerce",
+      "printshop.feature.store.desc": "Catalogo publico con filtros de productos, carrito de compras y flujo de checkout",
+      "printshop.feature.admin": "Panel de Administracion",
+      "printshop.feature.admin.desc": "Back-office completo con inventario, ordenes, clientes, proveedores y registros de actividad",
+      "printshop.feature.invoicing": "Facturacion PDF y Reportes",
+      "printshop.feature.invoicing.desc": "Generacion de facturas con React-PDF y exportacion de reportes detallados en Excel con ExcelJS",
+      "printshop.feature.auth": "Autenticacion y Rate Limiting",
+      "printshop.feature.auth.desc": "Autenticacion Supabase con acceso basado en roles y rate limiting con Upstash Redis",
+      "printshop.gallery.invoicing": "Facturacion",
+      "printshop.gallery.logs": "Registros",
+      "printshop.gallery.reports": "Reportes",
+
+      // Folium Detail Page
+      "folium.breadcrumb.title": "Folium Labs",
+      "folium.info.title": "Informacion del proyecto",
+      "folium.info.date.label": "Fecha del proyecto",
+      "folium.info.date.value": "2025 - Presente",
+      "folium.info.category.label": "Categoria",
+      "folium.info.category.value": "Desarrollo Web (SaaS)",
+      "folium.info.client.label": "Cliente",
+      "folium.info.client.value": "Folium Labs",
+      "folium.info.url.label": "Sitio Web",
+      "folium.func.title": "Funcionalidad",
+      "folium.func.description":
+        "Sitio web multi-pagina para agencia de servicios academicos y tecnologicos dirigida a estudiantes universitarios en Honduras. Incluye catalogo de 26 servicios, blog SEO con 60+ articulos, paginas de precios, testimonios, embudos de conversion por WhatsApp y correo, y soporte bilingue completo (ES/EN). Construido con Next.js 16, TypeScript, Tailwind CSS, MDX para el blog, Resend para emails, y Motion para animaciones.",
+      "folium.feature.blog": "Blog SEO (60+ Articulos)",
+      "folium.feature.blog.desc": "Blog con MDX, categorias, tiempo de lectura y optimizado para motores de busqueda",
+      "folium.feature.services": "Catalogo de Servicios (26)",
+      "folium.feature.services.desc": "Catalogo filtrable de servicios academicos y tecnicos con descripciones detalladas",
+      "folium.feature.conversion": "Embudos de Conversion",
+      "folium.feature.conversion.desc": "Integracion con WhatsApp y correo via Resend para captura de leads y emails transaccionales",
+      "folium.feature.i18n": "Bilingue (ES/EN)",
+      "folium.feature.i18n.desc": "Internacionalizacion completa con URLs, contenido y meta tags SEO localizados",
+      "folium.gallery.testimonials": "Testimonios",
+      "folium.gallery.pricing": "Precios",
+
+      "arca.breadcrumb.title": "El Arca Honduras",
+      "arca.info.title": "Informacion del proyecto",
+      "arca.info.date.label": "Fecha del proyecto",
+      "arca.info.date.value": "2025 - Presente",
+      "arca.info.category.label": "Categoria",
+      "arca.info.category.value": "Desarrollo Web (Sin Fines de Lucro)",
+      "arca.info.client.label": "Cliente",
+      "arca.info.client.value": "El Arca Honduras (Voluntariado)",
+      "arca.info.url.label": "Sitio Web",
+      "arca.func.title": "Funcionalidad",
+      "arca.func.description":
+        "Sitio web institucional de El Arca Honduras, organizacion sin fines de lucro que construye comunidades para personas con y sin discapacidades intelectuales desde 1977. Incluye blog con contenido MDX, galeria de fotos, paginas de comunidades, integracion de donaciones, optimizacion SEO e internacionalizacion completa en 5 idiomas (espanol, ingles, frances, portugues, aleman). Construido con Next.js 15, TypeScript, Tailwind CSS y Playwright para pruebas E2E.",
+      "arca.feature.blog": "Blog y Contenido",
+      "arca.feature.blog.desc": "Blog con MDX, contenido enriquecido, categorias y articulos optimizados para SEO",
+      "arca.feature.gallery": "Galeria de Fotos",
+      "arca.feature.gallery.desc": "Galeria filtrable mostrando eventos comunitarios, vida diaria y programas",
+      "arca.feature.i18n": "5 Idiomas",
+      "arca.feature.i18n.desc": "Internacionalizacion completa en espanol, ingles, frances, portugues y aleman con next-intl",
+      "arca.feature.seo": "SEO y Rendimiento",
+      "arca.feature.seo.desc": "Schemas optimizados, datos estructurados, proteccion hCaptcha y pruebas E2E con Playwright",
+      "arca.gallery.home": "Inicio Movil",
+      "arca.gallery.gallery": "Galeria Movil",
 
       // Testimonials Section
       "testimonials.title": "Testimonios",
@@ -201,24 +495,24 @@
       "pharmacy.info.category.value": "Desarrollo Web",
       "pharmacy.info.client.label": "Cliente",
       "pharmacy.info.client.value": "Proyecto Personal",
-      "pharmacy.info.repo": "Quieres ver mi codigo?",
+      "pharmacy.info.repo": "Ver en GitHub",
       "pharmacy.func.title": "Funcionalidad",
       "pharmacy.func.description":
-        "Este proyecto es un sitio web para una farmacia. Tiene un sistema de inicio de sesion para que los empleados accedan al sitio web, incluyendo una recuperacion avanzada de contrasena por correo electronico. Este proyecto tiene la opcion de verificar el inventario de la farmacia. El sitio web tambien tiene un area de gestion de usuarios donde los administradores pueden controlar los privilegios basicos de los usuarios. Ademas, este sitio web incluye una seccion de facturacion para administrar recibos y crear nuevos recibos para los clientes. El sitio web es totalmente responsive, echale un vistazo!",
+        "Sistema completo de gestion farmaceutica con interfaz moderna y responsiva. Incluye autenticacion segura con recuperacion por correo via SendGrid, seguimiento de inventario en tiempo real con alertas de stock, gestion de facturacion y recibos, administracion de usuarios con roles (Admin/Cajero), y un dashboard de reportes. Diseno totalmente responsivo optimizado para escritorio y movil.",
 
       // Spotify Project Page
       "spotify.breadcrumb.title": "Generador de Playlists de Spotify",
       "spotify.info.title": "Informacion del proyecto",
       "spotify.info.date.label": "Fecha del proyecto",
-      "spotify.info.date.value": "Diciembre 2023",
+      "spotify.info.date.value": "Diciembre 2024",
       "spotify.info.category.label": "Categoria",
       "spotify.info.category.value": "Desarrollo Web",
       "spotify.info.client.label": "Cliente",
       "spotify.info.client.value": "Proyecto Personal",
-      "spotify.info.repo": "Quieres ver mi codigo?",
+      "spotify.info.repo": "Ver en GitHub",
       "spotify.func.title": "Funcionalidad",
       "spotify.func.description":
-        "Este proyecto es una aplicacion que permite al usuario crear una playlist basada en su busqueda y luego exportarla a Spotify. La aplicacion usa la API de Spotify para buscar canciones y crear la playlist. La aplicacion tambien usa la API de Spotify para autenticar al usuario y obtener su informacion. La aplicacion esta construida usando React y Node.js.",
+        "Generador de playlists de Spotify con autenticacion OAuth, busqueda de canciones, generacion por estado de animo (controles de energia, bailabilidad, positividad y tempo), y exportacion directa a tu cuenta de Spotify. Incluye navegacion de tus canciones mas escuchadas, musica guardada y playlists generadas. Construido con React, Node.js y la API Web de Spotify. Soporta ingles y espanol (i18n).",
     },
   };
 
@@ -262,8 +556,8 @@
     if (typedEl) {
       var typedStrings =
         lang === "en"
-          ? "Systems Engineer, QA Automation, Full-Stack Developer, Mobile Developer"
-          : "Ingeniero en Sistemas, QA Automation, Full-Stack Developer, Mobile Developer";
+          ? "Full-Stack Developer, QA Engineer, Mobile Developer, Next.js Specialist"
+          : "Desarrollador Full-Stack, QA Engineer, Mobile Developer, Next.js Specialist";
       typedEl.setAttribute("data-typed-items", typedStrings);
 
       // Reinitialize Typed.js

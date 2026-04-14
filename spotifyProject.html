@@ -13,10 +13,9 @@
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -48,7 +47,7 @@
       <div class="d-flex flex-column" style="margin-top: 40px">
         <div class="profile">
           <img
-            src="assets/img/profileImage_formal.jpg"
+            src="assets/img/profileImage_sidebar.jpg"
             alt=""
             class="img-fluid rounded-circle"
           />
@@ -140,68 +139,161 @@
       </section>
       <!-- End Breadcrumbs -->
 
-      <!-- ======= Portfolio Details Section ======= -->
-      <section id="portfolio-details" class="portfolio-details">
+      <!-- ======= Project Hero ======= -->
+      <section class="project-hero">
         <div class="container">
-          <div class="row gy-4">
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/SpotifyProject1.png" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/SpotifyProject2.png" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/SpotifyProject3.png" alt="" />
-                  </div>
-
-                  <div class="swiper-slide">
-                    <img src="assets/img/portfolio/SpotifyProjectDemo.png" alt="" />
-                  </div>
-
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="portfolio-info">
-                <h3 data-i18n="spotify.info.title">Project information</h3>
-                <ul>
-                  <li><strong data-i18n="spotify.info.date.label">Project Date</strong>: <span data-i18n="spotify.info.date.value">December 2023</span></li>
-                  <li><strong data-i18n="spotify.info.category.label">Category</strong>: <span data-i18n="spotify.info.category.value">Web Development</span></li>
-                  <li><strong data-i18n="spotify.info.client.label">Client</strong>: <span data-i18n="spotify.info.client.value">Personal Project</span></li>
-                  <li>
-                    <strong
-                      ><a
-                        href="https://github.com/PickleRickHND/Spotify-Playlist-Generator"
-                        target="_blank" rel="noopener noreferrer"
-                        data-i18n="spotify.info.repo"
-                        >Want to check my code?</a
-                      ></strong
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="portfolio-description">
-                <h2 data-i18n="spotify.func.title">Functionality</h2>
-                <p style="text-align: justify" data-i18n="spotify.func.description">
-                  This project is an application that allows the user to create a
-                  playlist based on the user's search and then export it to Spotify. The application uses the Spotify API
-                  to search for songs and create the playlist. The application also uses the
-                  Spotify API to authenticate the user and get the user's information.
-                  The application is built using React and Node.js.
-                </p>
-              </div>
+          <div class="project-hero-content">
+            <span class="project-hero-badge" data-i18n="spotify.info.category.value">Web Development</span>
+            <h1 class="project-hero-title">Spotify Playlist Generator</h1>
+            <p class="project-hero-subtitle" data-i18n="spotify.func.description">
+              A full-featured Spotify playlist generator with OAuth authentication, song search, mood-based generation (energy, danceability, positivity, tempo sliders), and direct playlist export to your Spotify account. Features include browsing your top tracks, saved music, and generated playlists. Built with React, Node.js, and the Spotify Web API. Supports English and Spanish (i18n).
+            </p>
+            <div class="portfolio-tags">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Spotify API</span>
+              <span>OAuth</span>
+              <span>i18n</span>
             </div>
           </div>
         </div>
       </section>
-      <!-- End Portfolio Details Section -->
+
+      <!-- ======= Screenshot Carousel ======= -->
+      <section class="project-gallery">
+        <div class="container">
+          <div class="project-carousel swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="assets/img/portfolio/SpotifyProject1.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="browser-frame">
+                    <div class="browser-chrome">
+                      <div class="browser-dots"><i></i><i></i><i></i></div>
+                      <div class="browser-url">spotify-playlist-generator.vercel.app</div>
+                    </div>
+                    <img src="assets/img/portfolio/SpotifyProject1.png" alt="Spotify Playlist Generator - Landing" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/img/portfolio/SpotifyProject2.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="browser-frame">
+                    <div class="browser-chrome">
+                      <div class="browser-dots"><i></i><i></i><i></i></div>
+                      <div class="browser-url">spotify-playlist-generator.vercel.app/search</div>
+                    </div>
+                    <img src="assets/img/portfolio/SpotifyProject2.png" alt="Spotify Playlist Generator - Search" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/img/portfolio/SpotifyProject3.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <div class="browser-frame">
+                    <div class="browser-chrome">
+                      <div class="browser-dots"><i></i><i></i><i></i></div>
+                      <div class="browser-url">spotify-playlist-generator.vercel.app/mood</div>
+                    </div>
+                    <img src="assets/img/portfolio/SpotifyProject3.png" alt="Spotify Playlist Generator - Mood Generator" />
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/img/portfolio/SpotifyProject4.png" data-gallery="portfolioGallery" class="portfolio-lightbox carousel-mobile-slide">
+                  <div class="phone-frame" style="max-width: 200px; margin: 0 auto;">
+                    <img src="assets/img/portfolio/SpotifyProject4.png" alt="Spotify Playlist Generator - Mobile" />
+                  </div>
+                  <span class="phone-label" style="display: block; text-align: center; margin-top: 12px;" data-i18n="spotify.gallery.mobile">Mobile</span>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          new Swiper('.project-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            autoplay: { delay: 3500, disableOnInteraction: false },
+            pagination: { el: '.project-carousel .swiper-pagination', clickable: true },
+            breakpoints: {
+              768: { slidesPerView: 2 }
+            }
+          });
+        });
+      </script>
+
+      <!-- ======= Project Details ======= -->
+      <section class="project-details-section">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="project-detail-card">
+                <h3 data-i18n="spotify.func.title">Functionality</h3>
+                <div class="project-features">
+                  <div class="feature-item">
+                    <i class="bi bi-search"></i>
+                    <div>
+                      <strong data-i18n="spotify.feature.search">Song Search</strong>
+                      <p data-i18n="spotify.feature.search.desc">Search millions of tracks using the Spotify Web API with real-time results</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-sliders"></i>
+                    <div>
+                      <strong data-i18n="spotify.feature.mood">Mood-Based Generation</strong>
+                      <p data-i18n="spotify.feature.mood.desc">Generate playlists by adjusting energy, danceability, positivity, and tempo sliders</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-spotify"></i>
+                    <div>
+                      <strong data-i18n="spotify.feature.export">Direct Export</strong>
+                      <p data-i18n="spotify.feature.export.desc">One-click export of generated playlists directly to your Spotify account via OAuth</p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <i class="bi bi-translate"></i>
+                    <div>
+                      <strong data-i18n="spotify.feature.i18n">Bilingual (EN/ES)</strong>
+                      <p data-i18n="spotify.feature.i18n.desc">Full internationalization support with English and Spanish interfaces</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="project-detail-card">
+                <h3 data-i18n="spotify.info.title">Project information</h3>
+                <ul class="project-meta-list">
+                  <li>
+                    <span class="meta-key" data-i18n="spotify.info.date.label">Project Date</span>
+                    <span class="meta-val" data-i18n="spotify.info.date.value">December 2023</span>
+                  </li>
+                  <li>
+                    <span class="meta-key" data-i18n="spotify.info.category.label">Category</span>
+                    <span class="meta-val" data-i18n="spotify.info.category.value">Web Development</span>
+                  </li>
+                  <li>
+                    <span class="meta-key" data-i18n="spotify.info.client.label">Client</span>
+                    <span class="meta-val" data-i18n="spotify.info.client.value">Personal Project</span>
+                  </li>
+                  <li>
+                    <span class="meta-key" data-i18n="spotify.meta.repo.label">Repository</span>
+                    <span class="meta-val"><a href="https://github.com/PickleRickHND/Spotify-Playlist-Generator" target="_blank" rel="noopener noreferrer" data-i18n="spotify.info.repo"><i class="bi bi-github"></i> View Code</a></span>
+                  </li>
+                </ul>
+              </div>
+              <a href="index.html#portfolio" class="back-to-portfolio">
+                <i class="bx bx-arrow-back"></i> <span data-i18n="prizio.back">Back to Portfolio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- End #main -->
 

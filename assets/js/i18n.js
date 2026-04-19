@@ -180,7 +180,7 @@
       "folium.feature.i18n": "Bilingual (ES/EN)",
       "folium.feature.i18n.desc": "Full internationalization with localized URLs, content, and SEO meta tags",
       "folium.gallery.testimonials": "Testimonials",
-      "folium.gallery.pricing": "Pricing",
+      "folium.gallery.faq": "FAQ",
 
       "arca.breadcrumb.title": "El Arca Honduras",
       "arca.info.title": "Project information",
@@ -434,7 +434,7 @@
       "folium.feature.i18n": "Bilingue (ES/EN)",
       "folium.feature.i18n.desc": "Internacionalización completa con URLs, contenido y meta tags SEO localizados",
       "folium.gallery.testimonials": "Testimonios",
-      "folium.gallery.pricing": "Precios",
+      "folium.gallery.faq": "Preguntas frecuentes",
 
       "arca.breadcrumb.title": "El Arca Honduras",
       "arca.info.title": "Información del proyecto",

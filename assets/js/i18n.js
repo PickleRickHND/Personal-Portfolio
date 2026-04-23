@@ -154,9 +154,9 @@
       "printshop.feature.invoicing.desc": "Generate invoices with React-PDF and export detailed Excel reports with ExcelJS",
       "printshop.feature.auth": "Auth & Rate Limiting",
       "printshop.feature.auth.desc": "Supabase authentication with role-based access and Upstash Redis rate limiting",
-      "printshop.gallery.invoicing": "Invoicing",
-      "printshop.gallery.logs": "Activity Log",
-      "printshop.gallery.reports": "Reports",
+      "printshop.gallery.home": "Home",
+      "printshop.gallery.cart": "Cart",
+      "printshop.gallery.contact": "Contact",
 
       // Folium Detail Page
       "folium.breadcrumb.title": "Folium Labs",
@@ -408,9 +408,9 @@
       "printshop.feature.invoicing.desc": "Generación de facturas con React-PDF y exportación de reportes detallados en Excel con ExcelJS",
       "printshop.feature.auth": "Autenticación y Rate Limiting",
       "printshop.feature.auth.desc": "Autenticación Supabase con acceso basado en roles y rate limiting con Upstash Redis",
-      "printshop.gallery.invoicing": "Facturación",
-      "printshop.gallery.logs": "Registros",
-      "printshop.gallery.reports": "Reportes",
+      "printshop.gallery.home": "Inicio",
+      "printshop.gallery.cart": "Carrito",
+      "printshop.gallery.contact": "Contacto",
 
       // Folium Detail Page
       "folium.breadcrumb.title": "Folium Labs",

@@ -20,6 +20,7 @@ export type Project = {
   image: string;
   image2: string;
   gallery: string[];
+  mobileGallery?: string[];
   type: ProjectType;
   mode: ProjectVisualMode;
   url: string | null;
@@ -95,7 +96,10 @@ export const projects: Project[] = [
       "/img/portfolio/folium1.png",
       "/img/portfolio/folium2.png",
       "/img/portfolio/folium3.png",
+    ],
+    mobileGallery: [
       "/img/portfolio/folium4.png",
+      "/img/portfolio/folium5.png",
     ],
     type: "web",
     mode: "desktop",
@@ -116,6 +120,13 @@ export const projects: Project[] = [
       "/img/portfolio/printshop2.png",
       "/img/portfolio/printshop3.png",
       "/img/portfolio/printshop4.png",
+      "/img/portfolio/printshop5.png",
+      "/img/portfolio/printshop6.png",
+    ],
+    mobileGallery: [
+      "/img/portfolio/printshop7.png",
+      "/img/portfolio/printshop8.png",
+      "/img/portfolio/printshop9.png",
     ],
     type: "web",
     mode: "desktop",
@@ -134,6 +145,8 @@ export const projects: Project[] = [
     gallery: [
       "/img/portfolio/arca1.png",
       "/img/portfolio/arca2.png",
+    ],
+    mobileGallery: [
       "/img/portfolio/arca3.png",
       "/img/portfolio/arca4.png",
     ],
@@ -155,8 +168,8 @@ export const projects: Project[] = [
       "/img/portfolio/spotify1.png",
       "/img/portfolio/spotify2.png",
       "/img/portfolio/spotify3.png",
-      "/img/portfolio/spotify4.png",
     ],
+    mobileGallery: ["/img/portfolio/spotify4.png"],
     type: "web",
     mode: "desktop",
     url: "spotify-playlist-generator.vercel.app",
@@ -176,6 +189,11 @@ export const projects: Project[] = [
       "/img/portfolio/pharmacy2.png",
       "/img/portfolio/pharmacy3.png",
       "/img/portfolio/pharmacy4.png",
+    ],
+    mobileGallery: [
+      "/img/portfolio/pharmacy5.png",
+      "/img/portfolio/pharmacy6.png",
+      "/img/portfolio/pharmacy7.png",
     ],
     type: "web",
     mode: "desktop",

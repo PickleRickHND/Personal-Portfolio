@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { Container } from "./container";
@@ -20,21 +21,27 @@ export function Nav() {
       <Container>
         <nav
           aria-label={t("nav.index")}
-          className="flex h-[var(--size-nav-h)] items-center justify-between"
+          className="flex h-[var(--size-nav-h)] items-center justify-between gap-3"
         >
           <Link
             href="/"
-            className="flex items-center gap-3"
+            className="flex min-w-0 items-center gap-3"
             aria-label={t("brand.name")}
           >
             <span
               aria-hidden
-              className="grid h-7 w-7 place-items-center rounded-full border border-[var(--color-bone-muted)] font-serif text-base italic"
+              className="relative block h-[50px] w-[50px] shrink-0 overflow-hidden rounded-full border border-[var(--color-bone-muted)]"
             >
-              {t("brand.mark")}
+              <Image
+                src="/img/profile-avatar.jpg"
+                alt=""
+                fill
+                sizes="50px"
+                className="scale-110 object-cover"
+              />
             </span>
-            <span className="font-mono text-[12px] tracking-[var(--tracking-wider)]">
-              {t("brand.name")} —&nbsp;&nbsp;&nbsp;{t("brand.folio")}
+            <span className="truncate font-mono text-[11px] tracking-[var(--tracking-wider)] sm:text-[12px]">
+              {t("brand.name")}
             </span>
           </Link>
 
@@ -62,15 +69,16 @@ export function Nav() {
             })}
           </ul>
 
-          <div className="flex items-center gap-4">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-4">
             <LocaleSwitcher />
             <a
               href={resumeHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden rounded-full bg-[var(--color-bone)] px-4 py-2 text-[13px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] md:inline-flex"
+              className="rounded-full bg-[var(--color-bone)] px-3 py-1.5 text-[12px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] sm:px-4 sm:py-2 sm:text-[13px]"
             >
-              {t("nav.resume")} ↗
+              <span className="hidden sm:inline">{t("nav.resume")} ↗</span>
+              <span className="sm:hidden">CV ↗</span>
             </a>
           </div>
         </nav>

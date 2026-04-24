@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -8,8 +7,10 @@ import { routing } from "@/i18n/routing";
 import { Container } from "@/components/container";
 import { Footer } from "@/components/footer";
 import { ProjectNav } from "@/components/project-nav";
+import { Reveal } from "@/components/reveal";
+import { GalleryCarousel } from "@/components/gallery-carousel";
 import { getNextProject, getProject, projects } from "@/lib/portfolio-data";
-import { pad2, toRoman } from "@/lib/format";
+import { pad2 } from "@/lib/format";
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) =>
@@ -81,10 +82,6 @@ export default async function ProjectPage({
 
   const caseIndex = projects.indexOf(project) + 1;
   const total = projects.length;
-  const gallerySizes =
-    project.mode === "phones"
-      ? "(min-width: 768px) 25vw, 50vw"
-      : "(min-width: 768px) 50vw, 100vw";
 
   return (
     <>
@@ -95,19 +92,19 @@ export default async function ProjectPage({
       />
       <main>
         {/* Hero */}
-        <section className="pb-12 pt-20 md:pb-16 md:pt-24">
+        <section className="pb-10 pt-14 md:pb-16 md:pt-24">
           <Container>
-            <div className="mb-8 text-eyebrow">
+            <div className="mb-6 text-eyebrow md:mb-8">
               {t("project.caseStudy")} · {pad2(caseIndex)} {t("project.of")}{" "}
               {pad2(total)} · {project.year}
             </div>
-            <h1 className="mb-6 font-serif text-[clamp(72px,16vw,180px)] leading-[0.88] tracking-[-0.04em]">
+            <h1 className="mb-5 break-words font-serif text-[clamp(48px,14vw,180px)] leading-[0.88] tracking-[-0.04em] md:mb-6">
               {project.name}.
             </h1>
-            <p className="mb-12 max-w-[900px] font-serif text-[clamp(22px,3vw,32px)] italic leading-[1.3] text-bone-muted">
+            <p className="mb-10 font-serif text-[clamp(18px,5vw,32px)] italic leading-[1.3] text-bone-muted md:mb-12 md:max-w-[900px]">
               “{tp("tagline")}”
             </p>
-            <div className="grid grid-cols-2 gap-6 border-t border-[var(--color-rule)] pt-8 md:grid-cols-4 md:gap-6">
+            <div className="grid grid-cols-2 gap-5 border-t border-[var(--color-rule)] pt-6 md:grid-cols-4 md:gap-6 md:pt-8">
               <MetaCell label={t("project.year")} value={project.year} />
               <MetaCell label={t("project.role")} value={tp("role")} />
               <MetaCell
@@ -123,59 +120,50 @@ export default async function ProjectPage({
         </section>
 
         {/* Gallery */}
-        <section className="bg-ink-elev py-12">
+        <section className="bg-ink-elev py-14 md:py-20">
           <Container>
-            <div
-              className={
-                project.mode === "phones"
-                  ? "grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5"
-                  : "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5"
-              }
-            >
-              {project.gallery.map((src, i) => {
-                const caption = captions[i];
-                const altText = caption
-                  ? `${project.name} — ${caption}`
-                  : `${project.name} — screenshot ${i + 1}`;
-                return (
-                  <figure key={src} className="flex flex-col gap-2.5">
-                    <div
-                      className={`overflow-hidden border border-[var(--color-rule)] ${
-                        project.mode === "phones"
-                          ? "aspect-[9/19] rounded-[24px] border-[6px] border-[#1a1814] bg-ink-inset"
-                          : "aspect-[16/10] rounded-md bg-ink-inset"
-                      }`}
-                    >
-                      <Image
-                        src={src}
-                        alt={altText}
-                        width={1280}
-                        height={project.mode === "phones" ? 2780 : 800}
-                        sizes={gallerySizes}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    {caption ? (
-                      <figcaption className="font-mono text-[10px] tracking-[var(--tracking-widest)] text-bone-dim">
-                        Fig. {toRoman(i + 1)} — {caption}
-                      </figcaption>
-                    ) : null}
-                  </figure>
-                );
-              })}
-            </div>
+            {project.mobileGallery && project.mobileGallery.length > 0 ? (
+              <Reveal className="grid grid-cols-1 items-center gap-8 md:grid-cols-[1fr_240px] md:gap-10 lg:grid-cols-[1fr_280px] lg:gap-12">
+                <div className="min-w-0">
+                  <GalleryCarousel
+                    images={project.gallery}
+                    captions={captions}
+                    variant="desktop"
+                    alt={project.name}
+                    url={project.url ?? undefined}
+                  />
+                </div>
+                <div className="mx-auto w-[200px] sm:w-[220px] md:w-[230px] lg:w-[270px]">
+                  <GalleryCarousel
+                    images={project.mobileGallery}
+                    variant="phone"
+                    alt={`${project.name} — mobile`}
+                  />
+                </div>
+              </Reveal>
+            ) : (
+              <Reveal>
+                <GalleryCarousel
+                  images={project.gallery}
+                  captions={captions}
+                  variant={project.mode === "phones" ? "phone" : "desktop"}
+                  alt={project.name}
+                  url={project.url ?? undefined}
+                />
+              </Reveal>
+            )}
           </Container>
         </section>
 
         {/* Problem / body */}
-        <section className="border-t border-[var(--color-rule)] py-24 md:py-32">
+        <section className="border-t border-[var(--color-rule)] py-20 md:py-32">
           <Container>
-            <div className="grid grid-cols-1 gap-10 md:grid-cols-[1fr_2fr] md:gap-20">
+            <Reveal className="grid grid-cols-1 gap-8 md:grid-cols-[1fr_2fr] md:gap-20">
               <div>
-                <div className="mb-4 text-eyebrow-muted">
+                <div className="mb-3 text-eyebrow-muted md:mb-4">
                   {tp("problem.kicker")}
                 </div>
-                <h2 className="font-serif text-[clamp(40px,6vw,56px)] leading-[0.96] tracking-[var(--tracking-tighter)]">
+                <h2 className="font-serif text-[clamp(32px,8vw,56px)] leading-[0.96] tracking-[var(--tracking-tighter)]">
                   {tp("problem.headlineA")}
                   <br />
                   {tp("problem.headlineB")}
@@ -187,13 +175,13 @@ export default async function ProjectPage({
                   {tp("problem.headlineTail")}
                 </h2>
               </div>
-              <div className="text-[17px] leading-[1.65] text-bone-muted">
+              <div className="text-[15px] leading-[1.65] text-bone-muted md:text-[17px]">
                 {body.map((paragraph, i) => {
                   const isLast = i === body.length - 1;
                   return isLast ? (
                     <p
                       key={i}
-                      className="mt-5 border-l-2 border-[var(--color-cream)] pl-5 font-serif text-[22px] italic leading-[1.4] text-bone"
+                      className="mt-5 border-l-2 border-[var(--color-cream)] pl-4 font-serif text-[18px] italic leading-[1.4] text-bone md:pl-5 md:text-[22px]"
                     >
                       {paragraph}
                     </p>
@@ -204,27 +192,28 @@ export default async function ProjectPage({
                   );
                 })}
               </div>
-            </div>
+            </Reveal>
           </Container>
         </section>
 
         {/* Outcomes */}
-        <section className="border-t border-[var(--color-rule)] py-24 md:py-32">
+        <section className="border-t border-[var(--color-rule)] py-20 md:py-32">
           <Container>
-            <div className="mb-10 text-eyebrow-muted">
-              {tp("outcomes.kicker")}
-            </div>
-            <div className="grid grid-cols-1 border-t border-b border-[var(--color-rule)] md:grid-cols-3">
+            <Reveal>
+              <div className="mb-8 text-eyebrow-muted md:mb-10">
+                {tp("outcomes.kicker")}
+              </div>
+              <div className="grid grid-cols-1 border-t border-b border-[var(--color-rule)] md:grid-cols-3">
               {outcomes.map((o, i) => (
                 <div
                   key={`${o.l}-${i}`}
-                  className={`px-6 py-10 ${
+                  className={`px-5 py-8 md:px-6 md:py-10 ${
                     i < outcomes.length - 1
                       ? "border-b border-[var(--color-rule)] md:border-b-0 md:border-r"
                       : ""
                   }`}
                 >
-                  <div className="font-serif text-[clamp(48px,7vw,72px)] leading-none tracking-[var(--tracking-tighter)]">
+                  <div className="font-serif text-[clamp(42px,9vw,72px)] leading-none tracking-[var(--tracking-tighter)]">
                     {o.n}
                   </div>
                   <div className="mt-3.5 font-mono text-[10px] tracking-[var(--tracking-widest)] text-bone-dim">
@@ -232,33 +221,36 @@ export default async function ProjectPage({
                   </div>
                 </div>
               ))}
-            </div>
+              </div>
+            </Reveal>
           </Container>
         </section>
 
         {/* Next up */}
-        <section className="border-t border-[var(--color-rule)] py-20 text-center md:py-24">
+        <section className="border-t border-[var(--color-rule)] py-16 text-center md:py-24">
           <Container>
-            <div className="mb-6 text-eyebrow-muted">
-              {t("project.nextProject")}
-            </div>
-            {nextP ? (
-              <Link
-                href={`/work/${nextP.slug}`}
-                className="inline-block font-serif text-[clamp(48px,9vw,96px)] leading-[0.95] tracking-[var(--tracking-tighter)] transition-colors hover:text-cream"
-              >
-                {nextP.name}{" "}
-                <em className="italic text-bone-muted">→</em>
-              </Link>
-            ) : (
-              <Link
-                href="/"
-                className="inline-block font-serif text-[clamp(48px,9vw,96px)] leading-[0.95] tracking-[var(--tracking-tighter)] transition-colors hover:text-cream"
-              >
-                {t("project.backToIndex")}{" "}
-                <em className="italic text-bone-muted">→</em>
-              </Link>
-            )}
+            <Reveal>
+              <div className="mb-5 text-eyebrow-muted md:mb-6">
+                {t("project.nextProject")}
+              </div>
+              {nextP ? (
+                <Link
+                  href={`/work/${nextP.slug}`}
+                  className="inline-block break-words font-serif text-[clamp(32px,11vw,96px)] leading-[0.95] tracking-[var(--tracking-tighter)] transition-colors hover:text-cream"
+                >
+                  {nextP.name}{" "}
+                  <em className="italic text-bone-muted">→</em>
+                </Link>
+              ) : (
+                <Link
+                  href="/"
+                  className="inline-block break-words font-serif text-[clamp(32px,11vw,96px)] leading-[0.95] tracking-[var(--tracking-tighter)] transition-colors hover:text-cream"
+                >
+                  {t("project.backToIndex")}{" "}
+                  <em className="italic text-bone-muted">→</em>
+                </Link>
+              )}
+            </Reveal>
           </Container>
         </section>
       </main>

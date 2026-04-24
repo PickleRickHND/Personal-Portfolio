@@ -48,6 +48,7 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     deviceSizes: [360, 640, 828, 1080, 1280],
     imageSizes: [180, 230, 360, 640],
+    qualities: [75, 88, 92],
   },
   experimental: {
     optimizePackageImports: ["motion", "next-intl"],

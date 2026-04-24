@@ -8,11 +8,11 @@ export function Stat({
   className?: string;
 }) {
   return (
-    <div className={`px-5 py-7 ${className}`}>
-      <div className="font-serif text-[clamp(40px,5vw,56px)] leading-none tracking-[var(--tracking-tighter)] text-bone">
+    <div className={`px-4 py-6 md:px-5 md:py-7 ${className}`}>
+      <div className="font-serif text-[clamp(32px,7vw,56px)] leading-none tracking-[var(--tracking-tighter)] text-bone">
         {n}
       </div>
-      <div className="mt-3 font-mono text-[10px] leading-snug tracking-[var(--tracking-widest)] text-bone-dim">
+      <div className="mt-2.5 font-mono text-[10px] leading-snug tracking-[var(--tracking-widest)] text-bone-dim md:mt-3">
         {label}
       </div>
     </div>

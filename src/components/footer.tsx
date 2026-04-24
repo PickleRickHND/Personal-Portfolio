@@ -6,10 +6,8 @@ export function Footer() {
   return (
     <footer className="border-t border-[var(--color-rule)]">
       <Container>
-        <div className="flex flex-col items-start justify-between gap-3 py-10 text-[11px] tracking-[var(--tracking-wider)] text-[var(--color-bone-dim)] md:flex-row md:items-center">
+        <div className="flex justify-center py-10 text-[11px] tracking-[var(--tracking-wider)] text-bone-dim">
           <span className="font-mono uppercase">{t("copy")}</span>
-          <span className="font-mono uppercase">{t("built")}</span>
-          <span className="font-mono uppercase">{t("colophon")}</span>
         </div>
       </Container>
     </footer>

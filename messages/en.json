@@ -2,15 +2,13 @@
   "meta": {
     "brand": "Douglas Hedman",
     "home": {
-      "title": "Douglas Hedman — Full-Stack Developer",
-      "description": "Full-Stack Developer based in Tegucigalpa. Production web & mobile apps with Next.js, React, and Flutter — plus the QA automation that keeps them shipped."
+      "title": "Douglas Hedman · Full-Stack Developer",
+      "description": "Full-Stack Developer based in Tegucigalpa. Production web & mobile apps with Next.js, React, and Flutter."
     }
   },
   "brand": {
-    "mark": "D",
     "name": "Douglas Hedman",
-    "folio": "Folio '26",
-    "back": "← Back to Index"
+    "back": "Back to Index"
   },
   "nav": {
     "index": "Index",
@@ -22,38 +20,38 @@
     "langToggle": "EN / ES"
   },
   "localeSwitcher": {
-    "ariaLabel": "EN / ES — switch to {target}"
+    "ariaLabel": "EN / ES · switch to {target}"
   },
   "hero": {
-    "issue": "Vol. 03 — Spring 2026",
-    "status": "Available for work — Q3 2026",
+    "issue": "Portfolio · {year}",
+    "status": "Available for work",
     "fileTag": "Portfolio / index.html",
-    "tagline": "Full-Stack Developer, based in Tegucigalpa — building web & mobile things for three years and counting.",
+    "tagline": "Full-Stack Developer, based in Tegucigalpa · building web & mobile things for three years and counting.",
     "titleFirst": "Douglas",
     "titleSecond": "Hedman.",
     "cells": {
       "currentlyLabel": "Currently",
-      "currentlyValue": "Shipping full-stack apps & building a QA automation practice. Open to senior Full-Stack and Mobile roles.",
+      "currentlyValue": "Shipping production web and mobile apps across Next.js and Flutter. Open to senior Full-Stack and Mobile roles.",
       "stackLabel": "Stack",
-      "stackValue": "Next.js\nReact · Flutter",
+      "stackValue": "TypeScript · Dart · PHP · Python\nNext.js · React · Flutter",
       "focusLabel": "Focus",
-      "focusValue": "Full-Stack &\nQA Automation",
+      "focusValue": "Full-Stack &\nMobile",
       "basedLabel": "Based",
-      "basedValue": "Tegucigalpa, HN",
-      "basedSub": "Remote — global"
+      "basedValue": "Tegucigalpa, Honduras",
+      "basedSub": "Remote · global"
     }
   },
   "about": {
-    "index": "§ 01",
+    "index": "",
     "kicker": "About / Profile",
-    "headlineA": "A systems engineer",
-    "headlineB": "who",
-    "headlineEm": "ships",
+    "headlineA": "Developer",
+    "headlineB": "Full-Stack &",
+    "headlineEm": "Mobile",
     "headlineTail": ".",
     "portraitCaption": "Tegucigalpa, 2026",
-    "lead": "Three years of shipping. Production apps across Flutter, Next.js, and the messy edges in between — where QA automation actually matters.",
-    "p1": "I'm a Full-Stack Developer and Systems Engineer from Honduras. My work spans cross-platform mobile (Flutter), modern web (Next.js 16, React, TypeScript), and the automation layer underneath — Cypress and Playwright test suites that keep releases honest.",
-    "p2": "I graduated from José Cecilio del Valle University and hold professional certifications in Full-Stack Engineering and Computer Science. Lately I've been pairing that foundation with AI-augmented workflows: Claude Code, Cursor, and Gemini as force multipliers, not replacements."
+    "lead": "Three years building software that actually reaches production. Mobile apps with Flutter, web apps with Next.js, and the work of tying them together.",
+    "p1": "I'm from Honduras. Trained as a Systems Engineer, working as a Full-Stack Developer. I build mobile apps with Flutter and web apps with Next.js, React, and TypeScript. Before I ship anything, I write tests with Cypress and Playwright — I'd rather catch problems before the user does.",
+    "p2": "I studied Systems Engineering at José Cecilio del Valle University and hold certifications in Full-Stack Development and Computer Science. Day-to-day, I work with Claude Code, Cursor, and Gemini: they help me move faster, but the architecture calls are mine."
   },
   "stats": {
     "productionApps": "Production apps shipped",
@@ -62,17 +60,17 @@
     "languages": "Languages (i18n) delivered"
   },
   "work": {
-    "index": "§ 02",
+    "index": "",
     "kicker": "Selected Work",
     "headlineA": "Six projects,",
     "headlineB": "three years.",
-    "count": "Six selected productions — 2023–2025",
+    "count": "Six selected productions · 2023–2025",
     "filterMobile": "Mobile",
     "filterCommerce": "Commerce",
     "filterInternal": "Internal Tools",
     "featuredBadge": "Featured Project",
-    "caseBadge": "Case Study {n}",
-    "cta": "Read the case study",
+    "caseBadge": "Project {n}",
+    "cta": "Read the project",
     "fullList": "Full index",
     "year": "Year",
     "platform": "Platform",
@@ -84,11 +82,11 @@
       "role": "Lead Developer",
       "platform": "iOS + Android",
       "kind": "Mobile · Flutter",
-      "tagline": "Price comparison for Honduran supermarkets — the first Flutter app in the country built for daily shopping.",
+      "tagline": "Price comparison for Honduran supermarkets · the first Flutter app in the country built for daily shopping.",
       "short": "Price comparison for Honduran supermarkets.",
       "description": "Cross-platform price comparison app. Scan barcodes, compare prices across chains, set alerts, and build smart shopping lists.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "Grocery prices",
         "headlineB": "in Honduras",
         "headlineC": "are",
@@ -96,12 +94,12 @@
         "headlineTail": "."
       },
       "body": [
-        "Three national supermarket chains dominate Honduran retail. None of them publish standardized pricing. A single item — a 500g box of pasta, say — can vary by 30% between stores on any given day, and shoppers have no practical way to know in advance.",
-        "Prizio was built to close that information gap. Scan a barcode in-store, or search from home. See every price on the same screen, updated by a community of shoppers and merchant partners. Set alerts. Build a smart shopping list that routes you to the cheapest basket across your preferred chains.",
-        "Shipped on both iOS and Android with Firebase-backed sync, custom Sentry crash reporting, and a Cypress-inspired Flutter integration test suite covering the top 30 user journeys."
+        "Three national supermarket chains dominate Honduran retail, and none of them publish standardized pricing. A single item · a 500g box of pasta, say · can vary by 30% between stores on any given day, and shoppers have no practical way to know in advance.",
+        "Prizio was built to close that gap. Scan a barcode in-store or search from home, and every price shows up on the same screen, updated by a community of shoppers and merchant partners. Alerts are configurable, and smart lists route you to the cheapest basket across your preferred chains.",
+        "Shipped on iOS and Android. Firebase handles sync, Sentry catches crashes, and a Cypress-inspired Flutter integration suite covers the top 30 user journeys."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "12,400+", "l": "Listed SKUs tracked" },
         "b": { "n": "18%", "l": "Avg. basket savings" },
         "c": { "n": "54 green", "l": "Integration tests" }
@@ -112,11 +110,11 @@
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js 16",
       "kind": "Web · Next.js 16",
-      "tagline": "Academic services platform with SEO-first content — 60 articles and a 26-service catalog at launch.",
+      "tagline": "Academic services platform with SEO-first content · 60 articles and a 26-service catalog at launch.",
       "short": "Academic services platform with SEO-first content.",
       "description": "Academic services platform with 60+ SEO-optimized blog articles, 26-service catalog, and MDX-powered content system.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "Academic help",
         "headlineB": "needed a home",
         "headlineC": "that",
@@ -124,12 +122,12 @@
         "headlineTail": "."
       },
       "body": [
-        "Folium Labs provides thesis, research, and editorial services for university students across Latin America. The old funnel was a WhatsApp thread and a Linktree — no SEO footprint, no service transparency, no way for prospective clients to self-qualify.",
-        "I rebuilt the business on Next.js 16 with MDX-powered content, a typed service catalog, and Resend-backed contact flows. Sixty articles on thesis writing, APA, and research methodology were published at launch — each indexed, schema-annotated, and editorially reviewed.",
-        "Everything behind the scenes is typed end-to-end. Pricing, service catalog, and blog posts all live as static content that compiles at build time — no CMS, no runtime database queries, and deploy is a git push."
+        "Folium Labs provides thesis, research, and editorial services for university students across Latin America. The old funnel was a WhatsApp thread and a Linktree: no search presence, and no way for a prospective client to understand the services without writing in first.",
+        "I rebuilt the business on Next.js 16 with MDX-powered content, a typed service catalog, and Resend-backed contact flows. Sixty articles on thesis writing, APA, and research methodology went live at launch, each one editorially reviewed and indexed with its own schema.",
+        "Everything behind the scenes is typed end-to-end. Pricing, service catalog, and blog posts all live as static content that compiles at build time, with no CMS and no runtime database queries. Deploys are a git push."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "60+", "l": "SEO-indexed articles" },
         "b": { "n": "26", "l": "Services catalogued" },
         "c": { "n": "100%", "l": "Static, edge-rendered" }
@@ -140,11 +138,11 @@
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js",
       "kind": "Web · Commerce",
-      "tagline": "E-commerce with admin dashboard and invoicing — custom-built for a Honduran print shop.",
+      "tagline": "E-commerce with admin dashboard and invoicing · custom-built for a Honduran print shop.",
       "short": "E-commerce with admin dashboard and invoicing.",
       "description": "E-commerce platform with admin dashboard, React-PDF invoicing, Zustand-powered state, and end-to-end inventory management.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "A small print shop",
         "headlineB": "running its entire",
         "headlineC": "business on",
@@ -157,7 +155,7 @@
         "Built solo on Next.js with Supabase, React-PDF for invoices, and a Cypress suite guarding the checkout and admin flows."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "420+", "l": "Orders digitized / mo" },
         "b": { "n": "99.2%", "l": "Inventory accuracy" },
         "c": { "n": "38 green", "l": "Cypress tests" }
@@ -168,11 +166,11 @@
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js",
       "kind": "Web · Non-profit",
-      "tagline": "Five-language non-profit platform — blog, gallery, donations, and a full i18n stack.",
+      "tagline": "Five-language non-profit platform · blog, gallery, donations, and a full i18n stack.",
       "short": "5-language non-profit platform.",
       "description": "Non-profit website with blog, gallery, donation flow, and full localization across Spanish, English, French, Portuguese, and German.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "A non-profit",
         "headlineB": "speaking to",
         "headlineC": "a",
@@ -180,15 +178,15 @@
         "headlineTail": " audience."
       },
       "body": [
-        "El Arca Honduras is a non-profit serving children and families with disabilities. Their work reaches an international donor base, but the old site was Spanish-only and static — missing translations, no gallery, no way to route donations programmatically.",
+        "El Arca Honduras is a non-profit serving children and families with disabilities. Their work reaches an international donor base, but the old site was Spanish-only and static: no gallery, no translations, and donations exiting through a single channel regardless of where the visitor came from.",
         "I rebuilt it on Next.js with a full five-language stack (Spanish, English, French, Portuguese, German), a dynamic blog, a photo gallery, and a donation flow routing through the right regional processor.",
-        "Every piece of copy lives in typed translation files; no string on the site ships without all five locales. Built with the same stack I use for commercial work — translated, tested, shipped."
+        "Every piece of copy lives in typed translation files; no string ships without all five locales. Same stack I use for commercial work, same quality bar."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "5", "l": "Languages live" },
         "b": { "n": "100%", "l": "Typed translations" },
-        "c": { "n": "0 ms", "l": "CMS latency — static" }
+        "c": { "n": "0 ms", "l": "CMS latency · static" }
       },
       "captions": ["Home", "Mission", "Gallery", "Donate"]
     },
@@ -196,11 +194,11 @@
       "role": "Solo Developer",
       "platform": "Web · React",
       "kind": "Web · API Integration",
-      "tagline": "Generate playlists by mood, export to Spotify — live OAuth + Web API integration.",
+      "tagline": "Generate playlists by mood, export to Spotify · live OAuth + Web API integration.",
       "short": "Generate playlists by mood, export to Spotify.",
       "description": "Search songs, generate playlists by mood, and export directly to your Spotify account. OAuth flow + live API integration.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "Spotify has",
         "headlineB": "everything but",
         "headlineC": "a",
@@ -208,12 +206,12 @@
         "headlineTail": " button."
       },
       "body": [
-        "Spotify's own UI exposes acoustic features — energy, danceability, valence, tempo — but only through its Web API. They're invisible to the listener.",
-        "This app surfaces those features as sliders. Set a mood, generate a playlist that matches, preview it, then push the whole thing straight to your Spotify account via OAuth. No saved credentials, no middleman — just the Web API and your account.",
-        "Built to learn OAuth flows properly. Every call is rate-limited, every error handled, every action undoable."
+        "Spotify's own UI exposes acoustic features · energy, danceability, valence, tempo · but only through its Web API. They're invisible to the listener.",
+        "This app surfaces those features as sliders. Set a mood, generate a playlist that matches, preview it, then push the whole thing straight to your Spotify account via OAuth. No credentials stored anywhere; the app talks directly to the Web API and to your account, with nothing in between.",
+        "I built it to understand OAuth from start to finish. Every call respects Spotify's rate limits, errors are handled explicitly, and any action can be undone without breaking the session."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "OAuth 2.0", "l": "Auth flow" },
         "b": { "n": "4", "l": "Mood dimensions" },
         "c": { "n": "0", "l": "Credentials stored" }
@@ -224,11 +222,11 @@
       "role": "Solo Developer",
       "platform": "Web · PHP",
       "kind": "Web · Internal Tool",
-      "tagline": "Internal pharmacy operations system — running quietly, unchanged, three years on.",
+      "tagline": "Internal pharmacy operations system · running unchanged since 2023.",
       "short": "Inventory, billing & user management.",
-      "description": "Internal pharmacy operations system — inventory, billing, user roles, auth, and email-based password recovery.",
+      "description": "Internal pharmacy operations system · inventory, billing, user roles, auth, and email-based password recovery.",
       "problem": {
-        "kicker": "§ 01 — The Problem",
+        "kicker": "The Problem",
         "headlineA": "A family pharmacy",
         "headlineB": "needed to stop",
         "headlineC": "losing",
@@ -237,11 +235,11 @@
       },
       "body": [
         "Hedman Garcia Pharmacy is a family-run operation with thousands of SKUs and several staff handling sales across two shifts. Before the rebuild, billing was on a legacy cash-register system, inventory was eyeballed, and cross-staff reconciliation required end-of-day spreadsheet work.",
-        "I built a custom internal platform end-to-end: role-based auth with email recovery (SendGrid), unified billing, live stock adjustments on every sale, and staff-level reporting. Built on PHP and MySQL — deliberately boring server-side tech that family staff could trust and operate on modest hardware.",
-        "My first production system. Still running — quietly, unchanged, three years on."
+        "I built a custom internal platform end-to-end: role-based auth with email recovery (SendGrid), unified billing, live stock adjustments on every sale, and staff-level reporting. Built on PHP and MySQL · deliberately boring server-side tech that family staff could trust and operate on modest hardware.",
+        "My first production system. Still running, unchanged, since 2023."
       ],
       "outcomes": {
-        "kicker": "§ 02 — Outcomes",
+        "kicker": "Outcomes",
         "a": { "n": "6", "l": "Staff on-boarded" },
         "b": { "n": "180+", "l": "Daily transactions" },
         "c": { "n": "~100%", "l": "Uptime since 2023" }
@@ -250,7 +248,7 @@
     }
   },
   "project": {
-    "caseStudy": "Case Study",
+    "caseStudy": "Project",
     "of": "of",
     "nextProject": "Next project",
     "backToIndex": "Back to index",
@@ -264,7 +262,7 @@
     "internal": "Internal"
   },
   "stack": {
-    "index": "§ 03",
+    "index": "",
     "kicker": "Toolkit / Stack",
     "headlineA": "What I",
     "headlineEm": "build",
@@ -280,11 +278,21 @@
     }
   },
   "contact": {
-    "kicker": "— Let's build something",
-    "headlineA": "Get in",
-    "headlineEm": "touch",
-    "headlineTail": ".",
-    "sub": "Currently booking Full-Stack and Mobile engagements for Q3 2026.\nAverage response time: under 24 hours.",
+    "kicker": "Contact",
+    "headlineA": "Got a",
+    "headlineEm": "project",
+    "headlineTail": "?",
+    "info": {
+      "locationLabel": "Location",
+      "locationValue": "Tegucigalpa, Honduras",
+      "locationSub": "GMT-6",
+      "modeLabel": "Mode",
+      "modeValue": "Remote · global",
+      "responseLabel": "Reply",
+      "responseValue": "Under 24 hours",
+      "focusLabel": "Focus",
+      "focusValue": "Full-Stack & Mobile"
+    },
     "channels": {
       "github": "GitHub",
       "linkedin": "LinkedIn",
@@ -292,8 +300,6 @@
     }
   },
   "footer": {
-    "copy": "© 2026 — Douglas Hedman",
-    "built": "Designed & built in Tegucigalpa · Deployed on Vercel",
-    "colophon": "Colophon: Instrument Serif, DM Sans, DM Mono"
+    "copy": "© 2026 · Douglas Hedman"
   }
 }

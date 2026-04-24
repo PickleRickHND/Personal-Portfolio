@@ -22,16 +22,16 @@ export function ProjectRow({
     >
       <Link
         href={`/work/${project.slug}`}
-        className="group grid grid-cols-[40px_1fr_80px] items-center gap-4 border-b border-[var(--color-rule)] py-8 transition-colors hover:bg-ink-elev md:grid-cols-[80px_2fr_2fr_1fr_80px] md:gap-6 md:px-0 md:py-9 md:hover:px-6"
+        className="group grid grid-cols-[32px_1fr_auto] items-center gap-4 border-b border-[var(--color-rule)] py-7 transition-colors hover:bg-ink-elev md:grid-cols-[80px_2fr_2fr_1fr_80px] md:gap-6 md:px-0 md:py-9 md:hover:px-6"
       >
-        <div className="font-mono text-[11px] tracking-[var(--tracking-widest)] text-bone-dim">
+        <div className="font-mono text-[10px] tracking-[var(--tracking-widest)] text-bone-dim md:text-[11px]">
           {index}
         </div>
-        <div>
-          <div className="font-serif text-[clamp(28px,3.5vw,40px)] leading-none tracking-[var(--tracking-tight)]">
+        <div className="min-w-0">
+          <div className="font-serif text-[clamp(24px,6vw,40px)] leading-[1.02] tracking-[var(--tracking-tight)]">
             {project.name}
           </div>
-          <div className="mt-2 font-mono text-[10px] tracking-[var(--tracking-widest)] text-bone-muted">
+          <div className="mt-1.5 font-mono text-[10px] tracking-[var(--tracking-widest)] text-bone-muted md:mt-2">
             {tp("kind")}
           </div>
         </div>
@@ -48,7 +48,7 @@ export function ProjectRow({
             </span>
           ))}
         </div>
-        <div className="text-right font-serif text-[24px] italic text-bone-muted">
+        <div className="text-right font-serif text-[18px] italic text-bone-muted md:text-[24px]">
           {project.year}
         </div>
       </Link>

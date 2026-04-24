@@ -25,21 +25,22 @@ export function ProjectNav({
       <Container>
         <nav
           aria-label={currentName}
-          className="flex h-[var(--size-nav-h)] items-center justify-between"
+          className="flex h-[var(--size-nav-h)] items-center justify-between gap-3"
         >
           <Link
             href="/"
-            className="flex items-center gap-3"
+            className="flex min-w-0 items-center gap-3"
             aria-label={t("brand.back")}
           >
             <span
               aria-hidden
-              className="grid h-7 w-7 place-items-center rounded-full border border-[var(--color-bone-muted)] font-serif text-base italic"
+              className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-[var(--color-bone-muted)] font-serif text-base italic"
             >
-              {t("brand.mark")}
+              ←
             </span>
-            <span className="font-mono text-[12px] tracking-[var(--tracking-wider)]">
-              {t("brand.back")}
+            <span className="truncate font-mono text-[11px] tracking-[var(--tracking-wider)] sm:text-[12px]">
+              <span className="hidden sm:inline">{t("brand.back")}</span>
+              <span className="sm:hidden">Index</span>
             </span>
           </Link>
 
@@ -60,23 +61,26 @@ export function ProjectNav({
             </li>
           </ul>
 
-          <div className="flex items-center gap-4">
+          <div className="flex shrink-0 items-center gap-2 sm:gap-4">
             <LocaleSwitcher />
             {nextName ? (
               <Link
                 href={nextHref}
-                className="hidden rounded-full bg-[var(--color-bone)] px-4 py-2 text-[13px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] md:inline-flex"
+                aria-label={`Next project: ${nextName}`}
+                className="rounded-full bg-[var(--color-bone)] px-3 py-1.5 text-[12px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] sm:px-4 sm:py-2 sm:text-[13px]"
               >
-                {nextName} →
+                <span className="hidden sm:inline">{nextName} →</span>
+                <span className="sm:hidden">Next →</span>
               </Link>
             ) : (
               <a
                 href={resumeHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden rounded-full bg-[var(--color-bone)] px-4 py-2 text-[13px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] md:inline-flex"
+                className="rounded-full bg-[var(--color-bone)] px-3 py-1.5 text-[12px] font-medium text-[var(--color-ink)] transition-colors hover:bg-[var(--color-cream)] sm:px-4 sm:py-2 sm:text-[13px]"
               >
-                {t("nav.resume")} ↗
+                <span className="hidden sm:inline">{t("nav.resume")} ↗</span>
+                <span className="sm:hidden">CV ↗</span>
               </a>
             )}
           </div>

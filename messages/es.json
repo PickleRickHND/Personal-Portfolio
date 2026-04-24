@@ -1,0 +1,305 @@
+{
+  "meta": {
+    "brand": "Douglas Hedman",
+    "home": {
+      "title": "Douglas Hedman · Desarrollador Full-Stack",
+      "description": "Desarrollador Full-Stack basado en Tegucigalpa. Apps web y móviles en producción con Next.js, React y Flutter."
+    }
+  },
+  "brand": {
+    "name": "Douglas Hedman",
+    "back": "Volver al índice"
+  },
+  "nav": {
+    "index": "Índice",
+    "work": "Trabajo",
+    "about": "Perfil",
+    "stack": "Stack",
+    "contact": "Contacto",
+    "resume": "CV",
+    "langToggle": "EN / ES"
+  },
+  "localeSwitcher": {
+    "ariaLabel": "EN / ES · cambiar a {target}"
+  },
+  "hero": {
+    "issue": "Portafolio · {year}",
+    "status": "Disponible",
+    "fileTag": "Portafolio / index.html",
+    "tagline": "Desarrollador Full-Stack en Tegucigalpa · construyendo web y móvil desde hace tres años.",
+    "titleFirst": "Douglas",
+    "titleSecond": "Hedman.",
+    "cells": {
+      "currentlyLabel": "Actualmente",
+      "currentlyValue": "Entregando apps web y móviles en producción con Next.js y Flutter. Abierto a roles senior Full-Stack y Mobile.",
+      "stackLabel": "Stack",
+      "stackValue": "TypeScript · Dart · PHP · Python\nNext.js · React · Flutter",
+      "focusLabel": "Enfoque",
+      "focusValue": "Full-Stack &\nMobile",
+      "basedLabel": "Ubicación",
+      "basedValue": "Tegucigalpa, Honduras",
+      "basedSub": "Remoto · global"
+    }
+  },
+  "about": {
+    "index": "",
+    "kicker": "Perfil",
+    "headlineA": "Desarrollador",
+    "headlineB": "Full-Stack &",
+    "headlineEm": "Mobile",
+    "headlineTail": ".",
+    "portraitCaption": "Tegucigalpa, 2026",
+    "lead": "Llevo tres años construyendo software que llega a producción. Apps móviles con Flutter, sitios web con Next.js, y el trabajo de integrarlos.",
+    "p1": "Soy hondureño. Me formé como Ingeniero de Sistemas y trabajo como Desarrollador Full-Stack. Hago apps móviles con Flutter y sitios web con Next.js, React y TypeScript. Antes de cada lanzamiento escribo pruebas con Cypress y Playwright; prefiero encontrar los problemas antes de que los encuentre el usuario.",
+    "p2": "Estudié Ingeniería en Sistemas en la Universidad José Cecilio del Valle y obtuve certificaciones en desarrollo Full-Stack y Ciencias de la Computación. En el día a día trabajo con Claude Code, Cursor y Gemini: ayudan a ir más rápido, pero las decisiones de arquitectura las tomo yo."
+  },
+  "stats": {
+    "productionApps": "Apps en producción",
+    "automatedTests": "Pruebas automatizadas",
+    "yearsExperience": "Años de experiencia",
+    "languages": "Idiomas (i18n) entregados"
+  },
+  "work": {
+    "index": "",
+    "kicker": "Trabajo seleccionado",
+    "headlineA": "Seis proyectos,",
+    "headlineB": "tres años.",
+    "count": "Seis producciones seleccionadas · 2023–2025",
+    "filterMobile": "Móvil",
+    "filterCommerce": "Comercio",
+    "filterInternal": "Herramientas internas",
+    "featuredBadge": "Proyecto destacado",
+    "caseBadge": "Proyecto {n}",
+    "cta": "Ver el proyecto",
+    "fullList": "Índice completo",
+    "year": "Año",
+    "platform": "Plataforma",
+    "role": "Rol",
+    "stack": "Stack"
+  },
+  "projects": {
+    "prizio": {
+      "role": "Desarrollador Líder",
+      "platform": "iOS + Android",
+      "kind": "Móvil · Flutter",
+      "tagline": "Comparación de precios para supermercados hondureños · la primera app Flutter del país pensada para la compra diaria.",
+      "short": "Comparación de precios para supermercados hondureños.",
+      "description": "App cross-platform para comparar precios. Escaneá códigos de barras, compará precios entre cadenas, configurá alertas y armá listas inteligentes.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Los precios",
+        "headlineB": "en Honduras",
+        "headlineC": "son",
+        "headlineEm": "opacos",
+        "headlineTail": "."
+      },
+      "body": [
+        "Tres cadenas nacionales dominan el retail hondureño y ninguna publica precios estandarizados. Un mismo producto · una caja de pasta de 500g, por ejemplo · puede variar un 30% entre tiendas el mismo día, y el comprador no tiene forma práctica de saberlo antes.",
+        "Prizio cierra esa brecha. Escaneás un código en la tienda o buscás desde casa, y todos los precios aparecen en la misma pantalla, actualizados por una comunidad de compradores y comercios aliados. Las alertas son configurables, y las listas inteligentes te rutean al carrito más barato entre tus cadenas preferidas.",
+        "Publicada en iOS y Android. Firebase resuelve la sincronización, Sentry captura los crashes y una suite de pruebas de integración Flutter (inspirada en Cypress) cubre los 30 flujos críticos."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "12,400+", "l": "SKUs indexados" },
+        "b": { "n": "18%", "l": "Ahorro promedio del carrito" },
+        "c": { "n": "54 green", "l": "Pruebas de integración" }
+      },
+      "captions": ["Inicio", "Búsqueda", "Listas", "Tiendas"]
+    },
+    "folium": {
+      "role": "Desarrollador Full-Stack",
+      "platform": "Web · Next.js 16",
+      "kind": "Web · Next.js 16",
+      "tagline": "Plataforma de servicios académicos con contenido SEO-first · 60 artículos y 26 servicios desde el lanzamiento.",
+      "short": "Plataforma de servicios académicos con contenido SEO-first.",
+      "description": "Plataforma académica con 60+ artículos optimizados para SEO, catálogo de 26 servicios y sistema de contenido en MDX.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "La ayuda académica",
+        "headlineB": "necesitaba un hogar",
+        "headlineC": "que",
+        "headlineEm": "posicione",
+        "headlineTail": "."
+      },
+      "body": [
+        "Folium Labs brinda servicios de tesis, investigación y edición a universitarios de toda Latinoamérica. El embudo anterior era un hilo de WhatsApp y un Linktree: sin presencia en buscadores, y sin forma de que un prospecto entendiera los servicios sin escribir primero.",
+        "Reconstruí el negocio sobre Next.js 16 con contenido en MDX, un catálogo de servicios tipado y flujos de contacto con Resend. Sesenta artículos sobre tesis, APA y metodología de investigación salieron en vivo al lanzamiento, cada uno revisado editorialmente e indexado con su propio schema.",
+        "Todo está tipado de extremo a extremo. Precios, catálogo y blog viven como contenido estático que compila en build, sin CMS ni queries en runtime. El deploy es un git push."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "60+", "l": "Artículos SEO" },
+        "b": { "n": "26", "l": "Servicios catalogados" },
+        "c": { "n": "100%", "l": "Estático en edge" }
+      },
+      "captions": ["Inicio", "Catálogo", "Artículo", "Contacto"]
+    },
+    "printshop": {
+      "role": "Desarrollador Full-Stack",
+      "platform": "Web · Next.js",
+      "kind": "Web · Comercio",
+      "tagline": "E-commerce con panel administrativo y facturación · a medida para una imprenta hondureña.",
+      "short": "E-commerce con panel administrativo y facturación.",
+      "description": "Plataforma de e-commerce con panel administrativo, facturación con React-PDF, estado con Zustand y manejo de inventario end-to-end.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Una imprenta pequeña",
+        "headlineB": "manejando todo",
+        "headlineC": "el negocio en",
+        "headlineEm": "papel",
+        "headlineTail": "."
+      },
+      "body": [
+        "PrintShop 504 es una imprenta hondureña con una cartera creciente de clientes de mostrador y B2B. Antes de la reconstrucción, los pedidos se anotaban en papel, las facturas se hacían a mano y el inventario se reconciliaba mensualmente (y sin confiabilidad). Los faltantes eran rutina.",
+        "Diseñé y construí una plataforma de e-commerce a medida con panel administrativo, sistema de facturas con React-PDF, estado con Zustand y Supabase en el backend manejando auth, pedidos y un libro de inventario en vivo. Los clientes ordenan online; el staff cumple desde un único dashboard.",
+        "Construida en solitario sobre Next.js con Supabase, React-PDF para facturas y una suite Cypress que protege el checkout y los flujos administrativos."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "420+", "l": "Pedidos digitalizados/mes" },
+        "b": { "n": "99.2%", "l": "Precisión de inventario" },
+        "c": { "n": "38 green", "l": "Pruebas Cypress" }
+      },
+      "captions": ["Storefront", "Admin", "Factura", "Inventario"]
+    },
+    "arca": {
+      "role": "Desarrollador Full-Stack",
+      "platform": "Web · Next.js",
+      "kind": "Web · Non-profit",
+      "tagline": "Plataforma de non-profit en cinco idiomas · blog, galería, donaciones y stack i18n completo.",
+      "short": "Plataforma non-profit en 5 idiomas.",
+      "description": "Sitio non-profit con blog, galería, flujo de donaciones y localización completa en español, inglés, francés, portugués y alemán.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Una organización",
+        "headlineB": "hablando a una",
+        "headlineC": "audiencia",
+        "headlineEm": "global",
+        "headlineTail": "."
+      },
+      "body": [
+        "El Arca Honduras es una organización que atiende a niños y familias con discapacidades. Su trabajo llega a una base internacional de donantes, pero el sitio anterior era sólo en español y estático: sin galería, sin traducciones, y con donaciones saliendo por un único canal sin importar desde dónde viniera el visitante.",
+        "Lo reconstruí sobre Next.js con un stack completo en cinco idiomas (español, inglés, francés, portugués, alemán), blog dinámico, galería fotográfica y flujo de donaciones que rutea al procesador regional correcto.",
+        "Todo el copy vive en archivos de traducción tipados; ningún string se publica sin los cinco locales. Mismo stack que uso en trabajo comercial, misma barra de calidad."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "5", "l": "Idiomas en vivo" },
+        "b": { "n": "100%", "l": "Traducciones tipadas" },
+        "c": { "n": "0 ms", "l": "Latencia CMS · estático" }
+      },
+      "captions": ["Inicio", "Misión", "Galería", "Donaciones"]
+    },
+    "spotify": {
+      "role": "Desarrollador en solitario",
+      "platform": "Web · React",
+      "kind": "Web · Integración API",
+      "tagline": "Generá playlists por mood y exportalas a Spotify · OAuth y Web API en vivo.",
+      "short": "Generá playlists por mood y exportalas a Spotify.",
+      "description": "Buscá canciones, generá playlists por mood y exportalas directo a tu cuenta de Spotify. Flujo OAuth + integración con la Web API.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Spotify tiene",
+        "headlineB": "todo menos un",
+        "headlineC": "botón de",
+        "headlineEm": "vibe",
+        "headlineTail": "."
+      },
+      "body": [
+        "La UI de Spotify expone features acústicas · energía, danceability, valence, tempo · pero sólo a través de su Web API. Son invisibles para el oyente.",
+        "Esta app las convierte en sliders. Configurás un mood, generás una playlist que le encaja, la previsualizás y la mandás directo a tu cuenta de Spotify vía OAuth. No se guardan credenciales en ningún lado; la app habla directamente con la Web API y con tu cuenta, nada en medio.",
+        "La construí para entender OAuth de principio a fin. Cada llamada respeta el rate-limit de Spotify, los errores se manejan de forma explícita y el usuario puede deshacer cualquier acción sin romper su sesión."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "OAuth 2.0", "l": "Flujo de auth" },
+        "b": { "n": "4", "l": "Dimensiones de mood" },
+        "c": { "n": "0", "l": "Credenciales guardadas" }
+      },
+      "captions": ["Inicio", "Búsqueda", "Generador", "Exportar"]
+    },
+    "pharmacy": {
+      "role": "Desarrollador en solitario",
+      "platform": "Web · PHP",
+      "kind": "Web · Herramienta interna",
+      "tagline": "Sistema interno para farmacia · corriendo sin cambios desde 2023.",
+      "short": "Inventario, facturación y gestión de usuarios.",
+      "description": "Sistema interno de operaciones para farmacia · inventario, facturación, roles de usuario, auth y recuperación de contraseña por email.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Una farmacia familiar",
+        "headlineB": "necesitaba dejar",
+        "headlineC": "de perder",
+        "headlineEm": "inventario",
+        "headlineTail": "."
+      },
+      "body": [
+        "Hedman Garcia Pharmacy es una operación familiar con miles de SKUs y varios empleados manejando ventas en dos turnos. Antes de la reconstrucción, la facturación corría sobre una caja registradora antigua, el inventario se estimaba a ojo y la reconciliación entre turnos requería hojas de cálculo al final del día.",
+        "Construí una plataforma interna a medida end-to-end: auth con roles y recuperación por email (SendGrid), facturación unificada, ajustes de stock en vivo en cada venta y reporting a nivel de staff. Construida sobre PHP y MySQL · tecnología de servidor deliberadamente aburrida en la que el staff familiar podía confiar y operar con hardware modesto.",
+        "Mi primer sistema en producción. Sigue corriendo sin cambios desde 2023."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": { "n": "6", "l": "Staff capacitado" },
+        "b": { "n": "180+", "l": "Transacciones diarias" },
+        "c": { "n": "~100%", "l": "Uptime desde 2023" }
+      },
+      "captions": ["Dashboard", "Inventario", "Facturación", "Usuarios"]
+    }
+  },
+  "project": {
+    "caseStudy": "Proyecto",
+    "of": "de",
+    "nextProject": "Siguiente proyecto",
+    "backToIndex": "Volver al índice",
+    "viewLive": "Ver en vivo",
+    "year": "Año",
+    "role": "Rol",
+    "platform": "Plataforma",
+    "stack": "Stack",
+    "url": "URL",
+    "deployment": "Despliegue",
+    "internal": "Interno"
+  },
+  "stack": {
+    "index": "",
+    "kicker": "Toolkit / Stack",
+    "headlineA": "Con qué",
+    "headlineEm": "construyo",
+    "headlineTail": ".",
+    "categories": {
+      "Languages": "Lenguajes",
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Databases": "Bases de datos",
+      "Testing": "Testing",
+      "DevOps": "DevOps",
+      "AI": "IA"
+    }
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "headlineA": "¿Tienes un",
+    "headlineEm": "proyecto",
+    "headlineTail": "?",
+    "info": {
+      "locationLabel": "Ubicación",
+      "locationValue": "Tegucigalpa, Honduras",
+      "locationSub": "GMT-6",
+      "modeLabel": "Modalidad",
+      "modeValue": "Remoto · global",
+      "responseLabel": "Respuesta",
+      "responseValue": "Menos de 24 horas",
+      "focusLabel": "Enfoque",
+      "focusValue": "Full-Stack & Mobile"
+    },
+    "channels": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "footer": {
+    "copy": "© 2026 · Douglas Hedman"
+  }
+}

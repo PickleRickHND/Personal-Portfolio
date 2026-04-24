@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:root {
+  color-scheme: dark;
+}
+
 @theme {
   /* Direction A — Editorial Dark tokens */
   --color-ink: #0f0e0c;

@@ -13,6 +13,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   themeColor: "#0f0e0c",
+  colorScheme: "dark",
 };
 
 export function generateStaticParams() {
@@ -67,6 +68,12 @@ export async function generateMetadata({
         { url: "/icons/icon-32.png", sizes: "32x32", type: "image/png" },
         { url: "/icons/icon.png", type: "image/png" },
       ],
+    },
+    other: {
+      /* Dark Reader, Night Eye and similar extensions opt out when they
+         see this lock meta — the site already ships a dark theme, so
+         we don't want them re-inverting it. */
+      "darkreader-lock": "",
     },
   };
 }

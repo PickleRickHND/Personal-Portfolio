@@ -63,12 +63,6 @@ export async function generateMetadata({
       title: t("home.title"),
       description: t("home.description"),
     },
-    icons: {
-      icon: [
-        { url: "/icons/icon-32.png", sizes: "32x32", type: "image/png" },
-        { url: "/icons/icon.png", type: "image/png" },
-      ],
-    },
     other: {
       /* Dark Reader, Night Eye and similar extensions opt out when they
          see this lock meta — the site already ships a dark theme, so

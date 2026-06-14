@@ -62,9 +62,9 @@
   "work": {
     "index": "",
     "kicker": "Selected Work",
-    "headlineA": "Six projects,",
-    "headlineB": "three years.",
-    "count": "Six selected productions · 2023–2025",
+    "headlineA": "Seven projects,",
+    "headlineB": "four years.",
+    "count": "Seven selected productions · 2023–2026",
     "filterMobile": "Mobile",
     "filterCommerce": "Commerce",
     "filterInternal": "Internal Tools",
@@ -78,6 +78,46 @@
     "stack": "Stack"
   },
   "projects": {
+    "equine": {
+      "role": "Solo Developer · 3D",
+      "platform": "Web · Three.js",
+      "kind": "Web · 3D / Education",
+      "tagline": "An interactive 3D atlas of the equine digestive system, built for veterinary students.",
+      "short": "Interactive 3D atlas of the horse's digestive system.",
+      "description": "An interactive 3D model of the equine digestive system — nine labeled organs, click-to-focus, and detailed anatomical notes. Built for a veterinary library.",
+      "problem": {
+        "kicker": "The Problem",
+        "headlineA": "Anatomy is",
+        "headlineB": "hard to grasp",
+        "headlineC": "from a",
+        "headlineEm": "flat",
+        "headlineTail": " page."
+      },
+      "body": [
+        "The equine digestive system is unusual — a small stomach, an enormous cecum and colon where fiber ferments. Textbook diagrams flatten all of that into static cross-sections that are hard to read in space.",
+        "This atlas puts the whole tract in the browser as a real-time 3D model. A semi-transparent horse silhouette gives anatomical context; each of the nine organs is color-coded and selectable — by clicking the model directly or picking from the side panel — which then shows its name in Spanish and English plus a detailed description.",
+        "I modeled and labeled the organs in Blender, exported an optimized .glb, and rendered it with React Three Fiber and Three.js. The result runs smoothly on desktop and tablet — a study tool a veterinary student can actually rotate, zoom and explore."
+      ],
+      "outcomes": {
+        "kicker": "Outcomes",
+        "a": {
+          "n": "9",
+          "l": "Labeled organs"
+        },
+        "b": {
+          "n": "3D",
+          "l": "Real-time WebGL"
+        },
+        "c": {
+          "n": "Blender",
+          "l": "Modeling pipeline"
+        }
+      },
+      "captions": [
+        "Full atlas · selectable organs",
+        "Focused view · cecum"
+      ]
+    },
     "prizio": {
       "role": "Lead Developer",
       "platform": "iOS + Android",

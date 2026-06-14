@@ -62,9 +62,9 @@
   "work": {
     "index": "",
     "kicker": "Trabajo seleccionado",
-    "headlineA": "Seis proyectos,",
-    "headlineB": "tres años.",
-    "count": "Seis producciones seleccionadas · 2023–2025",
+    "headlineA": "Siete proyectos,",
+    "headlineB": "cuatro años.",
+    "count": "Siete producciones seleccionadas · 2023–2026",
     "filterMobile": "Móvil",
     "filterCommerce": "Comercio",
     "filterInternal": "Herramientas internas",
@@ -78,6 +78,46 @@
     "stack": "Stack"
   },
   "projects": {
+    "equine": {
+      "role": "Desarrollador en solitario · 3D",
+      "platform": "Web · Three.js",
+      "kind": "Web · 3D / Educación",
+      "tagline": "Un atlas 3D interactivo del sistema digestivo equino, hecho para estudiantes de veterinaria.",
+      "short": "Atlas 3D interactivo del sistema digestivo del caballo.",
+      "description": "Un modelo 3D interactivo del sistema digestivo equino — nueve órganos identificados, clic para enfocar y notas anatómicas detalladas. Hecho para una biblioteca de medicina veterinaria.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "La anatomía",
+        "headlineB": "es difícil de",
+        "headlineC": "entender en",
+        "headlineEm": "papel",
+        "headlineTail": " plano."
+      },
+      "body": [
+        "El sistema digestivo del caballo es atípico — un estómago pequeño y un ciego y colon enormes donde fermenta la fibra. Los diagramas de los libros aplanan todo eso en cortes estáticos difíciles de leer en el espacio.",
+        "Este atlas pone todo el tracto en el navegador como un modelo 3D en tiempo real. Una silueta semitransparente del caballo da contexto anatómico; cada uno de los nueve órganos está coloreado y es seleccionable — haciendo clic directo en el modelo o eligiéndolo del panel lateral — que muestra su nombre en español e inglés y una descripción detallada.",
+        "Modelé e identifiqué los órganos en Blender, exporté un .glb optimizado y lo rendericé con React Three Fiber y Three.js. El resultado corre fluido en escritorio y tablet — una herramienta de estudio que un estudiante de veterinaria puede rotar, hacer zoom y explorar."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": {
+          "n": "9",
+          "l": "Órganos identificados"
+        },
+        "b": {
+          "n": "3D",
+          "l": "WebGL en tiempo real"
+        },
+        "c": {
+          "n": "Blender",
+          "l": "Pipeline de modelado"
+        }
+      },
+      "captions": [
+        "Atlas completo · órganos seleccionables",
+        "Vista enfocada · ciego"
+      ]
+    },
     "prizio": {
       "role": "Desarrollador Líder",
       "platform": "iOS + Android",

@@ -1,4 +1,5 @@
 import {
+  SiBlender,
   SiClaude,
   SiCypress,
   SiDart,
@@ -57,6 +58,7 @@ const MAP: Record<string, ComponentType<IconProps>> = {
   Flutter: SiFlutter,
   Tailwind: SiTailwindcss,
   "Three.js": SiThreedotjs,
+  Blender: SiBlender,
   // Backend
   "Node.js": SiNodedotjs,
   Firebase: SiFirebase,

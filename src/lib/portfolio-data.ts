@@ -3,6 +3,7 @@ export type ProjectType = "mobile" | "web";
 export type ProjectVisualMode = "phones" | "desktop";
 
 export type ProjectI18nKey =
+  | "equine"
   | "prizio"
   | "folium"
   | "printshop"
@@ -63,6 +64,25 @@ export const portfolio = {
 } as const;
 
 export const projects: Project[] = [
+  {
+    id: "equine",
+    slug: "equine",
+    name: "Equine Digestive Atlas",
+    year: "2026",
+    i18nKey: "equine",
+    stack: ["Next.js 16", "React Three Fiber", "Three.js", "Blender"],
+    image: "/img/portfolio/equine1.png",
+    image2: "/img/portfolio/equine2.png",
+    gallery: [
+      "/img/portfolio/equine1.png",
+      "/img/portfolio/equine2.png",
+    ],
+    mobileGallery: ["/img/portfolio/equine_m1.png"],
+    type: "web",
+    mode: "desktop",
+    url: null,
+    featured: false,
+  },
   {
     id: "prizio",
     slug: "prizio",

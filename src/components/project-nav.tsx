@@ -34,9 +34,24 @@ export function ProjectNav({
           >
             <span
               aria-hidden
-              className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-[var(--color-bone-muted)] font-serif text-base italic"
+              className="grid h-7 w-7 shrink-0 place-items-center rounded-full border border-[var(--color-bone-muted)]"
             >
-              ←
+              {/* SVG en vez del glifo "←": la flecha ocupa un bounding box
+                  centrado en el viewBox (x/y 5–19), así queda perfectamente
+                  centrada en el círculo en los cuatro lados. */}
+              <svg
+                viewBox="0 0 24 24"
+                className="h-3.5 w-3.5"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M19 12H5" />
+                <path d="m12 19-7-7 7-7" />
+              </svg>
             </span>
             <span className="truncate font-mono text-[11px] tracking-[var(--tracking-wider)] sm:text-[12px]">
               <span className="hidden sm:inline">{t("brand.back")}</span>

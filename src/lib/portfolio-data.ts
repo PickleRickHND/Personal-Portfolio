@@ -49,7 +49,7 @@ export const portfolio = {
   stats: [
     { n: "5+", labelKey: "productionApps" as const },
     { n: "300+", labelKey: "automatedTests" as const },
-    { n: "3+", labelKey: "yearsExperience" as const },
+    { n: "4+", labelKey: "yearsExperience" as const },
     { n: "5", labelKey: "languages" as const },
   ],
   stack: {

@@ -141,12 +141,25 @@ export default async function ProjectPage({
                   />
                 </div>
               </Reveal>
+            ) : project.mode === "phones" ? (
+              <Reveal>
+                {/* Showcase de teléfono: ancho acotado y centrado. Sin esto el
+                    frame variante "phone" se estira a todo el Container. */}
+                <div className="mx-auto w-[260px] sm:w-[300px] md:w-[340px]">
+                  <GalleryCarousel
+                    images={project.gallery}
+                    captions={captions}
+                    variant="phone"
+                    alt={project.name}
+                  />
+                </div>
+              </Reveal>
             ) : (
               <Reveal>
                 <GalleryCarousel
                   images={project.gallery}
                   captions={captions}
-                  variant={project.mode === "phones" ? "phone" : "desktop"}
+                  variant="desktop"
                   alt={project.name}
                   url={project.url ?? undefined}
                 />

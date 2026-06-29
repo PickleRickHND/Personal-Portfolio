@@ -78,6 +78,49 @@
     "stack": "Stack"
   },
   "projects": {
+    "petlab": {
+      "role": "Desarrollador full-stack en solitario",
+      "platform": "Web · Laravel + Filament",
+      "kind": "Web · E-commerce",
+      "tagline": "Un e-commerce con pago contra entrega y un panel de gestión completo, para una tienda de mascotas hondureña.",
+      "short": "E-commerce y gestión de inventario para una tienda de mascotas.",
+      "description": "Tienda online y panel administrativo para una empresa de productos para mascotas en Honduras — catálogo, carrito con reserva de stock, checkout con pago contra entrega, e inventario con kardex. Stack TALL (Laravel · Livewire · Filament), bilingüe ES/EN.",
+      "problem": {
+        "kicker": "El problema",
+        "headlineA": "Vender en línea",
+        "headlineB": "sin perder el",
+        "headlineC": "control del",
+        "headlineEm": "inventario",
+        "headlineTail": "."
+      },
+      "body": [
+        "PetLab HN es la tienda online de una empresa de productos para mascotas con alcance nacional en Honduras. El reto no era solo vender en línea: era operar un negocio real — catálogo, inventario, compras a proveedores y pedidos — desde un solo sistema, con precios en lempiras y pago contra entrega.",
+        "Construí el storefront con el stack TALL (Tailwind, Alpine, Laravel, Livewire): catálogo filtrable, carrito con reserva de stock, checkout con dirección y ubicación en mapa (Leaflet), cuenta de cliente, reseñas y lista de deseos. Detrás, un panel administrativo completo en Filament gestiona inventario con kardex, compras, pedidos, promociones y reportes. Todo bilingüe ES/EN y con precisión monetaria exacta en lempiras y equivalencia en dólares.",
+        "Una sola base de código cubre la tienda de cara al cliente y la operación interna — respaldada por 359 tests entre Pest y Playwright."
+      ],
+      "outcomes": {
+        "kicker": "Resultados",
+        "a": {
+          "n": "359",
+          "l": "Tests Pest + Playwright"
+        },
+        "b": {
+          "n": "TALL",
+          "l": "Laravel · Livewire · Filament"
+        },
+        "c": {
+          "n": "92–94",
+          "l": "Core Web Vitals (lab)"
+        }
+      },
+      "captions": [
+        "Inicio · héroe, beneficios y categorías",
+        "Catálogo · filtros por categoría, marca y precio",
+        "Producto · ficha con reseñas y SKU",
+        "Checkout · pago contra entrega con mapa",
+        "Destacados · carrusel de productos"
+      ]
+    },
     "equine": {
       "role": "Desarrollador en solitario · 3D",
       "platform": "Web · Three.js",
@@ -259,12 +302,12 @@
       "captions": ["Inicio", "Búsqueda", "Generador", "Exportar"]
     },
     "pharmacy": {
-      "role": "Desarrollador en solitario",
-      "platform": "Web · PHP",
+      "role": "Desarrollador full-stack en solitario",
+      "platform": "Web · Laravel + Angular",
       "kind": "Web · Herramienta interna",
-      "tagline": "Sistema interno para farmacia · corriendo sin cambios desde 2023.",
-      "short": "Inventario, facturación y gestión de usuarios.",
-      "description": "Sistema interno de operaciones para farmacia · inventario, facturación, roles de usuario, auth y recuperación de contraseña por email.",
+      "tagline": "Sistema interno de farmacia · reconstruido como una API Laravel y una SPA Angular.",
+      "short": "Inventario, facturación, caja y reportes.",
+      "description": "Sistema interno de operaciones para farmacia — inventario con alertas de stock y vencimiento, facturación con ISV, caja, reportes y roles de usuario. Reconstruido como una API REST en Laravel y una SPA en Angular.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "Una farmacia familiar",
@@ -274,9 +317,9 @@
         "headlineTail": "."
       },
       "body": [
-        "Hedman Garcia Pharmacy es una operación familiar con miles de SKUs y varios empleados manejando ventas en dos turnos. Antes de la reconstrucción, la facturación corría sobre una caja registradora antigua, el inventario se estimaba a ojo y la reconciliación entre turnos requería hojas de cálculo al final del día.",
-        "Construí una plataforma interna a medida end-to-end: auth con roles y recuperación por email (SendGrid), facturación unificada, ajustes de stock en vivo en cada venta y reporting a nivel de staff. Construida sobre PHP y MySQL · tecnología de servidor deliberadamente aburrida en la que el staff familiar podía confiar y operar con hardware modesto.",
-        "Mi primer sistema en producción. Sigue corriendo sin cambios desde 2023."
+        "Hedman Garcia Pharmacy es una operación familiar con miles de SKUs y varios empleados manejando ventas en dos turnos. Antes del sistema, la facturación corría sobre una caja registradora antigua, el inventario se estimaba a ojo y la reconciliación entre turnos requería hojas de cálculo al final del día.",
+        "Construí una plataforma interna a medida end-to-end: auth con roles, facturación con ISV, ajustes de stock en vivo en cada venta, alertas de bajo stock y próximos a vencer, caja y reportes a nivel de staff. Fue mi primer sistema en producción, en 2023.",
+        "Después lo reconstruí como una API REST en Laravel (con Sanctum) y una SPA en Angular sobre MySQL — el mismo flujo de trabajo, ahora sobre una base moderna y testeada de punta a punta."
       ],
       "outcomes": {
         "kicker": "Resultados",
@@ -284,7 +327,7 @@
         "b": { "n": "180+", "l": "Transacciones diarias" },
         "c": { "n": "~100%", "l": "Uptime desde 2023" }
       },
-      "captions": ["Dashboard", "Inventario", "Facturación", "Usuarios"]
+      "captions": ["Acceso · login con branding", "Panel · KPIs y alertas de inventario", "Factura · detalle con ISV", "Productos · catálogo con stock y vencimiento", "Reportes · ventas por método de pago"]
     }
   },
   "project": {

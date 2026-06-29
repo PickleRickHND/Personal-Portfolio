@@ -78,6 +78,49 @@
     "stack": "Stack"
   },
   "projects": {
+    "petlab": {
+      "role": "Solo Full-Stack Developer",
+      "platform": "Web · Laravel + Filament",
+      "kind": "Web · E-commerce",
+      "tagline": "An e-commerce with cash on delivery and a complete management panel, for a Honduran pet store.",
+      "short": "E-commerce and inventory management for a pet store.",
+      "description": "Online store and admin panel for a pet-products business in Honduras — catalog, cart with stock reservation, cash-on-delivery checkout, and inventory with a kardex. TALL stack (Laravel · Livewire · Filament), bilingual ES/EN.",
+      "problem": {
+        "kicker": "The Problem",
+        "headlineA": "Sell online",
+        "headlineB": "without losing",
+        "headlineC": "track of the",
+        "headlineEm": "inventory",
+        "headlineTail": "."
+      },
+      "body": [
+        "PetLab HN is the online store of a nationwide pet-products business in Honduras. The challenge wasn't just selling online: it was running a real business — catalog, inventory, supplier purchasing and orders — from a single system, priced in lempiras with cash on delivery.",
+        "I built the storefront on the TALL stack (Tailwind, Alpine, Laravel, Livewire): a filterable catalog, a cart with stock reservation, checkout with address and map location (Leaflet), customer accounts, reviews and a wishlist. Behind it, a full Filament admin runs inventory with a kardex, purchasing, orders, promotions and reports. Everything is bilingual ES/EN with exact monetary precision in lempiras and a USD equivalent.",
+        "A single codebase covers both the customer-facing store and internal operations — backed by 359 tests across Pest and Playwright."
+      ],
+      "outcomes": {
+        "kicker": "Outcomes",
+        "a": {
+          "n": "359",
+          "l": "Pest + Playwright tests"
+        },
+        "b": {
+          "n": "TALL",
+          "l": "Laravel · Livewire · Filament"
+        },
+        "c": {
+          "n": "92–94",
+          "l": "Core Web Vitals (lab)"
+        }
+      },
+      "captions": [
+        "Home · hero, benefits and categories",
+        "Catalog · filter by category, brand and price",
+        "Product · detail page with reviews and SKU",
+        "Checkout · cash on delivery with map",
+        "Featured · product carousel"
+      ]
+    },
     "equine": {
       "role": "Solo Developer · 3D",
       "platform": "Web · Three.js",
@@ -259,12 +302,12 @@
       "captions": ["Home", "Search", "Builder", "Export"]
     },
     "pharmacy": {
-      "role": "Solo Developer",
-      "platform": "Web · PHP",
+      "role": "Solo Full-Stack Developer",
+      "platform": "Web · Laravel + Angular",
       "kind": "Web · Internal Tool",
-      "tagline": "Internal pharmacy operations system · running unchanged since 2023.",
-      "short": "Inventory, billing & user management.",
-      "description": "Internal pharmacy operations system · inventory, billing, user roles, auth, and email-based password recovery.",
+      "tagline": "Internal pharmacy system · rebuilt as a Laravel API and an Angular SPA.",
+      "short": "Inventory, invoicing, register & reports.",
+      "description": "Internal pharmacy operations system — inventory with low-stock and expiry alerts, invoicing with tax, register, reports and user roles. Rebuilt as a Laravel REST API and an Angular SPA.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "A family pharmacy",
@@ -274,9 +317,9 @@
         "headlineTail": "."
       },
       "body": [
-        "Hedman Garcia Pharmacy is a family-run operation with thousands of SKUs and several staff handling sales across two shifts. Before the rebuild, billing was on a legacy cash-register system, inventory was eyeballed, and cross-staff reconciliation required end-of-day spreadsheet work.",
-        "I built a custom internal platform end-to-end: role-based auth with email recovery (SendGrid), unified billing, live stock adjustments on every sale, and staff-level reporting. Built on PHP and MySQL · deliberately boring server-side tech that family staff could trust and operate on modest hardware.",
-        "My first production system. Still running, unchanged, since 2023."
+        "Hedman Garcia Pharmacy is a family-run operation with thousands of SKUs and several staff handling sales across two shifts. Before the system, billing was on a legacy cash-register, inventory was eyeballed, and cross-staff reconciliation required end-of-day spreadsheet work.",
+        "I built a custom internal platform end-to-end: role-based auth, invoicing with tax, live stock adjustments on every sale, low-stock and expiry alerts, a register and staff-level reporting. It was my first production system, back in 2023.",
+        "I later rebuilt it as a Laravel REST API (with Sanctum) and an Angular SPA on MySQL — the same workflow, now on a modern, end-to-end tested foundation."
       ],
       "outcomes": {
         "kicker": "Outcomes",
@@ -284,7 +327,7 @@
         "b": { "n": "180+", "l": "Daily transactions" },
         "c": { "n": "~100%", "l": "Uptime since 2023" }
       },
-      "captions": ["Dashboard", "Inventory", "Billing", "Users"]
+      "captions": ["Login · branded sign-in", "Dashboard · KPIs and inventory alerts", "Invoice · detail with tax (ISV)", "Products · catalog with stock and expiry", "Reports · sales by payment method"]
     }
   },
   "project": {

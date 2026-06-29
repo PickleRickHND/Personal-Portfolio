@@ -3,6 +3,7 @@ export type ProjectType = "mobile" | "web";
 export type ProjectVisualMode = "phones" | "desktop";
 
 export type ProjectI18nKey =
+  | "petlab"
   | "equine"
   | "prizio"
   | "folium"
@@ -54,8 +55,8 @@ export const portfolio = {
   ],
   stack: {
     Languages: ["TypeScript", "JavaScript", "Dart", "Python", "PHP"],
-    Frontend: ["Next.js", "React", "Flutter", "Tailwind", "Three.js"],
-    Backend: ["Node.js", "Firebase", "Supabase"],
+    Frontend: ["Next.js", "React", "Angular", "Flutter", "Tailwind", "Three.js", "Leaflet"],
+    Backend: ["Laravel", "Livewire", "Filament", "Node.js", "Firebase", "Supabase"],
     Databases: ["PostgreSQL", "MySQL", "Redis"],
     Testing: ["Cypress", "Playwright", "Sentry"],
     DevOps: ["Git", "Vercel", "GCP"],
@@ -100,6 +101,32 @@ export const projects: Project[] = [
     ],
     type: "mobile",
     mode: "phones",
+    url: null,
+    featured: true,
+  },
+  {
+    id: "petlab",
+    slug: "petlab",
+    name: "PetLab HN",
+    year: "2026",
+    i18nKey: "petlab",
+    stack: ["Laravel", "Livewire", "Filament", "Tailwind", "MySQL"],
+    image: "/img/portfolio/petlab1.png",
+    image2: "/img/portfolio/petlab2.png",
+    gallery: [
+      "/img/portfolio/petlab1.png",
+      "/img/portfolio/petlab2.png",
+      "/img/portfolio/petlab3.png",
+      "/img/portfolio/petlab4.png",
+      "/img/portfolio/petlab5.png",
+    ],
+    mobileGallery: [
+      "/img/portfolio/petlab_m1.png",
+      "/img/portfolio/petlab_m2.png",
+      "/img/portfolio/petlab_m3.png",
+    ],
+    type: "web",
+    mode: "desktop",
     url: null,
     featured: true,
   },
@@ -201,19 +228,20 @@ export const projects: Project[] = [
     name: "Hedman Garcia Pharmacy",
     year: "2023",
     i18nKey: "pharmacy",
-    stack: ["PHP", "MySQL", "SendGrid"],
-    image: "/img/portfolio/pharmacy1.png",
-    image2: "/img/portfolio/pharmacy2.png",
+    stack: ["Laravel", "Angular", "MySQL"],
+    image: "/img/portfolio/pharmacy-login.png",
+    image2: "/img/portfolio/pharmacy-dashboard.png",
     gallery: [
-      "/img/portfolio/pharmacy1.png",
-      "/img/portfolio/pharmacy2.png",
-      "/img/portfolio/pharmacy3.png",
-      "/img/portfolio/pharmacy4.png",
+      "/img/portfolio/pharmacy-login.png",
+      "/img/portfolio/pharmacy-dashboard.png",
+      "/img/portfolio/pharmacy-invoice.png",
+      "/img/portfolio/pharmacy-products.png",
+      "/img/portfolio/pharmacy-reports.png",
     ],
     mobileGallery: [
-      "/img/portfolio/pharmacy5.png",
-      "/img/portfolio/pharmacy6.png",
-      "/img/portfolio/pharmacy7.png",
+      "/img/portfolio/pharmacy-m-dashboard.png",
+      "/img/portfolio/pharmacy-m-products.png",
+      "/img/portfolio/pharmacy-m-invoice.png",
     ],
     type: "web",
     mode: "desktop",

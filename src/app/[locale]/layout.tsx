@@ -91,6 +91,7 @@ export default async function LocaleLayout({
     <html
       lang={typedLocale}
       className={`${dmSans.variable} ${dmMono.variable} ${instrumentSerif.variable}`}
+      data-scroll-behavior="smooth"
     >
       <body className="bg-ink text-bone antialiased">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

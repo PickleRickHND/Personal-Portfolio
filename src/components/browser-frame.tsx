@@ -20,7 +20,7 @@ export function BrowserFrame({
   const src = frames[active] ?? frames[0];
 
   return (
-    <div className="cv-auto flex min-h-[300px] w-full items-center justify-center py-6 md:h-[520px] md:py-0">
+    <div className="flex min-h-[300px] w-full items-center justify-center py-6 md:h-[520px] md:py-0">
       <motion.div
         className="relative w-full max-w-[640px] overflow-hidden rounded-[10px] bg-ink-inset shadow-[0_40px_80px_rgba(0,0,0,0.5),0_0_0_1px_#1a1814]"
         initial={{ opacity: 0, y: 24, rotate: 0 }}

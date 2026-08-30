@@ -12,6 +12,9 @@ const withMDX = createMDX({
 
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
+const developmentScriptSources =
+  process.env.NODE_ENV === "development" ? ["'unsafe-eval'"] : [];
+
 const securityHeaders = [
   {
     key: "Content-Security-Policy",
@@ -24,7 +27,7 @@ const securityHeaders = [
       "img-src 'self' data: blob:",
       "font-src 'self' https://fonts.gstatic.com data:",
       "style-src 'self' 'unsafe-inline'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      `script-src 'self' 'unsafe-inline' ${developmentScriptSources.join(" ")}`.trim(),
       "connect-src 'self'",
       "upgrade-insecure-requests",
     ].join("; "),

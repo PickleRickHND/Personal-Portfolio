@@ -8,18 +8,19 @@ test.describe("Landing — EN", () => {
       "Douglas"
     );
     await expect(
-      page.getByText("Available for work — Q3 2026")
+      page.getByText("Available for work", { exact: true })
     ).toBeVisible();
     await expect(page.locator("section#about")).toBeVisible();
     await expect(page.locator("section#work")).toBeVisible();
     await expect(page.locator("section#stack")).toBeVisible();
     await expect(page.locator("section#contact")).toBeVisible();
+    await expect(page.getByText("Eight projects,")).toBeVisible();
   });
 
-  test("renders all 6 project links", async ({ page }) => {
+  test("renders all 8 project links", async ({ page }) => {
     await page.goto("/en");
     const projectLinks = page.locator('main a[href*="/work/"]');
-    expect(await projectLinks.count()).toBeGreaterThanOrEqual(6);
+    expect(await projectLinks.count()).toBeGreaterThanOrEqual(8);
   });
 
   test("resume link points to EN pdf", async ({ page }) => {
@@ -42,7 +43,8 @@ test.describe("Landing — ES", () => {
   test("shows Spanish hero copy", async ({ page }) => {
     await page.goto("/es");
     await expect(page).toHaveTitle(/Desarrollador Full-Stack/);
-    await expect(page.getByText("Disponible — Q3 2026")).toBeVisible();
+    await expect(page.getByText("Disponible", { exact: true })).toBeVisible();
+    await expect(page.getByText("Ocho proyectos,")).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "es");
   });
 
@@ -95,7 +97,7 @@ test.describe("Project detail — Prizio (EN)", () => {
     );
     await expect(page.getByText("12,400+").first()).toBeVisible();
     await expect(
-      page.getByRole("link", { name: /Folium Labs/i }).first()
+      page.getByRole("link", { name: /PrintShop 504/i }).first()
     ).toBeVisible();
   });
 
@@ -105,12 +107,12 @@ test.describe("Project detail — Prizio (EN)", () => {
       "Click on next-project anchor is flaky on mobile emulator; covered at desktop viewport"
     );
     await page.goto("/en/work/prizio");
-    const next = page.getByRole("link", { name: /Folium Labs/i }).last();
+    const next = page.getByRole("link", { name: /PrintShop 504/i }).last();
     await next.scrollIntoViewIfNeeded();
     await next.click();
-    await expect(page).toHaveURL(/\/en\/work\/folium/);
+    await expect(page).toHaveURL(/\/en\/work\/printshop/);
     await expect(page.getByRole("heading", { level: 1 })).toContainText(
-      "Folium"
+      "PrintShop"
     );
   });
 });
@@ -133,14 +135,14 @@ test.describe("Last project wraps back to index", () => {
 });
 
 test.describe("SEO surfaces", () => {
-  test("sitemap lists 14 URLs (2 landings + 12 projects)", async ({
+  test("sitemap lists 18 URLs (2 landings + 16 projects)", async ({
     request,
   }) => {
     const r = await request.get("/sitemap.xml");
     expect(r.ok()).toBe(true);
     const body = await r.text();
     const urls = body.match(/<url>/g) ?? [];
-    expect(urls.length).toBe(14);
+    expect(urls.length).toBe(18);
     expect(body).toContain("/en/work/prizio");
     expect(body).toContain("/es/work/prizio");
     expect(body).toContain("x-default");

@@ -95,7 +95,7 @@ test.describe("Project detail — Prizio (EN)", () => {
     await expect(page.getByRole("heading", { level: 1 })).toContainText(
       "Prizio"
     );
-    await expect(page.getByText("12,400+").first()).toBeVisible();
+    await expect(page.getByText("3,389").first()).toBeVisible();
     await expect(
       page.getByRole("link", { name: /PrintShop 504/i }).first()
     ).toBeVisible();

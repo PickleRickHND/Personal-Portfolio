@@ -39,7 +39,7 @@ export const portfolio = {
   whatsapp: "+504 8904 1949",
   social: {
     github: "PickleRickHND",
-    linkedin: "douglas-hedman-9a48a5133",
+    linkedin: "douglashedman",
     twitter: "DouglasHedman10",
     instagram: "douglashedman10",
   },
@@ -56,9 +56,10 @@ export const portfolio = {
   stack: {
     Languages: ["TypeScript", "JavaScript", "Dart", "Python", "PHP"],
     Frontend: ["Next.js", "React", "Angular", "Flutter", "Tailwind", "Three.js", "Leaflet"],
-    Backend: ["Laravel", "Livewire", "Filament", "Node.js", "Firebase", "Supabase"],
+    Backend: ["Laravel", "Livewire", "Filament", "Node.js", "FastAPI", "Firebase", "Supabase"],
     Databases: ["PostgreSQL", "MySQL", "Redis"],
-    Testing: ["Cypress", "Playwright", "Sentry"],
+    Testing: ["Cypress", "Playwright", "Vitest", "Pest", "Jest", "Flutter Test"],
+    Observability: ["Sentry"],
     DevOps: ["Git", "Vercel", "GCP"],
     AI: ["Claude Code", "Gemini", "Cursor"],
   } satisfies Record<string, string[]>,
@@ -71,7 +72,7 @@ export const projects: Project[] = [
     name: "Prizio",
     year: "2025",
     i18nKey: "prizio",
-    stack: ["Flutter", "Dart", "Firebase", "GCP", "Sentry"],
+    stack: ["Flutter", "Firebase", "FastAPI", "GCP", "Sentry"],
     image: "/img/portfolio/prizio_home.png",
     image2: "/img/portfolio/prizio_busqueda.png",
     gallery: [
@@ -208,7 +209,7 @@ export const projects: Project[] = [
     name: "Spotify Playlist Generator",
     year: "2024",
     i18nKey: "spotify",
-    stack: ["React", "Spotify API", "Node.js", "i18n"],
+    stack: ["React", "Vite", "Spotify API", "OAuth PKCE"],
     image: "/img/portfolio/spotify1.png",
     image2: "/img/portfolio/spotify2.png",
     gallery: [
@@ -219,7 +220,7 @@ export const projects: Project[] = [
     mobileGallery: ["/img/portfolio/spotify4.png"],
     type: "web",
     mode: "desktop",
-    url: "spotify-playlist-generator.vercel.app",
+    url: null,
     featured: false,
   },
   {

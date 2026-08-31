@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 import {
   getNextProject,
   getProject,
+  portfolio,
   projects,
 } from "../../src/lib/portfolio-data";
 
@@ -57,6 +58,52 @@ describe("portfolio data", () => {
     for (const project of projects) {
       expect(en.projects[project.i18nKey]).toBeDefined();
       expect(es.projects[project.i18nKey]).toBeDefined();
+    }
+  });
+
+  it("keeps the public stack aligned with the current project toolchains", () => {
+    expect(portfolio.social.linkedin).toBe("douglashedman");
+    expect(portfolio.stack.Testing).toEqual(
+      expect.arrayContaining([
+        "Cypress",
+        "Playwright",
+        "Vitest",
+        "Pest",
+        "Jest",
+        "Flutter Test",
+      ])
+    );
+    expect(portfolio.stack.Observability).toEqual(["Sentry"]);
+    expect(portfolio.stack.Testing).not.toContain("Sentry");
+    expect(portfolio.stack.Backend).toContain("FastAPI");
+
+    expect(getProject("spotify")).toMatchObject({
+      stack: ["React", "Vite", "Spotify API", "OAuth PKCE"],
+      url: null,
+    });
+  });
+
+  it("does not reintroduce stale project claims in either locale", () => {
+    const en = JSON.parse(readFileSync(resolve("messages/en.json"), "utf8"));
+    const es = JSON.parse(readFileSync(resolve("messages/es.json"), "utf8"));
+
+    expect(en.hero.tagline).toContain("more than four years");
+    expect(es.hero.tagline).toContain("más de cuatro años");
+    expect(en.projects.equine.outcomes.a.n).toBe("7");
+    expect(es.projects.equine.outcomes.a.n).toBe("7");
+    expect(en.projects.printshop.outcomes.c.l).toBe("Vitest + Playwright");
+    expect(es.projects.printshop.outcomes.c.l).toBe("Vitest + Playwright");
+    expect(en.projects.spotify.outcomes.a.n).toBe("PKCE");
+    expect(es.projects.spotify.outcomes.a.n).toBe("PKCE");
+
+    for (const messages of [en, es]) {
+      const serialized = JSON.stringify(messages);
+      expect(serialized).not.toContain("stock reservation");
+      expect(serialized).not.toContain("reserva de stock");
+      expect(serialized).not.toContain("nine organs");
+      expect(serialized).not.toContain("nueve órganos");
+      expect(serialized).not.toContain("Cypress suite");
+      expect(serialized).not.toContain("suite Cypress");
     }
   });
 });

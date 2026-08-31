@@ -88,6 +88,9 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
 - [x] F9 — Playwright desktop/mobile and Lighthouse desktop baseline
 - [x] F10 — Production deployment on Vercel
 - [x] F11 — Technology refresh, dependency audit, current E2E contracts and documentation sync
+- [x] F12 — High-priority project facts, toolkit taxonomy, public links and bilingual CV sync
+- [x] F13 — CV contact links, project chronology, English terminology and observability taxonomy
+- [x] F14 — Private role-targeted CV variants for Full-Stack, QA Automation and Mobile (ES/EN)
 
 ## Quality Gates
 
@@ -96,10 +99,13 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
 | `npm run build` | Clean, 26 static pages including sitemap, robots and manifest |
 | `npm run typecheck` | No type errors |
 | `npm run lint` | No errors or warnings |
-| `npm run test:unit` | 3/3, 100% coverage on `portfolio-data.ts` |
+| `npm run test:unit` | 5/5, 100% coverage on `portfolio-data.ts` |
 | `npm run test:e2e` | 29 passed, 3 intentional mobile skips |
 | `npm audit` | 0 known vulnerabilities |
-| Browser verification | EN, ES and Prizio clean on desktop/mobile; no console errors, overlays, visible broken images or overflow |
+| Browser verification | EN/ES landing plus Spotify, Equine and PetLab case studies clean; no error overlays, blank states or stale public claims |
+| CV verification | 2 A4 pages per locale; email, portfolio, GitHub and LinkedIn links validated; 4 pages visually clean |
+| CV generator | 387 tests pass with `LOG_FORMAT=human`; TypeScript clean; ESLint 0 errors |
+| Private CV variants | 6 PDFs, 12 A4 pages visually verified; 4 links each; SIAC absent |
 
 ## Design Decisions
 
@@ -128,6 +134,19 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
   support. The lockfile is otherwise current and audit-clean.
 - **Development-only React eval** — the CSP includes `unsafe-eval` only in
   local development for React debugging. Production headers omit it.
+- **CV technology names stay versionless** — the downloadable resume communicates
+  durable capabilities instead of patch or major versions that age quickly. Exact
+  versions remain documented in each project repository.
+- **Two-line CV contact header** — personal contact details remain on the first line;
+  portfolio, GitHub and LinkedIn use independent clickable links on the second line.
+- **General public, variants private** — the portfolio exposes only the general ES/EN
+  resumes. Full-Stack, QA Automation and Mobile variants are generated for direct job
+  applications and stored outside the repository in the user's Downloads folder.
+- **Published work only** — SIAC stays out of the portfolio and CV until its public
+  launch. It is not added merely because the repository or production modules exist.
+- **Live links must match the documented build** — Spotify remains in the case-study
+  index, but its legacy Create React App deployment is not linked while the current
+  Vite/PKCE build is unpublished.
 
 ## Technical Notes
 
@@ -163,3 +182,4 @@ npm run verify        # typecheck + lint + unit + build
 - Design handoff: `/Users/douglashedman/Downloads/Personal Portfolio-handoff.zip`
 - Vercel project: `douglas-hedman-portfolio`
 - Resume PDFs: `public/resume/Douglas_Hedman_CV_2026_{EN,ES}.pdf`
+- Resume sources: `/Users/douglashedman/Development/claude-code-job-tailor/resume-data/tailor/general{,-es}/resume.yaml`

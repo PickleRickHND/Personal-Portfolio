@@ -6,6 +6,7 @@ import {
   SiDart,
   SiFilament,
   SiFirebase,
+  SiFastapi,
   SiFlutter,
   SiGit,
   SiGooglecloud,
@@ -28,6 +29,8 @@ import {
   SiThreedotjs,
   SiTypescript,
   SiVercel,
+  SiVitest,
+  SiJest,
 } from "react-icons/si";
 import type { ComponentType, SVGProps } from "react";
 
@@ -72,6 +75,7 @@ const MAP: Record<string, ComponentType<IconProps>> = {
   Laravel: SiLaravel,
   Livewire: SiLivewire,
   Filament: SiFilament,
+  FastAPI: SiFastapi,
   Leaflet: SiLeaflet,
   // Databases
   PostgreSQL: SiPostgresql,
@@ -80,6 +84,8 @@ const MAP: Record<string, ComponentType<IconProps>> = {
   // Testing
   Cypress: SiCypress,
   Playwright: PlaywrightMark,
+  Vitest: SiVitest,
+  Jest: SiJest,
   Sentry: SiSentry,
   // DevOps
   Git: SiGit,

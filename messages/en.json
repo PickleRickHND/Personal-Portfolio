@@ -26,7 +26,7 @@
     "issue": "Portfolio · {year}",
     "status": "Available for work",
     "fileTag": "Portfolio / index.html",
-    "tagline": "Full-Stack Developer, based in Tegucigalpa · building web & mobile things for three years and counting.",
+    "tagline": "Full-Stack Developer, based in Tegucigalpa · building web and mobile products for more than four years.",
     "titleFirst": "Douglas",
     "titleSecond": "Hedman.",
     "cells": {
@@ -49,8 +49,8 @@
     "headlineEm": "Mobile",
     "headlineTail": ".",
     "portraitCaption": "Tegucigalpa, 2026",
-    "lead": "Three years building software that actually reaches production. Mobile apps with Flutter, web apps with Next.js, and the work of tying them together.",
-    "p1": "I'm from Honduras. Trained as a Systems Engineer, working as a Full-Stack Developer. I build mobile apps with Flutter and web apps with Next.js, React, and TypeScript. Before I ship anything, I write tests with Cypress and Playwright — I'd rather catch problems before the user does.",
+    "lead": "More than four years building software that actually reaches production. Mobile apps with Flutter, web apps with Next.js, and the work of tying them together.",
+    "p1": "I'm from Honduras. Trained as a Systems Engineer, working as a Full-Stack Developer. I build mobile apps with Flutter and web apps with Next.js, React, and TypeScript. I test each product with the tools that fit its stack —from Cypress and Playwright to Vitest, Pest, Jest, and Flutter Test— because I'd rather catch problems before the user does.",
     "p2": "I studied Systems Engineering at José Cecilio del Valle University and hold certifications in Full-Stack Development and Computer Science. Day-to-day, I work with Claude Code, Cursor, and Gemini: they help me move faster, but the architecture calls are mine."
   },
   "stats": {
@@ -84,7 +84,7 @@
       "kind": "Web · E-commerce",
       "tagline": "An e-commerce with cash on delivery and a complete management panel, for a Honduran pet store.",
       "short": "E-commerce and inventory management for a pet store.",
-      "description": "Online store and admin panel for a pet-products business in Honduras — catalog, cart with stock reservation, cash-on-delivery checkout, and inventory with a kardex. TALL stack (Laravel · Livewire · Filament), bilingual ES/EN.",
+      "description": "Online store and admin panel for a pet-products business in Honduras — catalog, cart, cash-on-delivery checkout, and inventory with a kardex. TALL stack (Laravel · Livewire · Filament), bilingual ES/EN.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "Sell online",
@@ -95,13 +95,13 @@
       },
       "body": [
         "PetLab HN is the online store of a nationwide pet-products business in Honduras. The challenge wasn't just selling online: it was running a real business — catalog, inventory, supplier purchasing and orders — from a single system, priced in lempiras with cash on delivery.",
-        "I built the storefront on the TALL stack (Tailwind, Alpine, Laravel, Livewire): a filterable catalog, a cart with stock reservation, checkout with address and map location (Leaflet), customer accounts, reviews and a wishlist. Behind it, a full Filament admin runs inventory with a kardex, purchasing, orders, promotions and reports. Everything is bilingual ES/EN with exact monetary precision in lempiras and a USD equivalent.",
-        "A single codebase covers both the customer-facing store and internal operations — backed by 359 tests across Pest and Playwright."
+        "I built the storefront on the TALL stack (Tailwind, Alpine, Laravel, Livewire): a filterable catalog, a cart that validates stock when the order is confirmed, checkout with address and map location (Leaflet), customer accounts, reviews and a wishlist. Behind it, a full Filament admin runs inventory with a kardex, purchasing, orders, promotions and reports. Everything is bilingual ES/EN and operates with exact monetary precision in lempiras.",
+        "A single codebase covers both the customer-facing store and internal operations — backed by 359 Pest tests and 47 Playwright scenarios."
       ],
       "outcomes": {
         "kicker": "Outcomes",
         "a": {
-          "n": "359",
+          "n": "406",
           "l": "Pest + Playwright tests"
         },
         "b": {
@@ -127,7 +127,7 @@
       "kind": "Web · 3D / Education",
       "tagline": "An interactive 3D atlas of the equine digestive system, built for veterinary students.",
       "short": "Interactive 3D atlas of the horse's digestive system.",
-      "description": "An interactive 3D model of the equine digestive system — nine labeled organs, click-to-focus, and detailed anatomical notes. Built for a veterinary library.",
+      "description": "An interactive 3D model of the equine digestive system — seven labeled organs, click-to-focus, and detailed anatomical notes. Built for a veterinary library.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "Anatomy is",
@@ -138,13 +138,13 @@
       },
       "body": [
         "The equine digestive system is unusual — a small stomach, an enormous cecum and colon where fiber ferments. Textbook diagrams flatten all of that into static cross-sections that are hard to read in space.",
-        "This atlas puts the whole tract in the browser as a real-time 3D model. A semi-transparent horse silhouette gives anatomical context; each of the nine organs is color-coded and selectable — by clicking the model directly or picking from the side panel — which then shows its name in Spanish and English plus a detailed description.",
+        "This atlas puts the whole tract in the browser as a real-time 3D model. A semi-transparent horse silhouette gives anatomical context; the seven organs are color-coded and selectable — by clicking the model directly or picking from the side panel — with names in Spanish and English plus detailed descriptions.",
         "I modeled and labeled the organs in Blender, exported an optimized .glb, and rendered it with React Three Fiber and Three.js. The result runs smoothly on desktop and tablet — a study tool a veterinary student can actually rotate, zoom and explore."
       ],
       "outcomes": {
         "kicker": "Outcomes",
         "a": {
-          "n": "9",
+          "n": "7",
           "l": "Labeled organs"
         },
         "b": {
@@ -179,13 +179,13 @@
       "body": [
         "Three national supermarket chains dominate Honduran retail, and none of them publish standardized pricing. A single item · a 500g box of pasta, say · can vary by 30% between stores on any given day, and shoppers have no practical way to know in advance.",
         "Prizio was built to close that gap. Scan a barcode in-store or search from home, and every price shows up on the same screen, updated by a community of shoppers and merchant partners. Alerts are configurable, and smart lists route you to the cheapest basket across your preferred chains.",
-        "Shipped on iOS and Android. Firebase handles sync, Sentry catches crashes, and a Cypress-inspired Flutter integration suite covers the top 30 user journeys."
+        "Built for iOS and Android and currently being reactivated. Firebase maintains synchronization and 54 active Cloud Functions, Sentry captures errors, and 3,389 verified tests cover the Flutter app, FastAPI backend, and Functions."
       ],
       "outcomes": {
         "kicker": "Outcomes",
-        "a": { "n": "12,400+", "l": "Listed SKUs tracked" },
-        "b": { "n": "18%", "l": "Avg. basket savings" },
-        "c": { "n": "54 green", "l": "Integration tests" }
+        "a": { "n": "3,389", "l": "Verified tests" },
+        "b": { "n": "54", "l": "Active Cloud Functions" },
+        "c": { "n": "6", "l": "Integrated chains" }
       },
       "captions": ["Home", "Search", "Lists", "Stores"]
     },
@@ -235,13 +235,13 @@
       "body": [
         "PrintShop 504 is a Honduran print-and-sign shop with a growing roster of walk-in and B2B customers. Before the rebuild, orders were tracked on paper slips, invoices handwritten, and inventory reconciled monthly (and unreliably). Missed reorders were routine.",
         "I designed and built a custom e-commerce platform with an admin dashboard, a React-PDF invoicing system, Zustand-powered state, and Supabase at the backend handling auth, orders, and a live inventory ledger. Customers place orders online; staff fulfill them from a single dashboard.",
-        "Built solo on Next.js with Supabase, React-PDF for invoices, and a Cypress suite guarding the checkout and admin flows."
+        "Built solo on Next.js with Supabase and React-PDF for invoices. Vitest covers 707 unit tests, while Playwright protects the checkout and admin flows end to end."
       ],
       "outcomes": {
         "kicker": "Outcomes",
         "a": { "n": "420+", "l": "Orders digitized / mo" },
         "b": { "n": "99.2%", "l": "Inventory accuracy" },
-        "c": { "n": "38 green", "l": "Cypress tests" }
+        "c": { "n": "707+", "l": "Vitest + Playwright" }
       },
       "captions": ["Storefront", "Admin", "Invoice", "Inventory"]
     },
@@ -277,9 +277,9 @@
       "role": "Solo Developer",
       "platform": "Web · React",
       "kind": "Web · API Integration",
-      "tagline": "Generate playlists by mood, export to Spotify · live OAuth + Web API integration.",
+      "tagline": "Generate playlists by mood and export to Spotify · OAuth PKCE with the current Web API.",
       "short": "Generate playlists by mood, export to Spotify.",
-      "description": "Search songs, generate playlists by mood, and export directly to your Spotify account. OAuth flow + live API integration.",
+      "description": "Search songs, generate playlists with mood heuristics, and export directly to your Spotify account. OAuth with PKCE and Web API integration.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "Spotify has",
@@ -289,15 +289,15 @@
         "headlineTail": " button."
       },
       "body": [
-        "Spotify's own UI exposes acoustic features · energy, danceability, valence, tempo · but only through its Web API. They're invisible to the listener.",
-        "This app surfaces those features as sliders. Set a mood, generate a playlist that matches, preview it, then push the whole thing straight to your Spotify account via OAuth. No credentials stored anywhere; the app talks directly to the Web API and to your account, with nothing in between.",
-        "I built it to understand OAuth from start to finish. Every call respects Spotify's rate limits, errors are handled explicitly, and any action can be undone without breaking the session."
+        "Spotify retired several historical recommendation endpoints and changed the contracts for creating and modifying playlists. The challenge was preserving a useful experience without relying on obsolete APIs.",
+        "The application combines local genres and mood preferences into searches that work with the current API. You can find tracks, explore artists, prepare a playlist, and save it directly to your account.",
+        "Authentication uses Authorization Code with PKCE, with no client secret in the browser. Sessions refresh safely, batches respect official limits, and errors are handled without breaking the user's flow."
       ],
       "outcomes": {
         "kicker": "Outcomes",
-        "a": { "n": "OAuth 2.0", "l": "Auth flow" },
-        "b": { "n": "4", "l": "Mood dimensions" },
-        "c": { "n": "0", "l": "Credentials stored" }
+        "a": { "n": "PKCE", "l": "OAuth without a client secret" },
+        "b": { "n": "2026", "l": "Web API contracts" },
+        "c": { "n": "100", "l": "Tracks per batch" }
       },
       "captions": ["Home", "Search", "Builder", "Export"]
     },
@@ -357,7 +357,8 @@
       "Databases": "Databases",
       "Testing": "Testing",
       "DevOps": "DevOps",
-      "AI": "AI"
+      "AI": "AI",
+      "Observability": "Observability"
     }
   },
   "contact": {

@@ -26,7 +26,7 @@
     "issue": "Portafolio · {year}",
     "status": "Disponible",
     "fileTag": "Portafolio / index.html",
-    "tagline": "Desarrollador Full-Stack en Tegucigalpa · construyendo web y móvil desde hace tres años.",
+    "tagline": "Desarrollador Full-Stack en Tegucigalpa · construyendo web y móvil desde hace más de cuatro años.",
     "titleFirst": "Douglas",
     "titleSecond": "Hedman.",
     "cells": {
@@ -49,8 +49,8 @@
     "headlineEm": "Mobile",
     "headlineTail": ".",
     "portraitCaption": "Tegucigalpa, 2026",
-    "lead": "Llevo tres años construyendo software que llega a producción. Apps móviles con Flutter, sitios web con Next.js, y el trabajo de integrarlos.",
-    "p1": "Soy hondureño. Me formé como Ingeniero de Sistemas y trabajo como Desarrollador Full-Stack. Hago apps móviles con Flutter y sitios web con Next.js, React y TypeScript. Antes de cada lanzamiento escribo pruebas con Cypress y Playwright; prefiero encontrar los problemas antes de que los encuentre el usuario.",
+    "lead": "Llevo más de cuatro años construyendo software que llega a producción. Apps móviles con Flutter, sitios web con Next.js, y el trabajo de integrarlos.",
+    "p1": "Soy hondureño. Me formé como Ingeniero de Sistemas y trabajo como Desarrollador Full-Stack. Hago apps móviles con Flutter y sitios web con Next.js, React y TypeScript. Pruebo cada producto con las herramientas adecuadas para su stack —desde Cypress y Playwright hasta Vitest, Pest, Jest y Flutter Test— porque prefiero encontrar los problemas antes de que los encuentre el usuario.",
     "p2": "Estudié Ingeniería en Sistemas en la Universidad José Cecilio del Valle y obtuve certificaciones en desarrollo Full-Stack y Ciencias de la Computación. En el día a día trabajo con Claude Code, Cursor y Gemini: ayudan a ir más rápido, pero las decisiones de arquitectura las tomo yo."
   },
   "stats": {
@@ -84,7 +84,7 @@
       "kind": "Web · E-commerce",
       "tagline": "Un e-commerce con pago contra entrega y un panel de gestión completo, para una tienda de mascotas hondureña.",
       "short": "E-commerce y gestión de inventario para una tienda de mascotas.",
-      "description": "Tienda online y panel administrativo para una empresa de productos para mascotas en Honduras — catálogo, carrito con reserva de stock, checkout con pago contra entrega, e inventario con kardex. Stack TALL (Laravel · Livewire · Filament), bilingüe ES/EN.",
+      "description": "Tienda online y panel administrativo para una empresa de productos para mascotas en Honduras — catálogo, carrito, checkout con pago contra entrega e inventario con kardex. Stack TALL (Laravel · Livewire · Filament), bilingüe ES/EN.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "Vender en línea",
@@ -95,14 +95,14 @@
       },
       "body": [
         "PetLab HN es la tienda online de una empresa de productos para mascotas con alcance nacional en Honduras. El reto no era solo vender en línea: era operar un negocio real — catálogo, inventario, compras a proveedores y pedidos — desde un solo sistema, con precios en lempiras y pago contra entrega.",
-        "Construí el storefront con el stack TALL (Tailwind, Alpine, Laravel, Livewire): catálogo filtrable, carrito con reserva de stock, checkout con dirección y ubicación en mapa (Leaflet), cuenta de cliente, reseñas y lista de deseos. Detrás, un panel administrativo completo en Filament gestiona inventario con kardex, compras, pedidos, promociones y reportes. Todo bilingüe ES/EN y con precisión monetaria exacta en lempiras y equivalencia en dólares.",
-        "Una sola base de código cubre la tienda de cara al cliente y la operación interna — respaldada por 359 tests entre Pest y Playwright."
+        "Construí el storefront con el stack TALL (Tailwind, Alpine, Laravel, Livewire): catálogo filtrable, carrito que valida existencias al confirmar el pedido, checkout con dirección y ubicación en mapa (Leaflet), cuenta de cliente, reseñas y lista de deseos. Detrás, un panel administrativo completo en Filament gestiona inventario con kardex, compras, pedidos, promociones y reportes. Todo es bilingüe ES/EN y opera con precisión monetaria exacta en lempiras.",
+        "Una sola base de código cubre la tienda de cara al cliente y la operación interna — respaldada por 359 pruebas Pest y 47 escenarios Playwright."
       ],
       "outcomes": {
         "kicker": "Resultados",
         "a": {
-          "n": "359",
-          "l": "Tests Pest + Playwright"
+          "n": "406",
+          "l": "Pruebas Pest + Playwright"
         },
         "b": {
           "n": "TALL",
@@ -127,7 +127,7 @@
       "kind": "Web · 3D / Educación",
       "tagline": "Un atlas 3D interactivo del sistema digestivo equino, hecho para estudiantes de veterinaria.",
       "short": "Atlas 3D interactivo del sistema digestivo del caballo.",
-      "description": "Un modelo 3D interactivo del sistema digestivo equino — nueve órganos identificados, clic para enfocar y notas anatómicas detalladas. Hecho para una biblioteca de medicina veterinaria.",
+      "description": "Un modelo 3D interactivo del sistema digestivo equino — siete órganos identificados, clic para enfocar y notas anatómicas detalladas. Hecho para una biblioteca de medicina veterinaria.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "La anatomía",
@@ -138,13 +138,13 @@
       },
       "body": [
         "El sistema digestivo del caballo es atípico — un estómago pequeño y un ciego y colon enormes donde fermenta la fibra. Los diagramas de los libros aplanan todo eso en cortes estáticos difíciles de leer en el espacio.",
-        "Este atlas pone todo el tracto en el navegador como un modelo 3D en tiempo real. Una silueta semitransparente del caballo da contexto anatómico; cada uno de los nueve órganos está coloreado y es seleccionable — haciendo clic directo en el modelo o eligiéndolo del panel lateral — que muestra su nombre en español e inglés y una descripción detallada.",
+        "Este atlas pone todo el tracto en el navegador como un modelo 3D en tiempo real. Una silueta semitransparente del caballo da contexto anatómico; los siete órganos están coloreados y son seleccionables — haciendo clic directo en el modelo o eligiéndolos del panel lateral — con nombres en español e inglés y descripciones detalladas.",
         "Modelé e identifiqué los órganos en Blender, exporté un .glb optimizado y lo rendericé con React Three Fiber y Three.js. El resultado corre fluido en escritorio y tablet — una herramienta de estudio que un estudiante de veterinaria puede rotar, hacer zoom y explorar."
       ],
       "outcomes": {
         "kicker": "Resultados",
         "a": {
-          "n": "9",
+          "n": "7",
           "l": "Órganos identificados"
         },
         "b": {
@@ -179,13 +179,13 @@
       "body": [
         "Tres cadenas nacionales dominan el retail hondureño y ninguna publica precios estandarizados. Un mismo producto · una caja de pasta de 500g, por ejemplo · puede variar un 30% entre tiendas el mismo día, y el comprador no tiene forma práctica de saberlo antes.",
         "Prizio cierra esa brecha. Escaneás un código en la tienda o buscás desde casa, y todos los precios aparecen en la misma pantalla, actualizados por una comunidad de compradores y comercios aliados. Las alertas son configurables, y las listas inteligentes te rutean al carrito más barato entre tus cadenas preferidas.",
-        "Publicada en iOS y Android. Firebase resuelve la sincronización, Sentry captura los crashes y una suite de pruebas de integración Flutter (inspirada en Cypress) cubre los 30 flujos críticos."
+        "Construida para iOS y Android y actualmente en reactivación. Firebase mantiene la sincronización y 54 Cloud Functions activas, Sentry captura errores y 3,389 pruebas verificadas cubren la app Flutter, el backend FastAPI y las Functions."
       ],
       "outcomes": {
         "kicker": "Resultados",
-        "a": { "n": "12,400+", "l": "SKUs indexados" },
-        "b": { "n": "18%", "l": "Ahorro promedio del carrito" },
-        "c": { "n": "54 green", "l": "Pruebas de integración" }
+        "a": { "n": "3,389", "l": "Pruebas verificadas" },
+        "b": { "n": "54", "l": "Cloud Functions activas" },
+        "c": { "n": "6", "l": "Cadenas integradas" }
       },
       "captions": ["Inicio", "Búsqueda", "Listas", "Tiendas"]
     },
@@ -235,13 +235,13 @@
       "body": [
         "PrintShop 504 es una imprenta hondureña con una cartera creciente de clientes de mostrador y B2B. Antes de la reconstrucción, los pedidos se anotaban en papel, las facturas se hacían a mano y el inventario se reconciliaba mensualmente (y sin confiabilidad). Los faltantes eran rutina.",
         "Diseñé y construí una plataforma de e-commerce a medida con panel administrativo, sistema de facturas con React-PDF, estado con Zustand y Supabase en el backend manejando auth, pedidos y un libro de inventario en vivo. Los clientes ordenan online; el staff cumple desde un único dashboard.",
-        "Construida en solitario sobre Next.js con Supabase, React-PDF para facturas y una suite Cypress que protege el checkout y los flujos administrativos."
+        "Construida en solitario sobre Next.js con Supabase y React-PDF para facturas. Vitest cubre 707 pruebas unitarias y Playwright protege el checkout y los flujos administrativos de extremo a extremo."
       ],
       "outcomes": {
         "kicker": "Resultados",
         "a": { "n": "420+", "l": "Pedidos digitalizados/mes" },
         "b": { "n": "99.2%", "l": "Precisión de inventario" },
-        "c": { "n": "38 green", "l": "Pruebas Cypress" }
+        "c": { "n": "707+", "l": "Vitest + Playwright" }
       },
       "captions": ["Storefront", "Admin", "Factura", "Inventario"]
     },
@@ -277,9 +277,9 @@
       "role": "Desarrollador en solitario",
       "platform": "Web · React",
       "kind": "Web · Integración API",
-      "tagline": "Generá playlists por mood y exportalas a Spotify · OAuth y Web API en vivo.",
+      "tagline": "Generá playlists por mood y exportalas a Spotify · OAuth PKCE y Web API actualizada.",
       "short": "Generá playlists por mood y exportalas a Spotify.",
-      "description": "Buscá canciones, generá playlists por mood y exportalas directo a tu cuenta de Spotify. Flujo OAuth + integración con la Web API.",
+      "description": "Buscá canciones, generá playlists con heurísticas de mood y exportalas directo a tu cuenta de Spotify. OAuth con PKCE e integración con la Web API.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "Spotify tiene",
@@ -289,15 +289,15 @@
         "headlineTail": "."
       },
       "body": [
-        "La UI de Spotify expone features acústicas · energía, danceability, valence, tempo · pero sólo a través de su Web API. Son invisibles para el oyente.",
-        "Esta app las convierte en sliders. Configurás un mood, generás una playlist que le encaja, la previsualizás y la mandás directo a tu cuenta de Spotify vía OAuth. No se guardan credenciales en ningún lado; la app habla directamente con la Web API y con tu cuenta, nada en medio.",
-        "La construí para entender OAuth de principio a fin. Cada llamada respeta el rate-limit de Spotify, los errores se manejan de forma explícita y el usuario puede deshacer cualquier acción sin romper su sesión."
+        "Spotify retiró varios endpoints históricos de recomendaciones y cambió los contratos para crear y modificar playlists. El reto fue conservar una experiencia útil sin depender de APIs obsoletas.",
+        "La aplicación combina géneros locales y preferencias de mood para construir búsquedas compatibles con la API actual. Podés buscar canciones, explorar artistas, preparar una playlist y guardarla directamente en tu cuenta.",
+        "La autenticación usa Authorization Code con PKCE, sin client secret en el navegador. La sesión se renueva de forma segura, los lotes respetan los límites oficiales y los errores se manejan sin romper el flujo del usuario."
       ],
       "outcomes": {
         "kicker": "Resultados",
-        "a": { "n": "OAuth 2.0", "l": "Flujo de auth" },
-        "b": { "n": "4", "l": "Dimensiones de mood" },
-        "c": { "n": "0", "l": "Credenciales guardadas" }
+        "a": { "n": "PKCE", "l": "OAuth sin client secret" },
+        "b": { "n": "2026", "l": "Contratos Web API" },
+        "c": { "n": "100", "l": "Tracks por lote" }
       },
       "captions": ["Inicio", "Búsqueda", "Generador", "Exportar"]
     },
@@ -357,7 +357,8 @@
       "Databases": "Bases de datos",
       "Testing": "Testing",
       "DevOps": "DevOps",
-      "AI": "IA"
+      "AI": "IA",
+      "Observability": "Observabilidad"
     }
   },
   "contact": {

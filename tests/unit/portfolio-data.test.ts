@@ -20,10 +20,10 @@ function flattenKeys(value: unknown, prefix = ""): string[] {
 }
 
 describe("portfolio data", () => {
-  it("defines eight uniquely addressable projects with tracked images", () => {
-    expect(projects).toHaveLength(8);
-    expect(new Set(projects.map((project) => project.id)).size).toBe(8);
-    expect(new Set(projects.map((project) => project.slug)).size).toBe(8);
+  it("defines seven uniquely addressable projects with tracked images", () => {
+    expect(projects).toHaveLength(7);
+    expect(new Set(projects.map((project) => project.id)).size).toBe(7);
+    expect(new Set(projects.map((project) => project.slug)).size).toBe(7);
 
     for (const project of projects) {
       const images = [
@@ -44,6 +44,7 @@ describe("portfolio data", () => {
     expect(getProject("prizio")?.name).toBe("Prizio");
     expect(getProject("missing")).toBeUndefined();
     expect(getNextProject("prizio")?.slug).toBe("printshop");
+    expect(getNextProject("arca")?.slug).toBe("pharmacy");
     expect(getNextProject("pharmacy")).toBeNull();
     expect(getNextProject("missing")).toBeNull();
   });
@@ -77,10 +78,8 @@ describe("portfolio data", () => {
     expect(portfolio.stack.Testing).not.toContain("Sentry");
     expect(portfolio.stack.Backend).toContain("FastAPI");
 
-    expect(getProject("spotify")).toMatchObject({
-      stack: ["React", "Vite", "Spotify API", "OAuth PKCE"],
-      url: null,
-    });
+    expect(getProject("spotify")).toBeUndefined();
+    expect(getProject("folium")?.url).toBe("folium-labs.com");
   });
 
   it("does not reintroduce stale project claims in either locale", () => {
@@ -91,10 +90,10 @@ describe("portfolio data", () => {
     expect(es.hero.tagline).toContain("más de cuatro años");
     expect(en.projects.equine.outcomes.a.n).toBe("7");
     expect(es.projects.equine.outcomes.a.n).toBe("7");
-    expect(en.projects.printshop.outcomes.c.l).toBe("Vitest + Playwright");
-    expect(es.projects.printshop.outcomes.c.l).toBe("Vitest + Playwright");
-    expect(en.projects.spotify.outcomes.a.n).toBe("PKCE");
-    expect(es.projects.spotify.outcomes.a.n).toBe("PKCE");
+    expect(en.projects.printshop.outcomes.a.n).toBe("707");
+    expect(es.projects.printshop.outcomes.a.n).toBe("707");
+    expect(en.projects.spotify).toBeUndefined();
+    expect(es.projects.spotify).toBeUndefined();
 
     for (const messages of [en, es]) {
       const serialized = JSON.stringify(messages);
@@ -104,6 +103,14 @@ describe("portfolio data", () => {
       expect(serialized).not.toContain("nueve órganos");
       expect(serialized).not.toContain("Cypress suite");
       expect(serialized).not.toContain("suite Cypress");
+      // Cifras de negocio sin respaldo verificable
+      expect(serialized).not.toContain("420+");
+      expect(serialized).not.toContain("99.2%");
+      expect(serialized).not.toContain("180+");
+      expect(serialized).not.toContain("~100%");
+      expect(serialized).not.toContain("first Flutter app");
+      expect(serialized).not.toContain("primera app Flutter");
+      expect(serialized).not.toContain("foliumlabs.com");
     }
   });
 });

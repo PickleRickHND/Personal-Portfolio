@@ -21,7 +21,7 @@ npm run test:e2e     # Playwright desktop/mobile
 npm run verify       # typecheck + lint + unit + build
 ```
 
-Scripts auxiliares en `scripts/`: `visual-capture.mjs` y `mobile-capture.mjs` (capturas de pantalla para QA visual; output en `screenshots/`).
+Scripts auxiliares en `scripts/`: `visual-capture.mjs` y `mobile-capture.mjs` (capturas de pantalla para QA visual; output en `screenshots/`) y `project-capture.mjs` (imágenes de galería desde los sitios en producción, directo a `public/img/portfolio/`).
 
 ## Arquitectura
 
@@ -41,7 +41,7 @@ Scripts auxiliares en `scripts/`: `visual-capture.mjs` y `mobile-capture.mjs` (c
 
 ### Datos del portfolio
 
-- **Fuente única: `src/lib/portfolio-data.ts`** — tipos `Project`/`ProjectType`/`ProjectVisualMode`, los 8 proyectos (petlab, equine, prizio, folium, printshop, arca, spotify, pharmacy) y los datos de contacto/social. Agregar un proyecto = agregar entrada aquí + sus keys i18n + imágenes en `public/`.
+- **Fuente única: `src/lib/portfolio-data.ts`** — tipos `Project`/`ProjectType`/`ProjectVisualMode`, los 7 proyectos (petlab, equine, prizio, folium, printshop, arca, pharmacy) y los datos de contacto/social. Agregar un proyecto = agregar entrada aquí + sus keys i18n + imágenes en `public/`.
 - MDX está configurado en `next.config.ts` (`@next/mdx` + remark-gfm) pero **sin uso actual**: `content/projects/` está vacío; los case studies se renderizan desde `portfolio-data.ts` + mensajes i18n.
 
 ### Componentes (`src/components/`)

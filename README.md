@@ -60,7 +60,6 @@ El portfolio no funciona como una galería genérica. Cada proyecto tiene una ru
 - PetLab HN
 - Folium Labs
 - El Arca Honduras
-- Spotify Playlist Generator
 - Hedman-Garcia Pharmacy
 
 La configuración canónica vive en `src/lib/portfolio-data.ts`; el copy localizado se mantiene sincronizado en `messages/en.json` y `messages/es.json`.
@@ -152,7 +151,7 @@ npm run test:e2e
 npm audit
 ```
 
-Los scripts `scripts/visual-capture.mjs` y `scripts/mobile-capture.mjs` generan evidencia para comparaciones visuales.
+Los scripts `scripts/visual-capture.mjs` y `scripts/mobile-capture.mjs` generan evidencia para comparaciones visuales. `scripts/project-capture.mjs` captura desde producción las imágenes de galería de los proyectos (`node scripts/project-capture.mjs folium arca`).
 
 ## Despliegue
 

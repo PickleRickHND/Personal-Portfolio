@@ -14,13 +14,13 @@ test.describe("Landing — EN", () => {
     await expect(page.locator("section#work")).toBeVisible();
     await expect(page.locator("section#stack")).toBeVisible();
     await expect(page.locator("section#contact")).toBeVisible();
-    await expect(page.getByText("Eight projects,")).toBeVisible();
+    await expect(page.getByText("Seven projects,")).toBeVisible();
   });
 
-  test("renders all 8 project links", async ({ page }) => {
+  test("renders all 7 project links", async ({ page }) => {
     await page.goto("/en");
     const projectLinks = page.locator('main a[href*="/work/"]');
-    expect(await projectLinks.count()).toBeGreaterThanOrEqual(8);
+    expect(await projectLinks.count()).toBeGreaterThanOrEqual(7);
   });
 
   test("resume link points to EN pdf", async ({ page }) => {
@@ -44,7 +44,7 @@ test.describe("Landing — ES", () => {
     await page.goto("/es");
     await expect(page).toHaveTitle(/Desarrollador Full-Stack/);
     await expect(page.getByText("Disponible", { exact: true })).toBeVisible();
-    await expect(page.getByText("Ocho proyectos,")).toBeVisible();
+    await expect(page.getByText("Siete proyectos,")).toBeVisible();
     await expect(page.locator("html")).toHaveAttribute("lang", "es");
   });
 
@@ -135,16 +135,17 @@ test.describe("Last project wraps back to index", () => {
 });
 
 test.describe("SEO surfaces", () => {
-  test("sitemap lists 18 URLs (2 landings + 16 projects)", async ({
+  test("sitemap lists 16 URLs (2 landings + 14 projects)", async ({
     request,
   }) => {
     const r = await request.get("/sitemap.xml");
     expect(r.ok()).toBe(true);
     const body = await r.text();
     const urls = body.match(/<url>/g) ?? [];
-    expect(urls.length).toBe(18);
+    expect(urls.length).toBe(16);
     expect(body).toContain("/en/work/prizio");
     expect(body).toContain("/es/work/prizio");
+    expect(body).not.toContain("/work/spotify");
     expect(body).toContain("x-default");
   });
 

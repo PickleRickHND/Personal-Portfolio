@@ -54,7 +54,7 @@
     "p2": "Estudié Ingeniería en Sistemas en la Universidad José Cecilio del Valle y obtuve certificaciones en desarrollo Full-Stack y Ciencias de la Computación. En el día a día trabajo con Claude Code, Cursor y Gemini: ayudan a ir más rápido, pero las decisiones de arquitectura las tomo yo."
   },
   "stats": {
-    "productionApps": "Apps en producción",
+    "projectsBuilt": "Proyectos construidos de punta a punta",
     "automatedTests": "Pruebas automatizadas",
     "yearsExperience": "Años de experiencia",
     "languages": "Idiomas (i18n) entregados"
@@ -62,9 +62,9 @@
   "work": {
     "index": "",
     "kicker": "Trabajo seleccionado",
-    "headlineA": "Ocho proyectos,",
+    "headlineA": "Siete proyectos,",
     "headlineB": "cuatro años.",
-    "count": "Ocho producciones seleccionadas · 2023–2026",
+    "count": "Siete producciones seleccionadas · 2023–2026",
     "filterMobile": "Móvil",
     "filterCommerce": "Comercio",
     "filterInternal": "Herramientas internas",
@@ -165,7 +165,7 @@
       "role": "Desarrollador Líder",
       "platform": "iOS + Android",
       "kind": "Móvil · Flutter",
-      "tagline": "Comparación de precios para supermercados hondureños · la primera app Flutter del país pensada para la compra diaria.",
+      "tagline": "Comparación de precios para supermercados hondureños · seis cadenas en una sola pantalla, en Flutter para iOS y Android.",
       "short": "Comparación de precios para supermercados hondureños.",
       "description": "App cross-platform para comparar precios. Escaneá códigos de barras, compará precios entre cadenas, configurá alertas y armá listas inteligentes.",
       "problem": {
@@ -177,8 +177,8 @@
         "headlineTail": "."
       },
       "body": [
-        "Tres cadenas nacionales dominan el retail hondureño y ninguna publica precios estandarizados. Un mismo producto · una caja de pasta de 500g, por ejemplo · puede variar un 30% entre tiendas el mismo día, y el comprador no tiene forma práctica de saberlo antes.",
-        "Prizio cierra esa brecha. Escaneás un código en la tienda o buscás desde casa, y todos los precios aparecen en la misma pantalla, actualizados por una comunidad de compradores y comercios aliados. Las alertas son configurables, y las listas inteligentes te rutean al carrito más barato entre tus cadenas preferidas.",
+        "Las cadenas de supermercados en Honduras no publican precios comparables: el mismo producto puede costar bastante distinto de una tienda a otra, y el comprador no tiene forma práctica de saberlo antes de ir.",
+        "Prizio cierra esa brecha. Un pipeline de scraping automatizado recopila precios de seis cadenas (La Colonia, Walmart, Más x Menos, Paiz, Diprova y PriceSmart); escaneás un código en la tienda o buscás desde casa, y todos los precios aparecen en la misma pantalla. Alertas de precio, tendencias y listas inteligentes completan la app.",
         "Construida para iOS y Android y actualmente en reactivación. Firebase mantiene la sincronización y 54 Cloud Functions activas, Sentry captura errores y 3,389 pruebas verificadas cubren la app Flutter, el backend FastAPI y las Functions."
       ],
       "outcomes": {
@@ -193,9 +193,9 @@
       "role": "Desarrollador Full-Stack",
       "platform": "Web · Next.js 16",
       "kind": "Web · Next.js 16",
-      "tagline": "Plataforma de servicios académicos con contenido SEO-first · 60 artículos y 26 servicios desde el lanzamiento.",
+      "tagline": "Plataforma de servicios académicos para estudiantes hondureños · blog SEO bilingüe con 40 artículos y catálogo de 27 servicios.",
       "short": "Plataforma de servicios académicos con contenido SEO-first.",
-      "description": "Plataforma académica con 60+ artículos optimizados para SEO, catálogo de 26 servicios y sistema de contenido en MDX.",
+      "description": "Plataforma académica con blog bilingüe en MDX (40 artículos en español e inglés), catálogo de 27 servicios y contacto por WhatsApp y correo.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "La ayuda académica",
@@ -205,43 +205,43 @@
         "headlineTail": "."
       },
       "body": [
-        "Folium Labs brinda servicios de tesis, investigación y edición a universitarios de toda Latinoamérica. El embudo anterior era un hilo de WhatsApp y un Linktree: sin presencia en buscadores, y sin forma de que un prospecto entendiera los servicios sin escribir primero.",
-        "Reconstruí el negocio sobre Next.js 16 con contenido en MDX, un catálogo de servicios tipado y flujos de contacto con Resend. Sesenta artículos sobre tesis, APA y metodología de investigación salieron en vivo al lanzamiento, cada uno revisado editorialmente e indexado con su propio schema.",
-        "Todo está tipado de extremo a extremo. Precios, catálogo y blog viven como contenido estático que compila en build, sin CMS ni queries en runtime. El deploy es un git push."
+        "Folium Labs ofrece tutoría, metodología de investigación, análisis de datos y edición académica a universitarios en Honduras. El sitio tiene que explicar cada servicio con la claridad suficiente para que el estudiante decida antes de escribir, y posicionar en las preguntas que esos estudiantes realmente buscan.",
+        "Lo construí sobre Next.js 16 con un catálogo tipado de 27 servicios, un blog bilingüe en MDX (40 artículos en español e inglés sobre tesis, APA y metodología), páginas por universidad y flujos de contacto por WhatsApp y correo con Resend.",
+        "Contenido, precios y catálogo compilan en build, sin CMS. Analítica que respeta el consentimiento, datos estructurados schema.org, 488 pruebas unitarias y flujos end-to-end con Playwright lo mantienen estable mientras crece."
       ],
       "outcomes": {
         "kicker": "Resultados",
-        "a": { "n": "60+", "l": "Artículos SEO" },
-        "b": { "n": "26", "l": "Servicios catalogados" },
-        "c": { "n": "100%", "l": "Estático en edge" }
+        "a": { "n": "40", "l": "Artículos · ES + EN" },
+        "b": { "n": "27", "l": "Servicios catalogados" },
+        "c": { "n": "488", "l": "Pruebas unitarias" }
       },
-      "captions": ["Inicio", "Catálogo", "Artículo", "Contacto"]
+      "captions": ["Inicio", "Servicios", "Artículo"]
     },
     "printshop": {
       "role": "Desarrollador Full-Stack",
       "platform": "Web · Next.js",
       "kind": "Web · Comercio",
-      "tagline": "E-commerce con panel administrativo y facturación · a medida para una imprenta hondureña.",
+      "tagline": "E-commerce y administración para un negocio hondureño de sublimación · tienda, panel, facturación e inventario.",
       "short": "E-commerce con panel administrativo y facturación.",
       "description": "Plataforma de e-commerce con panel administrativo, facturación con React-PDF, estado con Zustand y manejo de inventario end-to-end.",
       "problem": {
         "kicker": "El problema",
-        "headlineA": "Una imprenta pequeña",
-        "headlineB": "manejando todo",
-        "headlineC": "el negocio en",
-        "headlineEm": "papel",
+        "headlineA": "Un negocio de sublimación",
+        "headlineB": "necesitaba vender",
+        "headlineC": "y administrar desde",
+        "headlineEm": "un solo lugar",
         "headlineTail": "."
       },
       "body": [
-        "PrintShop 504 es una imprenta hondureña con una cartera creciente de clientes de mostrador y B2B. Antes de la reconstrucción, los pedidos se anotaban en papel, las facturas se hacían a mano y el inventario se reconciliaba mensualmente (y sin confiabilidad). Los faltantes eran rutina.",
-        "Diseñé y construí una plataforma de e-commerce a medida con panel administrativo, sistema de facturas con React-PDF, estado con Zustand y Supabase en el backend manejando auth, pedidos y un libro de inventario en vivo. Los clientes ordenan online; el staff cumple desde un único dashboard.",
-        "Construida en solitario sobre Next.js con Supabase y React-PDF para facturas. Vitest cubre 707 pruebas unitarias y Playwright protege el checkout y los flujos administrativos de extremo a extremo."
+        "PrintShop 504 vende productos de sublimación a medida en Honduras: camisetas, bolsos, tazas y diseños personalizados. El negocio necesitaba una tienda en línea donde los clientes pudieran ordenar y, detrás, un solo lugar para manejar productos, pedidos, clientes, proveedores y facturación.",
+        "Diseñé y construí la plataforma sobre Next.js con Supabase para auth, datos y almacenamiento. La tienda pública cubre catálogo, carrito y checkout; el panel administrativo suma acceso por roles, facturas PDF con React-PDF, inventario con alertas de stock bajo, promociones, envíos, proveedores, reportes en Excel y bitácora de actividad.",
+        "Construida en solitario. 707 pruebas unitarias con Vitest y más de 330 pruebas end-to-end con Playwright cubren el checkout, los permisos y cada módulo del panel."
       ],
       "outcomes": {
         "kicker": "Resultados",
-        "a": { "n": "420+", "l": "Pedidos digitalizados/mes" },
-        "b": { "n": "99.2%", "l": "Precisión de inventario" },
-        "c": { "n": "707+", "l": "Vitest + Playwright" }
+        "a": { "n": "707", "l": "Pruebas unitarias Vitest" },
+        "b": { "n": "330+", "l": "Pruebas E2E Playwright" },
+        "c": { "n": "RBAC", "l": "Panel con roles" }
       },
       "captions": ["Storefront", "Admin", "Factura", "Inventario"]
     },
@@ -249,9 +249,9 @@
       "role": "Desarrollador Full-Stack",
       "platform": "Web · Next.js",
       "kind": "Web · Non-profit",
-      "tagline": "Plataforma de non-profit en cinco idiomas · blog, galería, donaciones y stack i18n completo.",
-      "short": "Plataforma non-profit en 5 idiomas.",
-      "description": "Sitio non-profit con blog, galería, flujo de donaciones y localización completa en español, inglés, francés, portugués y alemán.",
+      "tagline": "Sitio en cinco idiomas para una organización sin fines de lucro · blog, galería, programas y donaciones.",
+      "short": "Sitio non-profit en 5 idiomas.",
+      "description": "Sitio non-profit con blog, galería, páginas de programas, datos para donar y localización completa en español, inglés, francés, portugués y alemán.",
       "problem": {
         "kicker": "El problema",
         "headlineA": "Una organización",
@@ -261,45 +261,17 @@
         "headlineTail": "."
       },
       "body": [
-        "El Arca Honduras es una organización que atiende a niños y familias con discapacidades. Su trabajo llega a una base internacional de donantes, pero el sitio anterior era sólo en español y estático: sin galería, sin traducciones, y con donaciones saliendo por un único canal sin importar desde dónde viniera el visitante.",
-        "Lo reconstruí sobre Next.js con un stack completo en cinco idiomas (español, inglés, francés, portugués, alemán), blog dinámico, galería fotográfica y flujo de donaciones que rutea al procesador regional correcto.",
-        "Todo el copy vive en archivos de traducción tipados; ningún string se publica sin los cinco locales. Mismo stack que uso en trabajo comercial, misma barra de calidad."
+        "Desde 1977, El Arca Honduras construye comunidades en Tegucigalpa y Choluteca donde personas con y sin discapacidad intelectual comparten la vida. Sus donantes y voluntarios vienen de muchos países, así que el sitio tiene que hablarles a todos.",
+        "Lo construí sobre Next.js en cinco idiomas (español, inglés, francés, portugués y alemán) con blog, galería fotográfica, páginas de programas, preguntas frecuentes, formulario de contacto y una sección de donaciones con las cuentas bancarias de la organización.",
+        "Todo el texto vive en archivos de traducción tipados y las páginas se generan de forma estática, con 69 pruebas unitarias y 73 pruebas end-to-end con Playwright."
       ],
       "outcomes": {
         "kicker": "Resultados",
         "a": { "n": "5", "l": "Idiomas en vivo" },
-        "b": { "n": "100%", "l": "Traducciones tipadas" },
-        "c": { "n": "0 ms", "l": "Latencia CMS · estático" }
+        "b": { "n": "73", "l": "Pruebas E2E Playwright" },
+        "c": { "n": "69", "l": "Pruebas unitarias" }
       },
-      "captions": ["Inicio", "Misión", "Galería", "Donaciones"]
-    },
-    "spotify": {
-      "role": "Desarrollador en solitario",
-      "platform": "Web · React",
-      "kind": "Web · Integración API",
-      "tagline": "Generá playlists por mood y exportalas a Spotify · OAuth PKCE y Web API actualizada.",
-      "short": "Generá playlists por mood y exportalas a Spotify.",
-      "description": "Buscá canciones, generá playlists con heurísticas de mood y exportalas directo a tu cuenta de Spotify. OAuth con PKCE e integración con la Web API.",
-      "problem": {
-        "kicker": "El problema",
-        "headlineA": "Spotify tiene",
-        "headlineB": "todo menos un",
-        "headlineC": "botón de",
-        "headlineEm": "vibe",
-        "headlineTail": "."
-      },
-      "body": [
-        "Spotify retiró varios endpoints históricos de recomendaciones y cambió los contratos para crear y modificar playlists. El reto fue conservar una experiencia útil sin depender de APIs obsoletas.",
-        "La aplicación combina géneros locales y preferencias de mood para construir búsquedas compatibles con la API actual. Podés buscar canciones, explorar artistas, preparar una playlist y guardarla directamente en tu cuenta.",
-        "La autenticación usa Authorization Code con PKCE, sin client secret en el navegador. La sesión se renueva de forma segura, los lotes respetan los límites oficiales y los errores se manejan sin romper el flujo del usuario."
-      ],
-      "outcomes": {
-        "kicker": "Resultados",
-        "a": { "n": "PKCE", "l": "OAuth sin client secret" },
-        "b": { "n": "2026", "l": "Contratos Web API" },
-        "c": { "n": "100", "l": "Tracks por lote" }
-      },
-      "captions": ["Inicio", "Búsqueda", "Generador", "Exportar"]
+      "captions": ["Inicio", "Programas", "Galería"]
     },
     "pharmacy": {
       "role": "Desarrollador full-stack en solitario",
@@ -311,21 +283,21 @@
       "problem": {
         "kicker": "El problema",
         "headlineA": "Una farmacia familiar",
-        "headlineB": "necesitaba dejar",
-        "headlineC": "de perder",
-        "headlineEm": "inventario",
+        "headlineB": "necesitaba un sistema",
+        "headlineC": "para stock y",
+        "headlineEm": "facturación",
         "headlineTail": "."
       },
       "body": [
-        "Hedman Garcia Pharmacy es una operación familiar con miles de SKUs y varios empleados manejando ventas en dos turnos. Antes del sistema, la facturación corría sobre una caja registradora antigua, el inventario se estimaba a ojo y la reconciliación entre turnos requería hojas de cálculo al final del día.",
-        "Construí una plataforma interna a medida end-to-end: auth con roles, facturación con ISV, ajustes de stock en vivo en cada venta, alertas de bajo stock y próximos a vencer, caja y reportes a nivel de staff. Fue mi primer sistema en producción, en 2023.",
-        "Después lo reconstruí como una API REST en Laravel (con Sanctum) y una SPA en Angular sobre MySQL — el mismo flujo de trabajo, ahora sobre una base moderna y testeada de punta a punta."
+        "Hedman Garcia Pharmacy necesitaba un solo sistema para todo el mostrador: productos con stock y fecha de vencimiento, facturación con ISV, caja y reportes, con cada empleado viendo solo lo que su rol permite.",
+        "Lo construí de punta a punta: autenticación con roles, facturación con ISV, stock ajustado en cada venta, alertas de bajo stock y próximos a vencer, manejo de caja y reportes operativos. Fue mi primer sistema en producción, en 2023.",
+        "Después lo reconstruí como una API REST en Laravel (Sanctum, permisos con Spatie) y una SPA en Angular sobre MySQL, respaldado por 222 pruebas con Pest y flujos end-to-end de facturación con Playwright."
       ],
       "outcomes": {
         "kicker": "Resultados",
-        "a": { "n": "6", "l": "Staff capacitado" },
-        "b": { "n": "180+", "l": "Transacciones diarias" },
-        "c": { "n": "~100%", "l": "Uptime desde 2023" }
+        "a": { "n": "222", "l": "Pruebas Pest" },
+        "b": { "n": "RBAC", "l": "Roles y permisos (Spatie)" },
+        "c": { "n": "ISV", "l": "Facturación con impuesto" }
       },
       "captions": ["Acceso · login con branding", "Panel · KPIs y alertas de inventario", "Factura · detalle con ISV", "Productos · catálogo con stock y vencimiento", "Reportes · ventas por método de pago"]
     }

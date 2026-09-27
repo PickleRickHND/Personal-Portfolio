@@ -9,7 +9,6 @@ export type ProjectI18nKey =
   | "folium"
   | "printshop"
   | "arca"
-  | "spotify"
   | "pharmacy";
 
 export type Project = {
@@ -48,7 +47,7 @@ export const portfolio = {
     es: "/resume/Douglas_Hedman_CV_2026_ES.pdf",
   },
   stats: [
-    { n: "5+", labelKey: "productionApps" as const },
+    { n: "7", labelKey: "projectsBuilt" as const },
     { n: "300+", labelKey: "automatedTests" as const },
     { n: "4+", labelKey: "yearsExperience" as const },
     { n: "5", labelKey: "languages" as const },
@@ -178,7 +177,7 @@ export const projects: Project[] = [
     ],
     type: "web",
     mode: "desktop",
-    url: "foliumlabs.com",
+    url: "folium-labs.com",
     featured: false,
   },
   {
@@ -193,34 +192,15 @@ export const projects: Project[] = [
     gallery: [
       "/img/portfolio/arca1.png",
       "/img/portfolio/arca2.png",
+      "/img/portfolio/arca3.png",
     ],
     mobileGallery: [
-      "/img/portfolio/arca3.png",
-      "/img/portfolio/arca4.png",
+      "/img/portfolio/arca_m1.png",
+      "/img/portfolio/arca_m2.png",
     ],
     type: "web",
     mode: "desktop",
     url: "elarcadehonduras.org",
-    featured: false,
-  },
-  {
-    id: "spotify",
-    slug: "spotify",
-    name: "Spotify Playlist Generator",
-    year: "2024",
-    i18nKey: "spotify",
-    stack: ["React", "Vite", "Spotify API", "OAuth PKCE"],
-    image: "/img/portfolio/spotify1.png",
-    image2: "/img/portfolio/spotify2.png",
-    gallery: [
-      "/img/portfolio/spotify1.png",
-      "/img/portfolio/spotify2.png",
-      "/img/portfolio/spotify3.png",
-    ],
-    mobileGallery: ["/img/portfolio/spotify4.png"],
-    type: "web",
-    mode: "desktop",
-    url: null,
     featured: false,
   },
   {

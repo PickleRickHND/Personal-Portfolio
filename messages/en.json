@@ -54,7 +54,7 @@
     "p2": "I studied Systems Engineering at José Cecilio del Valle University and hold certifications in Full-Stack Development and Computer Science. Day-to-day, I work with Claude Code, Cursor, and Gemini: they help me move faster, but the architecture calls are mine."
   },
   "stats": {
-    "productionApps": "Production apps shipped",
+    "projectsBuilt": "Projects built end to end",
     "automatedTests": "Automated tests written",
     "yearsExperience": "Years of experience",
     "languages": "Languages (i18n) delivered"
@@ -62,9 +62,9 @@
   "work": {
     "index": "",
     "kicker": "Selected Work",
-    "headlineA": "Eight projects,",
+    "headlineA": "Seven projects,",
     "headlineB": "four years.",
-    "count": "Eight selected productions · 2023–2026",
+    "count": "Seven selected productions · 2023–2026",
     "filterMobile": "Mobile",
     "filterCommerce": "Commerce",
     "filterInternal": "Internal Tools",
@@ -165,7 +165,7 @@
       "role": "Lead Developer",
       "platform": "iOS + Android",
       "kind": "Mobile · Flutter",
-      "tagline": "Price comparison for Honduran supermarkets · the first Flutter app in the country built for daily shopping.",
+      "tagline": "Price comparison for Honduran supermarkets · six chains on one screen, built in Flutter for iOS and Android.",
       "short": "Price comparison for Honduran supermarkets.",
       "description": "Cross-platform price comparison app. Scan barcodes, compare prices across chains, set alerts, and build smart shopping lists.",
       "problem": {
@@ -177,8 +177,8 @@
         "headlineTail": "."
       },
       "body": [
-        "Three national supermarket chains dominate Honduran retail, and none of them publish standardized pricing. A single item · a 500g box of pasta, say · can vary by 30% between stores on any given day, and shoppers have no practical way to know in advance.",
-        "Prizio was built to close that gap. Scan a barcode in-store or search from home, and every price shows up on the same screen, updated by a community of shoppers and merchant partners. Alerts are configurable, and smart lists route you to the cheapest basket across your preferred chains.",
+        "Honduran supermarket chains don't publish comparable prices, so the same product can cost noticeably different amounts from one store to the next, and shoppers have no practical way to know before they go.",
+        "Prizio closes that gap. An automated scraping pipeline collects prices from six chains (La Colonia, Walmart, Más x Menos, Paiz, Diprova and PriceSmart); scan a barcode in-store or search from home, and every price shows up on the same screen. Price alerts, price trends and smart shopping lists round it out.",
         "Built for iOS and Android and currently being reactivated. Firebase maintains synchronization and 54 active Cloud Functions, Sentry captures errors, and 3,389 verified tests cover the Flutter app, FastAPI backend, and Functions."
       ],
       "outcomes": {
@@ -193,9 +193,9 @@
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js 16",
       "kind": "Web · Next.js 16",
-      "tagline": "Academic services platform with SEO-first content · 60 articles and a 26-service catalog at launch.",
+      "tagline": "Academic services platform for Honduran students · a bilingual SEO blog with 40 articles and a 27-service catalog.",
       "short": "Academic services platform with SEO-first content.",
-      "description": "Academic services platform with 60+ SEO-optimized blog articles, 26-service catalog, and MDX-powered content system.",
+      "description": "Academic services platform with a bilingual MDX blog (40 articles in Spanish and English), a 27-service catalog, and WhatsApp and email contact flows.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "Academic help",
@@ -205,43 +205,43 @@
         "headlineTail": "."
       },
       "body": [
-        "Folium Labs provides thesis, research, and editorial services for university students across Latin America. The old funnel was a WhatsApp thread and a Linktree: no search presence, and no way for a prospective client to understand the services without writing in first.",
-        "I rebuilt the business on Next.js 16 with MDX-powered content, a typed service catalog, and Resend-backed contact flows. Sixty articles on thesis writing, APA, and research methodology went live at launch, each one editorially reviewed and indexed with its own schema.",
-        "Everything behind the scenes is typed end-to-end. Pricing, service catalog, and blog posts all live as static content that compiles at build time, with no CMS and no runtime database queries. Deploys are a git push."
+        "Folium Labs offers tutoring, research methodology, data analysis and academic editing to university students in Honduras. The site has to explain every service clearly enough that a student can decide before writing in, and rank for the questions those students actually search.",
+        "I built it on Next.js 16 with a typed catalog of 27 services, a bilingual MDX blog (40 articles in Spanish and English on thesis writing, APA and research methods), pages for each university, and contact flows through WhatsApp and Resend email.",
+        "Content, pricing and the catalog compile at build time, with no CMS. Consent-aware analytics, schema.org structured data, and 488 unit tests plus Playwright end-to-end flows keep it stable as it grows."
       ],
       "outcomes": {
         "kicker": "Outcomes",
-        "a": { "n": "60+", "l": "SEO-indexed articles" },
-        "b": { "n": "26", "l": "Services catalogued" },
-        "c": { "n": "100%", "l": "Static, edge-rendered" }
+        "a": { "n": "40", "l": "Articles · ES + EN" },
+        "b": { "n": "27", "l": "Services catalogued" },
+        "c": { "n": "488", "l": "Unit tests" }
       },
-      "captions": ["Home", "Catalog", "Article", "Contact"]
+      "captions": ["Home", "Services", "Article"]
     },
     "printshop": {
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js",
       "kind": "Web · Commerce",
-      "tagline": "E-commerce with admin dashboard and invoicing · custom-built for a Honduran print shop.",
+      "tagline": "E-commerce and back office for a Honduran sublimation business · storefront, admin, invoicing and inventory.",
       "short": "E-commerce with admin dashboard and invoicing.",
       "description": "E-commerce platform with admin dashboard, React-PDF invoicing, Zustand-powered state, and end-to-end inventory management.",
       "problem": {
         "kicker": "The Problem",
-        "headlineA": "A small print shop",
-        "headlineB": "running its entire",
-        "headlineC": "business on",
-        "headlineEm": "paper",
+        "headlineA": "A sublimation business",
+        "headlineB": "needed to sell",
+        "headlineC": "and manage from",
+        "headlineEm": "one place",
         "headlineTail": "."
       },
       "body": [
-        "PrintShop 504 is a Honduran print-and-sign shop with a growing roster of walk-in and B2B customers. Before the rebuild, orders were tracked on paper slips, invoices handwritten, and inventory reconciled monthly (and unreliably). Missed reorders were routine.",
-        "I designed and built a custom e-commerce platform with an admin dashboard, a React-PDF invoicing system, Zustand-powered state, and Supabase at the backend handling auth, orders, and a live inventory ledger. Customers place orders online; staff fulfill them from a single dashboard.",
-        "Built solo on Next.js with Supabase and React-PDF for invoices. Vitest covers 707 unit tests, while Playwright protects the checkout and admin flows end to end."
+        "PrintShop 504 sells custom sublimation products in Honduras: t-shirts, bags, mugs and custom designs. The business needed an online store customers could order from and, behind it, a single place to run products, orders, customers, suppliers and invoicing.",
+        "I designed and built the platform on Next.js with Supabase handling auth, data and storage. The public storefront covers catalog, cart and checkout; the admin dashboard adds role-based access, PDF invoices with React-PDF, inventory with low-stock alerts, promotions, shipping, suppliers, Excel reports and an activity log.",
+        "Built solo. 707 Vitest unit tests and 330+ Playwright end-to-end tests cover checkout, permissions and every admin module."
       ],
       "outcomes": {
         "kicker": "Outcomes",
-        "a": { "n": "420+", "l": "Orders digitized / mo" },
-        "b": { "n": "99.2%", "l": "Inventory accuracy" },
-        "c": { "n": "707+", "l": "Vitest + Playwright" }
+        "a": { "n": "707", "l": "Vitest unit tests" },
+        "b": { "n": "330+", "l": "Playwright E2E tests" },
+        "c": { "n": "RBAC", "l": "Role-based admin" }
       },
       "captions": ["Storefront", "Admin", "Invoice", "Inventory"]
     },
@@ -249,9 +249,9 @@
       "role": "Full-Stack Developer",
       "platform": "Web · Next.js",
       "kind": "Web · Non-profit",
-      "tagline": "Five-language non-profit platform · blog, gallery, donations, and a full i18n stack.",
-      "short": "5-language non-profit platform.",
-      "description": "Non-profit website with blog, gallery, donation flow, and full localization across Spanish, English, French, Portuguese, and German.",
+      "tagline": "Five-language site for a non-profit · blog, gallery, programs and donations.",
+      "short": "5-language non-profit website.",
+      "description": "Non-profit website with blog, gallery, program pages, donation details, and full localization across Spanish, English, French, Portuguese, and German.",
       "problem": {
         "kicker": "The Problem",
         "headlineA": "A non-profit",
@@ -261,45 +261,17 @@
         "headlineTail": " audience."
       },
       "body": [
-        "El Arca Honduras is a non-profit serving children and families with disabilities. Their work reaches an international donor base, but the old site was Spanish-only and static: no gallery, no translations, and donations exiting through a single channel regardless of where the visitor came from.",
-        "I rebuilt it on Next.js with a full five-language stack (Spanish, English, French, Portuguese, German), a dynamic blog, a photo gallery, and a donation flow routing through the right regional processor.",
-        "Every piece of copy lives in typed translation files; no string ships without all five locales. Same stack I use for commercial work, same quality bar."
+        "Since 1977, El Arca Honduras has built communities in Tegucigalpa and Choluteca where people with and without intellectual disabilities share life together. Its supporters and volunteers come from many countries, so the site has to speak to all of them.",
+        "I built it on Next.js in five languages (Spanish, English, French, Portuguese and German) with a blog, a photo gallery, program pages, an FAQ, a contact form, and a donation section with the organization's bank accounts.",
+        "Every string lives in typed translation files and pages are generated statically, backed by 69 unit tests and 73 Playwright end-to-end tests."
       ],
       "outcomes": {
         "kicker": "Outcomes",
         "a": { "n": "5", "l": "Languages live" },
-        "b": { "n": "100%", "l": "Typed translations" },
-        "c": { "n": "0 ms", "l": "CMS latency · static" }
+        "b": { "n": "73", "l": "Playwright E2E tests" },
+        "c": { "n": "69", "l": "Unit tests" }
       },
-      "captions": ["Home", "Mission", "Gallery", "Donate"]
-    },
-    "spotify": {
-      "role": "Solo Developer",
-      "platform": "Web · React",
-      "kind": "Web · API Integration",
-      "tagline": "Generate playlists by mood and export to Spotify · OAuth PKCE with the current Web API.",
-      "short": "Generate playlists by mood, export to Spotify.",
-      "description": "Search songs, generate playlists with mood heuristics, and export directly to your Spotify account. OAuth with PKCE and Web API integration.",
-      "problem": {
-        "kicker": "The Problem",
-        "headlineA": "Spotify has",
-        "headlineB": "everything but",
-        "headlineC": "a",
-        "headlineEm": "vibe",
-        "headlineTail": " button."
-      },
-      "body": [
-        "Spotify retired several historical recommendation endpoints and changed the contracts for creating and modifying playlists. The challenge was preserving a useful experience without relying on obsolete APIs.",
-        "The application combines local genres and mood preferences into searches that work with the current API. You can find tracks, explore artists, prepare a playlist, and save it directly to your account.",
-        "Authentication uses Authorization Code with PKCE, with no client secret in the browser. Sessions refresh safely, batches respect official limits, and errors are handled without breaking the user's flow."
-      ],
-      "outcomes": {
-        "kicker": "Outcomes",
-        "a": { "n": "PKCE", "l": "OAuth without a client secret" },
-        "b": { "n": "2026", "l": "Web API contracts" },
-        "c": { "n": "100", "l": "Tracks per batch" }
-      },
-      "captions": ["Home", "Search", "Builder", "Export"]
+      "captions": ["Home", "Programs", "Gallery"]
     },
     "pharmacy": {
       "role": "Solo Full-Stack Developer",
@@ -311,21 +283,21 @@
       "problem": {
         "kicker": "The Problem",
         "headlineA": "A family pharmacy",
-        "headlineB": "needed to stop",
-        "headlineC": "losing",
-        "headlineEm": "inventory",
+        "headlineB": "needed one system",
+        "headlineC": "for stock and",
+        "headlineEm": "invoicing",
         "headlineTail": "."
       },
       "body": [
-        "Hedman Garcia Pharmacy is a family-run operation with thousands of SKUs and several staff handling sales across two shifts. Before the system, billing was on a legacy cash-register, inventory was eyeballed, and cross-staff reconciliation required end-of-day spreadsheet work.",
-        "I built a custom internal platform end-to-end: role-based auth, invoicing with tax, live stock adjustments on every sale, low-stock and expiry alerts, a register and staff-level reporting. It was my first production system, back in 2023.",
-        "I later rebuilt it as a Laravel REST API (with Sanctum) and an Angular SPA on MySQL — the same workflow, now on a modern, end-to-end tested foundation."
+        "Hedman Garcia Pharmacy needed one system for the whole counter: products with stock and expiry dates, invoicing with Honduran sales tax (ISV), the register and reports, with each staff member seeing only what their role allows.",
+        "I built it end to end: role-based authentication, invoicing with ISV, stock adjusted on every sale, low-stock and near-expiry alerts, register management and operational reports. It was my first production system, back in 2023.",
+        "I later rebuilt it as a Laravel REST API (Sanctum, Spatie permissions) and an Angular SPA on MySQL, backed by 222 Pest tests and Playwright end-to-end flows for invoicing."
       ],
       "outcomes": {
         "kicker": "Outcomes",
-        "a": { "n": "6", "l": "Staff on-boarded" },
-        "b": { "n": "180+", "l": "Daily transactions" },
-        "c": { "n": "~100%", "l": "Uptime since 2023" }
+        "a": { "n": "222", "l": "Pest tests" },
+        "b": { "n": "RBAC", "l": "Spatie roles & permissions" },
+        "c": { "n": "ISV", "l": "Invoicing with sales tax" }
       },
       "captions": ["Login · branded sign-in", "Dashboard · KPIs and inventory alerts", "Invoice · detail with tax (ISV)", "Products · catalog with stock and expiry", "Reports · sales by payment method"]
     }

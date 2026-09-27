@@ -31,7 +31,7 @@ src/
 │   │   ├── layout.tsx          # html/body/fonts/NextIntlProvider
 │   │   ├── page.tsx            # Landing page (hero/about/work/stack/contact)
 │   │   └── work/[slug]/
-│   │       └── page.tsx        # Case study template (8 projects)
+│   │       └── page.tsx        # Case study template (7 projects)
 │   ├── globals.css             # Tailwind 4 @theme tokens
 │   ├── layout.tsx              # Root passthrough
 │   ├── robots.ts               # /robots.txt
@@ -53,7 +53,7 @@ src/
 │   └── person-schema.tsx       # JSON-LD Person
 ├── lib/
 │   ├── fonts.ts                # next/font/google DM Sans, DM Mono, Instrument Serif
-│   └── portfolio-data.ts       # Typed portfolio + 8 projects
+│   └── portfolio-data.ts       # Typed portfolio + 7 projects
 ├── i18n/
 │   ├── routing.ts              # next-intl routing (en/es, always prefix)
 │   ├── navigation.ts           # Typed Link/useRouter
@@ -91,16 +91,17 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
 - [x] F12 — High-priority project facts, toolkit taxonomy, public links and bilingual CV sync
 - [x] F13 — CV contact links, project chronology, English terminology and observability taxonomy
 - [x] F14 — Private role-targeted CV variants for Full-Stack, QA Automation and Mobile (ES/EN)
+- [x] F15 — Seven projects (Spotify removed), verifiable-only claims, Folium/El Arca galleries recaptured from production
 
 ## Quality Gates
 
 | Check | Status |
 |-------|--------|
-| `npm run build` | Clean, 26 static pages including sitemap, robots and manifest |
+| `npm run build` | Clean, 24 static pages including sitemap, robots and manifest |
 | `npm run typecheck` | No type errors |
 | `npm run lint` | No errors or warnings |
 | `npm run test:unit` | 5/5, 100% coverage on `portfolio-data.ts` |
-| `npm run test:e2e` | 29 passed, 3 intentional mobile skips |
+| `npm run test:e2e` | 29 passed, 3 intentional mobile skips (sitemap: 16 URLs) |
 | `npm audit` | 0 known vulnerabilities |
 | Browser verification | EN/ES landing plus Spotify, Equine and PetLab case studies clean; no error overlays, blank states or stale public claims |
 | CV verification | 2 A4 pages per locale; email, portfolio, GitHub and LinkedIn links validated; 4 pages visually clean |
@@ -117,7 +118,7 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
   `/es/*`. Each route generates its canonical + hreflang alternates.
 - **Motion over AOS/Typed.js/Waypoints/PureCounter** — one animation library, all
   respecting `prefers-reduced-motion` through Motion's defaults.
-- **8 case studies with typed i18n bodies** — instead of MDX files, each project's
+- **7 case studies with typed i18n bodies** — instead of MDX files, each project's
   narrative lives in `messages/{locale}.json` under `projects.<id>.body[]` and
   friends. Keeps everything in one place and avoids MDX serialization wrinkles.
   MDX setup is still in place (`@next/mdx`, `remark-gfm`) if future case studies
@@ -144,9 +145,16 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
   applications and stored outside the repository in the user's Downloads folder.
 - **Published work only** — SIAC stays out of the portfolio and CV until its public
   launch. It is not added merely because the repository or production modules exist.
-- **Live links must match the documented build** — Spotify remains in the case-study
-  index, but its legacy Create React App deployment is not linked while the current
-  Vite/PKCE build is unpublished.
+- **Spotify removed (2026-09-26)** — the weakest project of the set; its case study,
+  messages and images were deleted. Pharmacy stays by the user's choice.
+- **Verifiable claims only** — every number on the site must come from
+  something checkable in the project repo (test counts, articles, services, languages).
+  Business metrics without evidence (orders/month, inventory accuracy, uptime, staff,
+  "first app in the country") were removed and are guarded by a unit test.
+- **Gallery captures from production** — `scripts/project-capture.mjs` shoots desktop
+  16:10 (1440×900) and mobile 9:19 (390×823 @2x) straight into `public/img/portfolio/`,
+  pre-seeding a *declined* cookie consent (no banner, no analytics hits) and hiding
+  floating widgets.
 
 ## Technical Notes
 

@@ -82,12 +82,13 @@ jobs:
             fi
 
             sha=$(jq -r .headRefOid <<< "$pr")
-            # Un deployment bloqueado (p. ej., proyecto de Vercel en pausa) no es un build
-            # fallido: se descarta y el gate queda en los demás checks.
+            # Un deployment bloqueado (proyecto de Vercel en pausa) o frenado por el límite
+            # diario del plan no es un build fallido: se descarta y el gate queda en los
+            # demás checks.
             blocked='[]'
             if jq -e '[.statusCheckRollup[] | select(.__typename == "StatusContext" and .state != "SUCCESS")] | length > 0' <<< "$pr" > /dev/null; then
               blocked=$(gh api "repos/$GH_REPO/commits/$sha/status" \
-                --jq '[.statuses[] | select(.state == "failure" and ((.description // "") | startswith("Deployment was blocked"))) | .context]')
+                --jq '[.statuses[] | select(.state == "failure" and ((.description // "") | test("^Deployment (was blocked|rate limited)"))) | .context]')
             fi
             pr=$(jq --argjson b "$blocked" '.statusCheckRollup |= map(select(.__typename != "StatusContext" or ([.context] | inside($b) | not)))' <<< "$pr")
 

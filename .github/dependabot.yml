@@ -19,5 +19,25 @@ updates:
         update-types:
           - minor
           - patch
+      # vitest y @vitest/* exigen la misma versión: un major por separado
+      # rompe el install por conflicto de peers.
+      vitest:
+        patterns:
+          - vitest
+          - '@vitest/*'
+        update-types:
+          - major
+    ignore:
+      # TypeScript 7 queda diferido: typescript-eslint solo acepta typescript
+      # <6.1 (typescript-eslint#10940). Quitar cuando lo soporte.
+      - dependency-name: typescript
+        versions: ['>= 7']
+      # @types/node sigue el major del runtime: Node 24 (engines, .nvmrc, Vercel).
+      - dependency-name: '@types/node'
+        versions: ['>= 25']
+      # ESLint 10 queda diferido: los plugins que trae eslint-config-next
+      # (react, import, jsx-a11y) solo declaran eslint ^9. Quitar cuando lo soporten.
+      - dependency-name: eslint
+        versions: ['>= 10']
     commit-message:
       prefix: chore(deps)

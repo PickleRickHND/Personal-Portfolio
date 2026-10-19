@@ -1,0 +1,23 @@
+# PRs semanales agrupados. Los patch/minor se mergean solos cuando los checks
+# del PR están en verde (workflows/dependabot-automerge.yml); los major quedan
+# para revisión manual. El cooldown espera 7 días desde cada release antes de
+# proponerla, como protección contra paquetes comprometidos.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '06:00'
+      timezone: America/Tegucigalpa
+    cooldown:
+      default-days: 7
+    open-pull-requests-limit: 5
+    groups:
+      minor-patch:
+        update-types:
+          - minor
+          - patch
+    commit-message:
+      prefix: chore(deps)

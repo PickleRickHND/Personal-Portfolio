@@ -1,0 +1,116 @@
+# Mergea solos los PRs de Dependabot que son patch/minor cuando todos
+# los checks del PR (Vercel) están en verde. Los major y los PRs sin checks
+# quedan para revisión manual. Pausar: gh workflow disable dependabot-automerge.yml
+name: Dependabot auto-merge
+
+on:
+  status:
+  schedule:
+    - cron: '30 14 * * 2,5'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Solo listar qué se mergearía
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+
+jobs:
+  automerge:
+    # Los eventos de ramas que no son de Dependabot saltan el job sin gastar minutos.
+    if: >-
+      github.event_name == 'schedule' ||
+      github.event_name == 'workflow_dispatch' ||
+      (github.event_name == 'status' &&
+        github.event.state == 'success' &&
+        contains(join(github.event.branches.*.name, ' '), 'dependabot/'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # A nivel de job para que los runs saltados no desplacen a uno pendiente.
+    concurrency:
+      group: dependabot-automerge
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+      DRY_RUN: ${{ inputs.dry_run == true }}
+    steps:
+      - name: Mergear el primer PR elegible
+        run: |
+          set -euo pipefail
+
+          base="${BASE_BRANCH:-$(gh api "repos/$GH_REPO" --jq .default_branch)}"
+
+          # Major si cambia el primer número, o el segundo en versiones 0.x.
+          is_major() {
+            local f1 f2 t1 t2 _rest
+            IFS=. read -r f1 f2 _rest <<< "${1#v}"
+            IFS=. read -r t1 t2 _rest <<< "${2#v}"
+            [[ "${f1%%[!0-9]*}" != "${t1%%[!0-9]*}" ]] && return 0
+            [[ "${f1%%[!0-9]*}" == 0 && "${f2%%[!0-9]*}" != "${t2%%[!0-9]*}" ]] && return 0
+            return 1
+          }
+
+          prs=$(gh pr list --author app/dependabot --state open --base "$base" --limit 50 \
+            --json number,title,body,headRefOid,statusCheckRollup)
+
+          for n in $(jq -r 'sort_by(.number) | .[].number' <<< "$prs"); do
+            pr=$(jq --argjson n "$n" '.[] | select(.number == $n)' <<< "$prs")
+
+            # Pares "from X to Y" del título y de las líneas Bumps/Updates del cuerpo
+            # (los PRs agrupados listan una línea "Updates `pkg` from X to Y" por paquete).
+            pairs=$(jq -r '.title, (.body | split("\n")[] | select(test("^(Bumps |Updates `)")))' <<< "$pr" \
+              | grep -oE 'from [0-9v][^ ]* to [0-9v][^ ]*' | sed -E 's/[.,]$//' || true)
+            if [[ -z "$pairs" ]]; then
+              echo "#$n: sin versiones legibles, queda manual"
+              continue
+            fi
+            major=""
+            while read -r _ from _ to; do
+              if is_major "$from" "$to"; then major="$from -> $to"; break; fi
+            done <<< "$pairs"
+            if [[ -n "$major" ]]; then
+              echo "#$n: major ($major), queda manual"
+              continue
+            fi
+
+            total=$(jq '.statusCheckRollup | length' <<< "$pr")
+            not_green=$(jq -r '[.statusCheckRollup[]
+              | (if .__typename == "CheckRun" then
+                   (if .status == "COMPLETED" then .conclusion else "PENDING" end)
+                 else .state end) as $s
+              | select($s != "SUCCESS" and $s != "SKIPPED" and $s != "NEUTRAL")
+              | "\(.name // .context)=\($s)"] | join(", ")' <<< "$pr")
+            if [[ "$total" -eq 0 || -n "$not_green" ]]; then
+              echo "#$n: checks no están en verde (${not_green:-sin checks})"
+              continue
+            fi
+
+            mergeable=UNKNOWN
+            for _ in 1 2 3; do
+              mergeable=$(gh pr view "$n" --json mergeable --jq .mergeable)
+              [[ "$mergeable" != UNKNOWN ]] && break
+              sleep 5
+            done
+            if [[ "$mergeable" != MERGEABLE ]]; then
+              echo "#$n: mergeable=$mergeable, espera el rebase de Dependabot"
+              continue
+            fi
+
+            if [[ "$DRY_RUN" == true ]]; then
+              echo "#$n: se mergearía ($(jq -r .title <<< "$pr"))"
+              continue
+            fi
+            sha=$(jq -r .headRefOid <<< "$pr")
+            if gh pr merge "$n" --squash --delete-branch --match-head-commit "$sha"; then
+              # Uno por run: los demás se rebasean y su CI vuelve a disparar este workflow.
+              echo "#$n: mergeado"
+              exit 0
+            fi
+            echo "::warning::#$n: el merge falló, se intenta con el siguiente"
+          done

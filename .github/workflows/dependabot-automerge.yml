@@ -81,6 +81,16 @@ jobs:
               continue
             fi
 
+            sha=$(jq -r .headRefOid <<< "$pr")
+            # Un deployment bloqueado (p. ej., proyecto de Vercel en pausa) no es un build
+            # fallido: se descarta y el gate queda en los demás checks.
+            blocked='[]'
+            if jq -e '[.statusCheckRollup[] | select(.__typename == "StatusContext" and .state != "SUCCESS")] | length > 0' <<< "$pr" > /dev/null; then
+              blocked=$(gh api "repos/$GH_REPO/commits/$sha/status" \
+                --jq '[.statuses[] | select(.state == "failure" and ((.description // "") | startswith("Deployment was blocked"))) | .context]')
+            fi
+            pr=$(jq --argjson b "$blocked" '.statusCheckRollup |= map(select(.__typename != "StatusContext" or ([.context] | inside($b) | not)))' <<< "$pr")
+
             total=$(jq '.statusCheckRollup | length' <<< "$pr")
             not_green=$(jq -r '[.statusCheckRollup[]
               | (if .__typename == "CheckRun" then
@@ -108,7 +118,6 @@ jobs:
               echo "#$n: se mergearía ($(jq -r .title <<< "$pr"))"
               continue
             fi
-            sha=$(jq -r .headRefOid <<< "$pr")
             if gh pr merge "$n" --squash --delete-branch --match-head-commit "$sha"; then
               # Uno por run: los demás se rebasean y su CI vuelve a disparar este workflow.
               echo "#$n: mergeado"

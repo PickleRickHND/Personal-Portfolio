@@ -16,10 +16,10 @@ Deployed to Vercel as an App Router static site with runtime i18n.
 | UI | React | 19.2.8 |
 | Language | TypeScript | 6.0.3 |
 | Styling | Tailwind CSS (@theme CSS-first) | 4.3.3 |
-| Animation | Motion | 13.1.1 |
+| Animation | Motion | 14.1.0 |
 | i18n | next-intl | 4.14.1 |
 | Content | MDX (@next/mdx + remark-gfm) | 16.3.3 / 4.0.1 |
-| Testing | Vitest / Playwright | 4.1.11 / 1.62.1 |
+| Testing | Vitest / Playwright | 5.0.4 / 1.64.0 |
 | Deploy | Vercel | Production |
 
 ## Directory Map
@@ -164,6 +164,11 @@ legacy/                         # Pre-redesign HTML/CSS/JS (rollback safety)
   Motion; the container itself enters via scroll reveal.
 - `StatGrid` borders collapse correctly on mobile (single column, no right border).
 - JSON-LD Person lives in the body so it ships with every prerendered page.
+- Dependencias (2026-10-19): Vitest 5 y `@vitest/coverage-v8` 5 se actualizan juntos (por separado
+  el install falla por peers) y Motion 14 solo quita APIs internas. Quedan diferidos TypeScript 7
+  (`typescript-eslint` exige `typescript <6.1`, typescript-eslint#10940), ESLint 10 (los plugins de
+  `eslint-config-next` solo declaran ESLint 9) y `@types/node` > 24 (sigue el runtime Node 24);
+  `.github/dependabot.yml` los ignora.
 
 ## How to Run
 

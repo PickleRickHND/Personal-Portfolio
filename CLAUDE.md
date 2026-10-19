@@ -4,7 +4,7 @@ Guía para Claude Code al trabajar en este repositorio.
 
 ## Overview
 
-Portfolio personal de Douglas Hedman (Full-Stack Developer). **Node.js 24 + Next.js 16.3 (App Router + Turbopack) + React 19.2 + TypeScript 6 + Tailwind CSS 4.3 + next-intl 4.14 + Motion 13**, deployado en Vercel (proyecto `douglas-hedman-portfolio`, push a `main` auto-deploya).
+Portfolio personal de Douglas Hedman (Full-Stack Developer). **Node.js 24 + Next.js 16.3 (App Router + Turbopack) + React 19.2 + TypeScript 6 + Tailwind CSS 4.3 + next-intl 4.14 + Motion 14**, deployado en Vercel (proyecto `douglas-hedman-portfolio`, push a `main` auto-deploya).
 
 > El sitio estático anterior (HTML/CSS/JS puro) vive en `legacy/` solo como referencia histórica. NO se mantiene ni se edita.
 

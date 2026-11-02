@@ -21,9 +21,9 @@
   "dependencies": {
     "@mdx-js/loader": "3.1.1",
     "@mdx-js/react": "3.1.1",
-    "@next/mdx": "16.4.2",
-    "motion": "14.4.0",
-    "next": "16.4.2",
+    "@next/mdx": "16.4.3",
+    "motion": "14.6.0",
+    "next": "16.4.3",
     "next-intl": "4.14.9",
     "react": "19.3.1",
     "react-dom": "19.3.1",
@@ -39,7 +39,7 @@
     "@types/react-dom": "19.3.0",
     "@vitest/coverage-v8": "5.0.5",
     "eslint": "9.39.5",
-    "eslint-config-next": "16.4.2",
+    "eslint-config-next": "16.4.3",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "vitest": "5.0.5"
